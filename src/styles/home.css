@@ -1,0 +1,70 @@
+.name {
+    color : #760bde;
+}
+
+.text-google {
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+.introduction {
+    color: gray;
+    font-size: x-large;
+}
+
+@media screen and (max-width: 450px) {
+    .introduction {
+        font-size: medium;
+    }
+    .d-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-home {
+        width: 100%;
+        height: auto;
+        margin-left: 0 !important; 
+        display: block;
+    }
+
+    .text-footer{
+        font-size: small;
+    }
+    .container-xxl {
+        padding: 0 10px; /* Reduce el padding para evitar espacio no deseado */
+    }
+    .name, .text-google {
+        text-align: center; /* Centra el texto para una presentación más limpia */
+        margin-top: 20px; /* Reduce o ajusta los márgenes superiores según sea necesario */
+    }
+}
+
+.img-home {
+    width: 70%;
+    height: auto;
+    margin-left: 10%;
+}
+
+.reference-a {
+    color: #d63384;
+    text-decoration: none;
+}
+.reference-a {
+    color: #d63384;
+    text-decoration: none;
+}
+
+.fixed-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: white; /* Asegúrate de que el texto sea legible contra el fondo de la página */
+    text-align: center;
+    padding: 10px 0; /* Añade algo de relleno para que se vea bien */
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1); /* Opcional: añade una sombra para separar del contenido */
+}
