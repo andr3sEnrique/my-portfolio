@@ -56,11 +56,21 @@
 }
 
 .line {
-    background-color: #760bde;
+    background-color: #5897c3;
     height: auto;
     width: 10px;
     margin-left: 5px;
     margin-right: 5px;
+}
+.line-separation{
+    background-color: #760bde;
+    height: 5px;
+    width: 100%;
+}
+
+.imgs{
+    width: 20%;
+    height: auto;
 }
 
 .hidden {
@@ -94,6 +104,16 @@
     width: 100%;
     height: auto;
     margin-bottom: 20px;
+}
+.hobbies {
+    display: inline-block;
+    animation: wave 1s ease-in-out infinite;
+    transform-origin: 70% 70%;
+    font-size: 3rem;
+}
+
+.cursor {
+    cursor: pointer;
 }
 
 @media screen and (max-width: 450px) {
