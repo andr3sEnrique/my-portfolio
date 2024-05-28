@@ -1,19 +1,21 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.464f219d.css",
-    "main.js": "/my-portfolio/static/js/main.8a68c55f.js",
+    "main.css": "/my-portfolio/static/css/main.bdffd7bc.css",
+    "main.js": "/my-portfolio/static/js/main.946c713a.js",
     "static/js/453.acca0757.chunk.js": "/my-portfolio/static/js/453.acca0757.chunk.js",
     "static/media/profile-pic.jpeg": "/my-portfolio/static/media/profile-pic.f57d648b7f989ed06cde.jpeg",
     "static/media/papel-picado.png": "/my-portfolio/static/media/papel-picado.33e7fd0033112174c748.png",
     "static/media/altar.png": "/my-portfolio/static/media/altar.9a9baf66a439822b14eb.png",
     "static/media/imgHome.jpg": "/my-portfolio/static/media/imgHome.a33d2a9ac42b11151394.jpg",
+    "static/media/logo-orleans.png": "/my-portfolio/static/media/logo-orleans.6287a87aaf5f4e8b634a.png",
+    "static/media/Logo-utez.png": "/my-portfolio/static/media/Logo-utez.5ed9f81a0ef59e20442c.png",
     "index.html": "/my-portfolio/index.html",
-    "main.464f219d.css.map": "/my-portfolio/static/css/main.464f219d.css.map",
-    "main.8a68c55f.js.map": "/my-portfolio/static/js/main.8a68c55f.js.map",
+    "main.bdffd7bc.css.map": "/my-portfolio/static/css/main.bdffd7bc.css.map",
+    "main.946c713a.js.map": "/my-portfolio/static/js/main.946c713a.js.map",
     "453.acca0757.chunk.js.map": "/my-portfolio/static/js/453.acca0757.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.464f219d.css",
-    "static/js/main.8a68c55f.js"
+    "static/css/main.bdffd7bc.css",
+    "static/js/main.946c713a.js"
   ]
 }
