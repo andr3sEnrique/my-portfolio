@@ -9,11 +9,11 @@ function CustomNavbar() {
   return (
     <Navbar expand="lg" className="bg-color navbar-100 fixed-top">
       <Container>
-        <Navbar.Brand as={NavLink} to="/" className="text-white text-google navbar-brand-small">Andres Enrique Ortiz Santa Cruz</Navbar.Brand>
+        <Navbar.Brand as={NavLink} to="/my-portfolio" className="text-white text-google navbar-brand-small">Andres Enrique Ortiz Santa Cruz</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link as={NavLink} to="/" className="text-white text-google">Home</Nav.Link>
+            <Nav.Link as={NavLink} to="/my-portfolio" className="text-white text-google">Home</Nav.Link>
             <Nav.Link as={NavLink} to="/about" className="text-white text-google">About Me</Nav.Link>
             <Nav.Link as={NavLink} to="/skills" className="text-white text-google">Skills</Nav.Link>
             <Nav.Link as={NavLink} to="/experience" className="text-white text-google">Experience</Nav.Link>

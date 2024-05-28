@@ -58,13 +58,19 @@
     text-decoration: none;
 }
 
-.fixed-footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background: white; /* Asegúrate de que el texto sea legible contra el fondo de la página */
-    text-align: center;
-    padding: 10px 0; /* Añade algo de relleno para que se vea bien */
-    box-shadow: 0 -2px 5px rgba(0,0,0,0.1); /* Opcional: añade una sombra para separar del contenido */
+@keyframes wave {
+    0% { transform: rotate(0deg); }
+    10% { transform: rotate(14deg); }
+    20% { transform: rotate(-8deg); }
+    30% { transform: rotate(14deg); }
+    40% { transform: rotate(-4deg); }
+    50% { transform: rotate(10deg); }
+    60% { transform: rotate(0deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.wave-emoji {
+    display: inline-block;
+    animation: wave 1s ease-in-out infinite;
+    transform-origin: 70% 70%;
 }

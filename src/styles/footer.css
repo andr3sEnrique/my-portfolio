@@ -1,46 +1,15 @@
-footer {
-    background-color: #343a40;
-    padding: 2rem 0;
-    color: white;
-    text-align: center;
+.fixed-footer {
+    position: fixed; /* Fija la posición relativa a la ventana del navegador */
+    bottom: 0; /* Alinea en la parte inferior */
+    left: 0; /* Alinea a la izquierda */
+    width: 100%; /* Asegura que se extienda a lo ancho de la pantalla */
+    background: #FFF; /* Color de fondo, cambialo según tu diseño */
+    text-align: center; /* Centra el texto dentro del footer */
+    z-index: 1000; /* Asegura que el footer esté sobre otros elementos */
+    padding: 10px;
+    margin-bottom: -5px;
 }
 
-footer h5 {
-    margin-bottom: 1rem;
+.name {
+    color : #760bde;
 }
-
-footer p, footer a {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-
-@media screen and (max-width: 450px) {
-    footer {
-        padding: 1rem 0; /* Reduce el padding */
-    }
-
-    footer p, footer a, footer h5 {
-        font-size: 0.875rem; /* Reduce el tamaño del texto */
-    }
-
-    footer .col-md-4 {
-        flex: 0 0 100%; /* Asegúrate de que las columnas ocupen el 100% del ancho */
-        max-width: 100%;
-    }
-}
-
-@media (min-width: 451px) {
-    .justify-content-center {
-        justify-content: center;
-    }
-
-    .justify-content-center .col-md-4 {
-        margin-left: 1rem; /* Ajusta el valor según sea necesario */
-        margin-right: 1rem; /* Ajusta el valor según sea necesario */
-    }
-}
-

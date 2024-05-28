@@ -1,0 +1,13 @@
+.quetzalcoatl {
+    position: fixed;
+    bottom: 20px; /* Ajusta la posición vertical */
+    right: -100px; /* Comienza fuera de la pantalla a la derecha */
+    width: 100px; /* Ajusta el tamaño según sea necesario */
+    height: auto;
+    transition: transform 10s linear; /* Duración de la animación */
+    z-index: 9999;
+}
+
+.animate {
+    transform: translateX(calc(-100vw - 100px)) rotate(360deg); /* Mover hacia la izquierda y rotar */
+}
