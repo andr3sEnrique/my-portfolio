@@ -53,10 +53,6 @@
     color: #d63384;
     text-decoration: none;
 }
-.reference-a {
-    color: #d63384;
-    text-decoration: none;
-}
 
 @keyframes wave {
     0% { transform: rotate(0deg); }
