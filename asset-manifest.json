@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.7e06ac08.css",
-    "main.js": "/my-portfolio/static/js/main.707b4196.js",
+    "main.css": "/my-portfolio/static/css/main.30452c8c.css",
+    "main.js": "/my-portfolio/static/js/main.3ece0a94.js",
     "static/js/453.acca0757.chunk.js": "/my-portfolio/static/js/453.acca0757.chunk.js",
     "static/media/profile-pic.jpeg": "/my-portfolio/static/media/profile-pic.f57d648b7f989ed06cde.jpeg",
     "static/media/papel-picado.png": "/my-portfolio/static/media/papel-picado.33e7fd0033112174c748.png",
@@ -9,13 +9,16 @@
     "static/media/imgHome.jpg": "/my-portfolio/static/media/imgHome.a33d2a9ac42b11151394.jpg",
     "static/media/logo-orleans.png": "/my-portfolio/static/media/logo-orleans.6287a87aaf5f4e8b634a.png",
     "static/media/Logo-utez.png": "/my-portfolio/static/media/Logo-utez.5ed9f81a0ef59e20442c.png",
+    "static/media/ronnie-coleman.jpg": "/my-portfolio/static/media/ronnie-coleman.201de9ef8957823abcb7.jpg",
+    "static/media/taco.png": "/my-portfolio/static/media/taco.643f89a90201b89f08fa.png",
+    "static/media/guitar.png": "/my-portfolio/static/media/guitar.335e510adc7b34668cc0.png",
     "index.html": "/my-portfolio/index.html",
-    "main.7e06ac08.css.map": "/my-portfolio/static/css/main.7e06ac08.css.map",
-    "main.707b4196.js.map": "/my-portfolio/static/js/main.707b4196.js.map",
+    "main.30452c8c.css.map": "/my-portfolio/static/css/main.30452c8c.css.map",
+    "main.3ece0a94.js.map": "/my-portfolio/static/js/main.3ece0a94.js.map",
     "453.acca0757.chunk.js.map": "/my-portfolio/static/js/453.acca0757.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7e06ac08.css",
-    "static/js/main.707b4196.js"
+    "static/css/main.30452c8c.css",
+    "static/js/main.3ece0a94.js"
   ]
 }
