@@ -47,6 +47,9 @@
     width: 100%; /* Ensure flex container takes full width */
 }
 
+.level-0 {
+    min-width: 100vh;
+}
 
 .visible {
     opacity: 1;
