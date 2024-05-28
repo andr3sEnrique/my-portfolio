@@ -13,7 +13,7 @@ function About () {
     useEffect(() => {
         const handleScroll = () => {
             const scrolled = window.scrollY;
-            if (scrolled < 130) {
+            if (scrolled < 110) {
                 setScale(1 + scrolled / 100);
                 setLevelVisible(0);
             } else if (scrolled >= 130 && scrolled < 300) {
