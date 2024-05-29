@@ -55,11 +55,13 @@ height: 40px;
   
 .skills {
     color: gray;
+    margin-bottom: 20px;
 }
 
 .poses-gym {
     width: 10%;
     height: auto;
+    cursor: pointer;
 }
 .skills-container {
     display: flex;

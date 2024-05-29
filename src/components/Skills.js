@@ -8,9 +8,35 @@ import Pose2 from '../img/pose2.png';
 import Pose3 from '../img/pose3.png';
 import Pose4 from '../img/pose4.png';
 import '../styles/skills.css';
+import Responsability from '../img/dieta.jpg';
+import Adaptability from '../img/suplementos.jpg';
+import TeamWork from '../img/team-work.jpg';
+import Engagement from '../img/cbum.png';
+import CustomModal from './Modal';
 
 function Skills () {
     const [isLoading, setIsLoading] = useState(true);
+    const [show, setShow] = useState(false);
+    const [currentSkill, setCurrentSkill] = useState({});
+    const skillsData = [
+        { title: "Responsibility", img: Responsability },
+        { title: "Adaptability", img: Adaptability },
+        { title: "TeamWork", img: TeamWork },
+        { title: "Engagement", img: Engagement }
+    ];
+    const handleShow = (index) => {
+        const skill = skillsData[index - 1]; // Adjusting index because arrays are zero-indexed
+        if (skill) {
+            setCurrentSkill(skill);
+            setShow(true);
+        } else {
+            console.log("not in the range"); // This is more appropriate than 'print'
+        }
+    };
+    
+    const handleClose = () => {
+        setShow(false);
+    };
     useEffect(() => {
         const fetchData = async () => {
             await new Promise(resolve => setTimeout(resolve, 3000)); 
@@ -33,11 +59,12 @@ function Skills () {
                     <img src={LamparaD} alt="lampara" className="lamparas derecha" />
                 </div>
                 <div className="d-flex flex-row justify-content-between mt-5">
-                    <img src={Pose1} alt="pose gym 1" className="poses-gym" />
-                    <img src={Pose2} alt="pose gym 2" className="poses-gym"/>
-                    <img src={Pose3} alt="pose gym 3" className="poses-gym"/>
-                    <img src={Pose4} alt="pose gym 4" className="poses-gym"/>
+                    <img src={Pose1} alt="pose gym 1" className="poses-gym" onClick={() => handleShow(1)}/>
+                    <img src={Pose2} alt="pose gym 2" className="poses-gym" onClick={() => handleShow(2)}/>
+                    <img src={Pose3} alt="pose gym 3" className="poses-gym" onClick={() => handleShow(3)}/>
+                    <img src={Pose4} alt="pose gym 4" className="poses-gym" onClick={() => handleShow(4)}/>
                 </div>
+                <CustomModal title={currentSkill.title} img={currentSkill.img} show={show} handleClose={handleClose} />
                 <div className=" mb-5 tarima"></div>
                 <h2 className="text-google2 text-center">FrontEnd</h2>
                 <div className="skills-container">

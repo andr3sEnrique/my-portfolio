@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import '../styles/home.css'
 function Home() {
     return (
-        <div className='p-4'>
+        <div className='p-5'>
             <div className='container-xxl'>
                     <h1 className='text-google mt-5'>Hey, I'm <span className='name'>Enrique</span> <span className='wave-emoji'>👋🏽</span></h1>
                     <p className='text-google introduction mt-4'>I am a Mexican student developer at the IUT in Orléans. I have done different projects using a variety of technologies and tools.</p>
