@@ -48,13 +48,13 @@ function About () {
             {isLoading ? (
                 <Loader image={Quetzalcoatl} />
             ) : (
-                <div>
+                <div className="pt-5">
                     <img className="papel" src={Papel} alt="papel picado" />
                     <div className="container-xxl">
                         <div className={`altar-level level-0 ${levelVisible === 0 ? 'visible' : 'hidden'}`}>
                             <img alt="altar" className="altar-img" src={Altar} style={{ transform: `scale(${scale})`, transition: 'transform 0.5s ease' }}/>
                         </div>
-                        <div className={`altar-level level-1 ${levelVisible === 1 ? 'visible' : 'hidden'}`}>
+                        <div className={`mt-4 altar-level level-1 ${levelVisible === 1 ? 'visible' : 'hidden'}`}>
                             <h1 className="title">
                                 <span className="green-color">Who is Andres </span>
                                 <span className="white-text">Enrique Ortiz </span>
