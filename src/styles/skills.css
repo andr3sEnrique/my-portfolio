@@ -1,0 +1,66 @@
+.lamparas {
+    width: 20%;
+    height: auto;
+    
+}
+
+.tarima {
+    background-color: brown;
+    width: 100%;
+    height: 5px;
+}
+.derecha {
+    transform: rotate(20deg);
+
+}
+
+.izquierda {
+    transform: rotate(-20deg);
+}
+
+.text-google2 {
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+.dumbbell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bar {
+width: 200px;
+height: 20px;
+background-color: gray;
+}
+
+.weight {
+width: 20px; 
+height: 50px;
+background-color: black;
+border-radius: 20%;
+margin: 5px;
+}
+
+.weight-1 {
+width: 20px;
+height: 30px;
+}
+  
+.weight-2 { 
+width: 30px;
+height: 40px;
+}
+
+.weight-3 { 
+    width: 50px;
+    height: 60px;
+}
+  
+.skills {
+    color: gray;
+}
