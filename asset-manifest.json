@@ -1,36 +1,39 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.fb234197.css",
-    "main.js": "/my-portfolio/static/js/main.8a3d0328.js",
+    "main.css": "/my-portfolio/static/css/main.3dd1bfbf.css",
+    "main.js": "/my-portfolio/static/js/main.055e15f0.js",
     "static/js/453.acca0757.chunk.js": "/my-portfolio/static/js/453.acca0757.chunk.js",
     "static/media/profile-pic.jpeg": "/my-portfolio/static/media/profile-pic.f57d648b7f989ed06cde.jpeg",
     "static/media/cbum.png": "/my-portfolio/static/media/cbum.57eeb53b9a202784267b.png",
     "static/media/papel-picado.png": "/my-portfolio/static/media/papel-picado.33e7fd0033112174c748.png",
     "static/media/altar.png": "/my-portfolio/static/media/altar.9a9baf66a439822b14eb.png",
+    "static/media/cempasuchil.png": "/my-portfolio/static/media/cempasuchil.cf9daf270c8e54cfa142.png",
     "static/media/disco-olimpico.png": "/my-portfolio/static/media/disco-olimpico.e2fca57aa56fed427617.png",
+    "static/media/ramon.png": "/my-portfolio/static/media/ramon.174b69c94d47dc1dca64.png",
+    "static/media/breon.jpg": "/my-portfolio/static/media/breon.242277b9b03241be8a8a.jpg",
     "static/media/imgHome.jpg": "/my-portfolio/static/media/imgHome.a33d2a9ac42b11151394.jpg",
     "static/media/logo-orleans.png": "/my-portfolio/static/media/logo-orleans.6287a87aaf5f4e8b634a.png",
+    "static/media/terrence.jpg": "/my-portfolio/static/media/terrence.e8082faaa2dc1dd11d9b.jpg",
     "static/media/Logo-utez.png": "/my-portfolio/static/media/Logo-utez.5ed9f81a0ef59e20442c.png",
     "static/media/lampara-derecha.png": "/my-portfolio/static/media/lampara-derecha.bb620403dacf85a7eff3.png",
     "static/media/lampara-izquierda.png": "/my-portfolio/static/media/lampara-izquierda.5510e88d25880f187da7.png",
     "static/media/ronnie-coleman.jpg": "/my-portfolio/static/media/ronnie-coleman.201de9ef8957823abcb7.jpg",
     "static/media/dieta.jpg": "/my-portfolio/static/media/dieta.5683450a851d64d09c2b.jpg",
-    "static/media/taco.png": "/my-portfolio/static/media/taco.643f89a90201b89f08fa.png",
     "static/media/quetzal-loader.png": "/my-portfolio/static/media/quetzal-loader.b2a27a4997e362d02b5a.png",
     "static/media/team-work.jpg": "/my-portfolio/static/media/team-work.f1ab83ea820ba07c708f.jpg",
+    "static/media/urs.jpg": "/my-portfolio/static/media/urs.ea6c8d9dad59be599cae.jpg",
     "static/media/suplementos.jpg": "/my-portfolio/static/media/suplementos.c6bc7353efa5e3b4fcba.jpg",
-    "static/media/guitar.png": "/my-portfolio/static/media/guitar.335e510adc7b34668cc0.png",
     "static/media/pose4.png": "/my-portfolio/static/media/pose4.67c50fbe776c05dd3dfd.png",
     "static/media/pose3.png": "/my-portfolio/static/media/pose3.ded844fa28ba36f615ea.png",
     "static/media/pose2.png": "/my-portfolio/static/media/pose2.5ca2d34e99a47bce38d9.png",
     "static/media/pose1.png": "/my-portfolio/static/media/pose1.82573236d5d96b3d8ad7.png",
     "index.html": "/my-portfolio/index.html",
-    "main.fb234197.css.map": "/my-portfolio/static/css/main.fb234197.css.map",
-    "main.8a3d0328.js.map": "/my-portfolio/static/js/main.8a3d0328.js.map",
+    "main.3dd1bfbf.css.map": "/my-portfolio/static/css/main.3dd1bfbf.css.map",
+    "main.055e15f0.js.map": "/my-portfolio/static/js/main.055e15f0.js.map",
     "453.acca0757.chunk.js.map": "/my-portfolio/static/js/453.acca0757.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fb234197.css",
-    "static/js/main.8a3d0328.js"
+    "static/css/main.3dd1bfbf.css",
+    "static/js/main.055e15f0.js"
   ]
 }
