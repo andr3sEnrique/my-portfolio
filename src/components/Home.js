@@ -12,7 +12,7 @@ function Home() {
             const timeOutId = setTimeout(() => {
                 setText(text + fullText.charAt(index));
                 setIndex(index + 1);
-            }, 50);
+            }, 40);
             return () => clearTimeout(timeOutId);
         }
     }, [text, index, fullText]);

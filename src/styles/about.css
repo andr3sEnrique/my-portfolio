@@ -56,11 +56,12 @@
 }
 
 .line {
-    background-color: #5897c3;
+    background-color: #e7682f;
     height: auto;
     width: 10px;
     margin-left: 5px;
     margin-right: 5px;
+    display: none;
 }
 .line-separation{
     height: 8%;
@@ -120,14 +121,22 @@
     cursor: pointer;
 }
 
+.about-me {
+    padding-left: 1rem;
+}
+
 @media screen and (max-width: 450px) {
     .line {
         margin-top: 10px;
         height: 3px;
         width: 100%;
+        display: block;
     }
     .text-google {
         font-size: medium;
+    }
+    .about-me{
+        padding-left: 0;
     }
 }
 

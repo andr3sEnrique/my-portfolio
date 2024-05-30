@@ -15,7 +15,6 @@ import Terrence from '../img/terrence.jpg';
 import '../styles/about.css';
 import Quetzalcoatl from '../img/quetzal-loader.png';
 import Loader from './Loader';
-import CustomModal from './Modal';
 import ModalHobbie from "./ModalHobbie";
 
 function About () {
@@ -25,11 +24,11 @@ function About () {
     const [show, setShow] = useState(false);
     const [showModal, setShowModal] = useState(false);
     const [showWatch, setShowWatch] = useState(false);
-    const [showResults, setShowResults] = useState(false);
     const [count, setCount] = useState(0);
     const [timeLeft, setTimeLeft] = useState(10);
     const [timerActive, setTimerActive] = useState(false);
     const [currentLevel, setCurrentLevel] = useState({});
+    const [displayState, setDisplayState] = useState('game');
     const countRef = useRef(0);
     const levelData = [
         { title: "You can do better", img: Terrence},
@@ -38,23 +37,31 @@ function About () {
         {title: "Good :)", img: Ramon},
         {title: "You're the next Mr. Olympia", img: Cbum}
     ]
-    const handleShowGame = () => setShowModal(true);
-    const handleCloseGame = () => {
-        setShowModal(false);
+    const handleShowGame = () => {
+        setShowModal(true);
+        setDisplayState('game');
         setTimerActive(false);
         setTimeLeft(10);
         setCount(0);
+        
+    };
+    const handleCloseGame = () => {
+        countRef.current = 0; 
+        setCount(0);
+        setShowModal(false);
+        
     };
 
     const startCountdown = () => {
         setTimerActive(true);
-        setCount(0);
-        countRef.current = 0;  
         const interval = setInterval(() => {
             setTimeLeft(prevTime => {
                 if (prevTime <= 1) {
                     clearInterval(interval);
-                    evaluateLevel();
+                    setDisplayState('loading');
+                    setTimeout(() => {
+                        evaluateLevel();
+                    }, 2000);
                     return 10;
                 }
                 return prevTime - 1;
@@ -71,22 +78,20 @@ function About () {
 
     const evaluateLevel = () => {
         const finalCount = countRef.current; 
-        if (finalCount <= 40) {
+        if (finalCount <= 50) {
             setCurrentLevel(levelData[0]);
-        } else if (finalCount <= 50) {
-            setCurrentLevel(levelData[1]);
         } else if (finalCount <= 60) {
-            setCurrentLevel(levelData[2]);
+            setCurrentLevel(levelData[1]);
         } else if (finalCount <= 70) {
+            setCurrentLevel(levelData[2]);
+        } else if (finalCount <= 80) {
             setCurrentLevel(levelData[3]);
-        } else if (finalCount >= 80) {
+        } else if (finalCount >= 90) {
             setCurrentLevel(levelData[4]);
         }
-        setShowResults(true);
-        handleCloseGame();
+        setDisplayState('results');
     };
 
-    const handleCloseResults = () => setShowResults(false);
     const handleCloseWatch = () => setShowWatch(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
@@ -133,7 +138,7 @@ function About () {
                             <div className="d-flex justify-content-center content-1">
                                 <img src={profile} alt="Enrique's profile" className="profile-pic"/>
                                 <div className="line"></div>
-                                <div className="d-flex justify-content-center flex-column">
+                                <div className="d-flex justify-content-center flex-column about-me">
                                     <p className="text-google">Hello, I'm Andres Enrique Ortiz Santa Cruz, a <span className="key-words">software development</span> student who likes to create web and mobile applications.</p>
                                     <p className="text-google">When I'm not working I like to <span className="key-words">work out</span> at the gym, <span className="key-words">explore</span> and <span className="key-words">learn</span> new things.</p>
                                     
@@ -191,22 +196,38 @@ function About () {
                                 </div> 
                                 <ModalHobbie show={showWatch} handleClose={handleCloseWatch}/>
                                 <Modal show={showModal} onHide={handleCloseGame}>
-                                    <Modal.Header closeButton>
-                                        <Modal.Title>Click the button as many time as you can</Modal.Title>
-                                    </Modal.Header>
-                                    <Modal.Body>
-                                        <p>Clicks: {count}</p>
-                                        <p>Time Left: {timeLeft}s</p>
-                                        {!timerActive && <Button onClick={startCountdown}>Start</Button>}
-                                        {timerActive && <Button onClick={incrementCount}>Click Me!</Button>}
-                                    </Modal.Body>
+                                <Modal.Header closeButton>
+                                    <Modal.Title>{displayState === 'game' ? 'Click the button as many times as you can' : 'Results'}</Modal.Title>
+                                </Modal.Header>
+                                <Modal.Body>
+                                    {displayState === 'game' && (
+                                        <>
+                                            <p>Clicks: {count}</p>
+                                            <p>Time Left: {timeLeft}s</p>
+                                            {!timerActive && <Button onClick={startCountdown}>Start</Button>}
+                                            {timerActive && <Button onClick={incrementCount}>Click Me!</Button>}
+                                        </>
+                                    )}
+                                    {displayState === 'loading' && 
+                                    <div class="text-center">
+                                        <div class="spinner-border text-warning" role="status">
+                                            <span class="visually-hidden">Loading...</span>
+                                        </div>
+                                    </div>
+                                  } 
+                                    {displayState === 'results' && (
+                                        <>
+                                            <h1 className="text-center">{currentLevel.title}</h1>
+                                            <img src={currentLevel.img} alt="Workout" class="img-fluid" />
+                                        </>
+                                    )}
+                                </Modal.Body>
                                     <Modal.Footer>
                                         <Button variant="secondary" onClick={handleCloseGame}>
                                             Close
                                         </Button>
                                     </Modal.Footer>
                                 </Modal>
-                                <CustomModal title={currentLevel.title} img={currentLevel.img} show={showResults} handleClose={handleCloseResults}/>
 
                                 <Modal show={show} onHide={handleClose}>
                                     <Modal.Header closeButton>
