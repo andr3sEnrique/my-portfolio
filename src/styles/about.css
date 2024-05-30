@@ -63,9 +63,13 @@
     margin-right: 5px;
 }
 .line-separation{
-    background-color: #760bde;
-    height: 5px;
+    height: 8%;
     width: 100%;
+}
+
+.flor {
+    width: 50%;
+    height: 100%;
 }
 
 .imgs{
