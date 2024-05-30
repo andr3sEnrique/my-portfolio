@@ -1,22 +1,28 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.3dd1bfbf.css",
-    "main.js": "/my-portfolio/static/js/main.055e15f0.js",
+    "main.css": "/my-portfolio/static/css/main.1e9f4a2a.css",
+    "main.js": "/my-portfolio/static/js/main.13d8369f.js",
     "static/js/453.acca0757.chunk.js": "/my-portfolio/static/js/453.acca0757.chunk.js",
     "static/media/profile-pic.jpeg": "/my-portfolio/static/media/profile-pic.f57d648b7f989ed06cde.jpeg",
     "static/media/cbum.png": "/my-portfolio/static/media/cbum.57eeb53b9a202784267b.png",
+    "static/media/rick.png": "/my-portfolio/static/media/rick.6c06b1399d92aaeda773.png",
     "static/media/papel-picado.png": "/my-portfolio/static/media/papel-picado.33e7fd0033112174c748.png",
     "static/media/altar.png": "/my-portfolio/static/media/altar.9a9baf66a439822b14eb.png",
+    "static/media/back-to-the-future.jpg": "/my-portfolio/static/media/back-to-the-future.5f7d77e02857ca07d12c.jpg",
     "static/media/cempasuchil.png": "/my-portfolio/static/media/cempasuchil.cf9daf270c8e54cfa142.png",
     "static/media/disco-olimpico.png": "/my-portfolio/static/media/disco-olimpico.e2fca57aa56fed427617.png",
+    "static/media/snk.jpg": "/my-portfolio/static/media/snk.181eaf588f824a573a57.jpg",
     "static/media/ramon.png": "/my-portfolio/static/media/ramon.174b69c94d47dc1dca64.png",
+    "static/media/spiderman.jpg": "/my-portfolio/static/media/spiderman.b5bcbd8a320d110986c9.jpg",
     "static/media/breon.jpg": "/my-portfolio/static/media/breon.242277b9b03241be8a8a.jpg",
+    "static/media/breaking-bad.jpg": "/my-portfolio/static/media/breaking-bad.6577c533ad45e2700598.jpg",
     "static/media/imgHome.jpg": "/my-portfolio/static/media/imgHome.a33d2a9ac42b11151394.jpg",
     "static/media/logo-orleans.png": "/my-portfolio/static/media/logo-orleans.6287a87aaf5f4e8b634a.png",
     "static/media/terrence.jpg": "/my-portfolio/static/media/terrence.e8082faaa2dc1dd11d9b.jpg",
     "static/media/Logo-utez.png": "/my-portfolio/static/media/Logo-utez.5ed9f81a0ef59e20442c.png",
     "static/media/lampara-derecha.png": "/my-portfolio/static/media/lampara-derecha.bb620403dacf85a7eff3.png",
     "static/media/lampara-izquierda.png": "/my-portfolio/static/media/lampara-izquierda.5510e88d25880f187da7.png",
+    "static/media/tengen.jpg": "/my-portfolio/static/media/tengen.681e41dc9e1e0388b841.jpg",
     "static/media/ronnie-coleman.jpg": "/my-portfolio/static/media/ronnie-coleman.201de9ef8957823abcb7.jpg",
     "static/media/dieta.jpg": "/my-portfolio/static/media/dieta.5683450a851d64d09c2b.jpg",
     "static/media/quetzal-loader.png": "/my-portfolio/static/media/quetzal-loader.b2a27a4997e362d02b5a.png",
@@ -28,12 +34,12 @@
     "static/media/pose2.png": "/my-portfolio/static/media/pose2.5ca2d34e99a47bce38d9.png",
     "static/media/pose1.png": "/my-portfolio/static/media/pose1.82573236d5d96b3d8ad7.png",
     "index.html": "/my-portfolio/index.html",
-    "main.3dd1bfbf.css.map": "/my-portfolio/static/css/main.3dd1bfbf.css.map",
-    "main.055e15f0.js.map": "/my-portfolio/static/js/main.055e15f0.js.map",
+    "main.1e9f4a2a.css.map": "/my-portfolio/static/css/main.1e9f4a2a.css.map",
+    "main.13d8369f.js.map": "/my-portfolio/static/js/main.13d8369f.js.map",
     "453.acca0757.chunk.js.map": "/my-portfolio/static/js/453.acca0757.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3dd1bfbf.css",
-    "static/js/main.055e15f0.js"
+    "static/css/main.1e9f4a2a.css",
+    "static/js/main.13d8369f.js"
   ]
 }
