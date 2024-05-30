@@ -16,6 +16,7 @@ import '../styles/about.css';
 import Quetzalcoatl from '../img/quetzal-loader.png';
 import Loader from './Loader';
 import CustomModal from './Modal';
+import ModalHobbie from "./ModalHobbie";
 
 function About () {
     const [levelVisible, setLevelVisible] = useState(0);
@@ -23,12 +24,12 @@ function About () {
     const [isLoading, setIsLoading] = useState(true);
     const [show, setShow] = useState(false);
     const [showModal, setShowModal] = useState(false);
+    const [showWatch, setShowWatch] = useState(false);
     const [showResults, setShowResults] = useState(false);
     const [count, setCount] = useState(0);
     const [timeLeft, setTimeLeft] = useState(10);
     const [timerActive, setTimerActive] = useState(false);
     const [currentLevel, setCurrentLevel] = useState({});
-
     const countRef = useRef(0);
     const levelData = [
         { title: "You can do better", img: Terrence},
@@ -70,15 +71,15 @@ function About () {
 
     const evaluateLevel = () => {
         const finalCount = countRef.current; 
-        if (finalCount <= 20) {
+        if (finalCount <= 40) {
             setCurrentLevel(levelData[0]);
-        } else if (finalCount <= 30) {
-            setCurrentLevel(levelData[1]);
-        } else if (finalCount <= 40) {
-            setCurrentLevel(levelData[2]);
         } else if (finalCount <= 50) {
+            setCurrentLevel(levelData[1]);
+        } else if (finalCount <= 60) {
+            setCurrentLevel(levelData[2]);
+        } else if (finalCount <= 70) {
             setCurrentLevel(levelData[3]);
-        } else if (finalCount >= 65) {
+        } else if (finalCount >= 80) {
             setCurrentLevel(levelData[4]);
         }
         setShowResults(true);
@@ -86,6 +87,7 @@ function About () {
     };
 
     const handleCloseResults = () => setShowResults(false);
+    const handleCloseWatch = () => setShowWatch(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
     useEffect(() => {
@@ -178,7 +180,7 @@ function About () {
                                     </div>
                                     <div className="row align-items-center">
                                         <div className="col align-self-center text-center">
-                                            <span className="hobbies">🎬</span>
+                                            <span className="hobbies cursor" onClick={() => setShowWatch(true)}>🎬</span>
                                             <h2>Watch</h2>
                                         </div>
                                         <div className="col align-self-center text-center">
@@ -187,6 +189,7 @@ function About () {
                                         </div>
                                     </div>
                                 </div> 
+                                <ModalHobbie show={showWatch} handleClose={handleCloseWatch}/>
                                 <Modal show={showModal} onHide={handleCloseGame}>
                                     <Modal.Header closeButton>
                                         <Modal.Title>Click the button as many time as you can</Modal.Title>
@@ -197,9 +200,14 @@ function About () {
                                         {!timerActive && <Button onClick={startCountdown}>Start</Button>}
                                         {timerActive && <Button onClick={incrementCount}>Click Me!</Button>}
                                     </Modal.Body>
+                                    <Modal.Footer>
+                                        <Button variant="secondary" onClick={handleCloseGame}>
+                                            Close
+                                        </Button>
+                                    </Modal.Footer>
                                 </Modal>
                                 <CustomModal title={currentLevel.title} img={currentLevel.img} show={showResults} handleClose={handleCloseResults}/>
-                                
+
                                 <Modal show={show} onHide={handleClose}>
                                     <Modal.Header closeButton>
                                         <Modal.Title>You're doing well</Modal.Title>

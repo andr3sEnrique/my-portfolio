@@ -1,13 +1,30 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import '../styles/navbar.css'
 
 function CustomNavbar() {
+  const location = useLocation();
+  const getNavbarBackground = (pathname) => {
+    switch(pathname) {
+      case '/my-portfolio':
+        return '#760bde';
+      case '/about':
+        return '#c54308'; 
+      case '/skills':
+        return '#474747';
+      case '/experience':
+        return '#fbbc05';
+      case '/contact':
+        return '#ea4335';
+      default:
+        return '#760bde';
+    }
+  };
   return (
-    <Navbar expand="lg" className="bg-color navbar-100 fixed-top">
+    <Navbar expand="lg" className="navbar-100 fixed-top" style={{ backgroundColor: getNavbarBackground(location.pathname) }}>
       <Container>
         <Navbar.Brand as={NavLink} to="/my-portfolio" className="text-white text-google navbar-brand-small">Andres Enrique Ortiz Santa Cruz</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
