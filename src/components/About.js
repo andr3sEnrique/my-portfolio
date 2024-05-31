@@ -235,7 +235,7 @@ function About () {
                                     </Modal.Header>
                                     <Modal.Body>
                                         <img src={Ronnie} alt="Workout" class="img-fluid" />
-                                        <h1>Light Weight !</h1>
+                                        <h1 className="text-center">Light Weight !</h1>
                                     </Modal.Body>
                                     <Modal.Footer>
                                         <Button variant="secondary" onClick={handleClose}>

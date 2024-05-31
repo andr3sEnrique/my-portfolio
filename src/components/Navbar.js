@@ -16,9 +16,9 @@ function CustomNavbar() {
       case '/skills':
         return '#474747';
       case '/experience':
-        return '#fbbc05';
+        return '#2e8372';
       case '/contact':
-        return '#ea4335';
+        return '#089ec5';
       default:
         return '#760bde';
     }

@@ -52,7 +52,7 @@ function Skills () {
         {isLoading ? (
             <Loader image={Disco}/>
         ) : (
-            <div className="container-xxl pt-5">
+            <div className="container-xxl pt-5" style={{padding: "30px"}}>
                 <div className="d-flex justify-content-between align-items-center flex-row mb-5 contenedor">
                     <img src={LamparaI} alt="lampara" className="lamparas izquierda" />
                     <h1 className="text-google2">Skills</h1>

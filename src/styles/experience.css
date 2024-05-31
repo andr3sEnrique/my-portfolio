@@ -1,0 +1,45 @@
+
+.card {
+    border: 1px solid #3c3c3c;
+    box-shadow: 5px 5px 5px 5px rgba(21, 133, 150, 0.4);
+}
+
+.list-group-item {
+    border: none;
+    color: #ce9178;
+}
+
+.titleProjet {
+    color: #2e8372;
+}
+
+.headerTitle {
+    color: #4ec9b0;
+}
+
+.title-empresa {
+    color: #8f1a54;
+}
+
+.body-text {
+    color: rgb(15, 95, 107) !important;
+}
+
+.footer-text {
+    color: #f9913c;
+}
+
+.img-technologies {
+    width: 30px;
+    margin-right: 10px;
+    height: auto;
+}
+
+@media screen and (max-width: 450px) {
+    .img-technologies {
+        width: 20px;
+    }
+    .footer-text {
+        font-size: medium;
+    }
+}

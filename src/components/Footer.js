@@ -12,15 +12,15 @@ function Footer (){
           case '/skills':
             return '#474747';
           case '/experience':
-            return '#fbbc05';
+            return '#2e8372';
           case '/contact':
-            return '#ea4335';
+            return '#089ec5';
           default:
             return '#760bde';
         }
       };
     return (
-        <h2 className='name fixed-footer text-footer' style={{ color: getNavbarBackground(location.pathname) }}>© 2024 Andres Enrique Ortiz. All rights reserved.</h2>
+        <h2 className='name fixed-footer text-footer' style={{ color: getNavbarBackground(location.pathname) }}>© 2024 Built with ❤️ by Andres Enrique Ortiz.</h2>
     )
 }
 
