@@ -25,7 +25,7 @@ function Contact () {
             <div className="contact-container">
                 <div className="content-contact">
                     <p className="contact-text pe-4">If you have any questions or concerns, please don't hesitate to contact me. I am open to any opportunities that align with my skills and interests.</p>
-                    <div className="d-flex flex-column justify-content-start align-items-start">
+                    <div className="d-flex flex-column justify-content-start align-items-start mb-4">
                         <div className="d-flex flex-row mt-4 align-items-center">
                             <img src={telefono} alt="Telefono icon" className="contact-icons me-2" />
                             <span className="contact-text info">+33 0744755637</span>
