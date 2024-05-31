@@ -18,7 +18,7 @@ function CustomNavbar() {
       case '/experience':
         return '#2e8372';
       case '/contact':
-        return '#089ec5';
+        return '#8f1a54';
       default:
         return '#760bde';
     }

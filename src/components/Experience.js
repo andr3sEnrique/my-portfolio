@@ -29,9 +29,9 @@ function Experience () {
                 <div class="card-footer text-body-secondary">
                     <div className="d-flex flex-row align-items-center">
                         <h5 className="footer-text me-3">Technologies used</h5> 
-                        <img src={grafanaIcon} alt="Grafana icon" className="img-technologies" />   
-                        <img src={pythonIcon} alt="Python icon" className="img-technologies" />  
-                        <img src={flutterIcon} alt="Flutter icon" className="img-technologies" />   
+                        <img src={grafanaIcon} alt="Grafana icon" className="img-technologies" onClick={() => {window.open('https://grafana.com/', '_blanck');}} />   
+                        <img src={pythonIcon} alt="Python icon" className="img-technologies" onClick={() => {window.open('https://www.python.org/', '_blanck');}}/>  
+                        <img src={flutterIcon} alt="Flutter icon" className="img-technologies" onClick={() => {window.open('https://flutter.dev/', '_blanck');}}/>   
                     </div> 
                 </div>
             </div>
@@ -49,9 +49,9 @@ function Experience () {
                 <div class="card-footer text-body-secondary">
                     <div className="d-flex flex-row align-items-center">
                         <h5 className="footer-text me-3">Technologies used</h5> 
-                        <img src={supabaseIcon} alt="Supabase icon" className="img-technologies" />   
-                        <img src={reactIcon} alt="React icon" className="img-technologies" />
-                        <img src={typescriptIcon} alt="TypeScript icon" className="img-technologies" />    
+                        <img src={supabaseIcon} alt="Supabase icon" className="img-technologies" onClick={() => {window.open('https://supabase.com/', '_blanck');}} />   
+                        <img src={reactIcon} alt="React icon" className="img-technologies" onClick={() => {window.open('https://react.dev/', '_blanck');}} />
+                        <img src={typescriptIcon} alt="TypeScript icon" className="img-technologies" onClick={() => {window.open('https://www.typescriptlang.org/', '_blanck');}} />    
                     </div> 
                 </div>
             </div>
@@ -69,9 +69,9 @@ function Experience () {
                 <div class="card-footer text-body-secondary">
                     <div className="d-flex flex-row align-items-center">
                         <h5 className="footer-text me-3">Technologies used</h5> 
-                        <img src={springIcon} alt="Spring Boot icon" className="img-technologies" />   
-                        <img src={javaIcon} alt="Java icon" className="img-technologies" />
-                        <img src={mysqlIcon} alt="MySQL icon" className="img-technologies" />    
+                        <img src={springIcon} alt="Spring Boot icon" className="img-technologies" onClick={() => {window.open('https://spring.io/', '_blanck');}} />   
+                        <img src={javaIcon} alt="Java icon" className="img-technologies" onClick={() => {window.open('https://www.java.com/', '_blanck');}} />
+                        <img src={mysqlIcon} alt="MySQL icon" className="img-technologies" onClick={() => {window.open('https://www.mysql.com/', '_blanck');}}/>    
                     </div>  
                 </div>
             </div>
