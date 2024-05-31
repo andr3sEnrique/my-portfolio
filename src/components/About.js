@@ -80,13 +80,13 @@ function About () {
         const finalCount = countRef.current; 
         if (finalCount <= 50) {
             setCurrentLevel(levelData[0]);
-        } else if (finalCount <= 60) {
-            setCurrentLevel(levelData[1]);
         } else if (finalCount <= 70) {
-            setCurrentLevel(levelData[2]);
+            setCurrentLevel(levelData[1]);
         } else if (finalCount <= 80) {
+            setCurrentLevel(levelData[2]);
+        } else if (finalCount <= 90) {
             setCurrentLevel(levelData[3]);
-        } else if (finalCount >= 90) {
+        } else if (finalCount >= 100) {
             setCurrentLevel(levelData[4]);
         }
         setDisplayState('results');
@@ -209,7 +209,7 @@ function About () {
                                         </>
                                     )}
                                     {displayState === 'loading' && 
-                                    <div class="text-center">
+                                    <div class="text-center div-spinner">
                                         <div class="spinner-border text-warning" role="status">
                                             <span class="visually-hidden">Loading...</span>
                                         </div>
