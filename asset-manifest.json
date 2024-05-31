@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.06c7402b.css",
-    "main.js": "/my-portfolio/static/js/main.5d799ed9.js",
-    "static/js/453.acca0757.chunk.js": "/my-portfolio/static/js/453.acca0757.chunk.js",
+    "main.css": "/my-portfolio/static/css/main.94f13157.css",
+    "main.js": "/my-portfolio/static/js/main.fcfad9b7.js",
+    "static/js/453.41811d64.chunk.js": "/my-portfolio/static/js/453.41811d64.chunk.js",
     "static/media/profile-pic.jpeg": "/my-portfolio/static/media/profile-pic.f57d648b7f989ed06cde.jpeg",
     "static/media/cbum.png": "/my-portfolio/static/media/cbum.57eeb53b9a202784267b.png",
     "static/media/rick.png": "/my-portfolio/static/media/rick.6c06b1399d92aaeda773.png",
@@ -25,6 +25,7 @@
     "static/media/tengen.jpg": "/my-portfolio/static/media/tengen.681e41dc9e1e0388b841.jpg",
     "static/media/ronnie-coleman.jpg": "/my-portfolio/static/media/ronnie-coleman.201de9ef8957823abcb7.jpg",
     "static/media/dieta.jpg": "/my-portfolio/static/media/dieta.5683450a851d64d09c2b.jpg",
+    "static/media/spring.png": "/my-portfolio/static/media/spring.28945251997aaff9b452.png",
     "static/media/quetzal-loader.png": "/my-portfolio/static/media/quetzal-loader.b2a27a4997e362d02b5a.png",
     "static/media/team-work.jpg": "/my-portfolio/static/media/team-work.f1ab83ea820ba07c708f.jpg",
     "static/media/urs.jpg": "/my-portfolio/static/media/urs.ea6c8d9dad59be599cae.jpg",
@@ -32,14 +33,18 @@
     "static/media/pose4.png": "/my-portfolio/static/media/pose4.67c50fbe776c05dd3dfd.png",
     "static/media/pose3.png": "/my-portfolio/static/media/pose3.ded844fa28ba36f615ea.png",
     "static/media/pose2.png": "/my-portfolio/static/media/pose2.5ca2d34e99a47bce38d9.png",
+    "static/media/mysql.png": "/my-portfolio/static/media/mysql.9e541756895e562f0dea.png",
+    "static/media/java.png": "/my-portfolio/static/media/java.b5ab17a2688cbda20be9.png",
     "static/media/pose1.png": "/my-portfolio/static/media/pose1.82573236d5d96b3d8ad7.png",
+    "static/media/grafana.png": "/my-portfolio/static/media/grafana.849ceea1e7b3297de29a.png",
+    "static/media/react.png": "/my-portfolio/static/media/react.a1f489284484028b3900.png",
     "index.html": "/my-portfolio/index.html",
-    "main.06c7402b.css.map": "/my-portfolio/static/css/main.06c7402b.css.map",
-    "main.5d799ed9.js.map": "/my-portfolio/static/js/main.5d799ed9.js.map",
-    "453.acca0757.chunk.js.map": "/my-portfolio/static/js/453.acca0757.chunk.js.map"
+    "main.94f13157.css.map": "/my-portfolio/static/css/main.94f13157.css.map",
+    "main.fcfad9b7.js.map": "/my-portfolio/static/js/main.fcfad9b7.js.map",
+    "453.41811d64.chunk.js.map": "/my-portfolio/static/js/453.41811d64.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.06c7402b.css",
-    "static/js/main.5d799ed9.js"
+    "static/css/main.94f13157.css",
+    "static/js/main.fcfad9b7.js"
   ]
 }
