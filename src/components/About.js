@@ -2,7 +2,6 @@ import React, { useEffect, useState, useRef } from "react";
 import { Modal, Button } from 'react-bootstrap';
 import Experience from './Experience';
 import Contact from "./Contact";
-import Papel from "../img/papel-picado.png";
 import Cempasuchil from '../img/cempasuchil.png';
 import profile from '../img/profile-pic.jpg';
 import LogoUtez from '../img/Logo-utez.png';
@@ -110,7 +109,6 @@ function About () {
                 <Loader image={Quetzalcoatl} />
             ) : (
                 <div className="pt-5">
-                    <img className="papel" src={Papel} alt="papel picado" />
                     <div className="container-xxl">
                         <div className={`mt-4 altar-level level-1 visible`}>
                             <h1 className="title">
