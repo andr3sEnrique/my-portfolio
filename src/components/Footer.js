@@ -11,10 +11,6 @@ function Footer (){
             return '#c54308'; 
           case '/skills':
             return '#474747';
-          case '/experience':
-            return '#2e8372';
-          case '/contact':
-            return '#8f1a54';
           default:
             return '#760bde';
         }

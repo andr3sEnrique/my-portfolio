@@ -1,8 +1,9 @@
 import React, { useEffect, useState, useRef } from "react";
 import { Modal, Button } from 'react-bootstrap';
+import Experience from './Experience';
+import Contact from "./Contact";
 import Papel from "../img/papel-picado.png";
 import Cempasuchil from '../img/cempasuchil.png';
-import Altar from "../img/altar.png";
 import profile from '../img/profile-pic.jpeg';
 import LogoUtez from '../img/Logo-utez.png';
 import LogoOrleans from '../img/logo-orleans.png';
@@ -18,8 +19,6 @@ import Loader from './Loader';
 import ModalHobbie from "./ModalHobbie";
 
 function About () {
-    const [levelVisible, setLevelVisible] = useState(0);
-    const [scale, setScale] = useState(1);
     const [isLoading, setIsLoading] = useState(true);
     const [show, setShow] = useState(false);
     const [showModal, setShowModal] = useState(false);
@@ -102,19 +101,6 @@ function About () {
           };
 
         fetchData();
-        const handleScroll = () => {
-            const scrolled = window.scrollY;
-            if (scrolled < 110) {
-                setScale(1 + scrolled / 100);
-                setLevelVisible(0);
-            } else if (scrolled >= 130 && scrolled < 300) {
-                setLevelVisible(1);
-            } 
-        };
-
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
-
         
     }, []);
 
@@ -126,10 +112,7 @@ function About () {
                 <div className="pt-5">
                     <img className="papel" src={Papel} alt="papel picado" />
                     <div className="container-xxl">
-                        <div className={`altar-level level-0 ${levelVisible === 0 ? 'visible' : 'hidden'}`}>
-                            <img alt="altar" className="altar-img" src={Altar} style={{ transform: `scale(${scale})`, transition: 'transform 0.5s ease' }}/>
-                        </div>
-                        <div className={`mt-4 altar-level level-1 ${levelVisible === 1 ? 'visible' : 'hidden'}`}>
+                        <div className={`mt-4 altar-level level-1 visible`}>
                             <h1 className="title">
                                 <span className="green-color">Who is Andres </span>
                                 <span className="white-text">Enrique Ortiz </span>
@@ -244,6 +227,10 @@ function About () {
                                     </Modal.Footer>
                                 </Modal>
                             </div>
+                            <div className="line-separation d-flex flex-row"><img src={Cempasuchil} alt="flor de cempasuchil" className="flor"/><img src={Cempasuchil} alt="flor de cempasuchil" className="flor"/></div>
+                            <Experience />
+                            <div className="line-separation d-flex flex-row"><img src={Cempasuchil} alt="flor de cempasuchil" className="flor"/><img src={Cempasuchil} alt="flor de cempasuchil" className="flor"/></div>
+                            <Contact />
                             
                         </div>
                     </div>

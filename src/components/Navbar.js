@@ -15,10 +15,6 @@ function CustomNavbar() {
         return '#c54308'; 
       case '/skills':
         return '#474747';
-      case '/experience':
-        return '#2e8372';
-      case '/contact':
-        return '#8f1a54';
       default:
         return '#760bde';
     }
@@ -33,8 +29,6 @@ function CustomNavbar() {
             <Nav.Link as={NavLink} to="/my-portfolio" className="text-white text-google">Home</Nav.Link>
             <Nav.Link as={NavLink} to="/about" className="text-white text-google">About Me</Nav.Link>
             <Nav.Link as={NavLink} to="/skills" className="text-white text-google">Skills</Nav.Link>
-            <Nav.Link as={NavLink} to="/experience" className="text-white text-google">Experience</Nav.Link>
-            <Nav.Link as={NavLink} to="/contact" className="text-white text-google">Contact</Nav.Link>
         
           </Nav>
         </Navbar.Collapse>

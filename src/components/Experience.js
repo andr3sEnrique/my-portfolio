@@ -12,7 +12,7 @@ import typescriptIcon from '../img/typescript.png';
 
 function Experience () {
     return(
-        <div className="container-xxl p-5">
+        <div className="p-4">
             <h1 className="text-center mt-5 titleProjet">Projects 📂</h1>
             <div class="card mt-5">
                 <div class="card-header">

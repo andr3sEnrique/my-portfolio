@@ -3,6 +3,9 @@ import '../styles/contact.css';
 import arroba from '../img/arroba.png';
 import telefono from '../img/llamada.png';
 import ubicacion from '../img/marcador.png';
+import instagram from '../img/instagram.png';
+import github from '../img/github.png';
+import linkedin from '../img/linkedin.png';
 import emailjs from 'emailjs-com';
 
 function Contact () {
@@ -20,7 +23,7 @@ function Contact () {
             });
     };
     return(
-        <div className="container-xxl p-5">
+        <div className="container-xxl ps-5 pe-5 pb-5 mb-5">
             <h1 className="text-center mt-5 title-contact mb-5">Contact Me 📩</h1>
             <div className="contact-container">
                 <div className="content-contact">
@@ -39,9 +42,14 @@ function Contact () {
                             <span className="contact-text info">Île-de-France</span>
                         </div>
                     </div>
-                    <a href={`${process.env.PUBLIC_URL}/cv.pdf`} download="CV_Andres.pdf" className="download-btn">
-                      Download CV
-                    </a>
+                    <div className="d-flex flex-row justify-content-around">
+                        <img src={instagram} alt="instagram logo" className="contact-icons social-icons" onClick={() => {window.open('https://www.instagram.com/enrique_ortizsc/', '_blanck');}}/>
+                        <img src={github} alt="github logo" className="contact-icons social-icons" onClick={() => {window.open('https://github.com/andr3sEnrique', '_blanck');}}/>
+                        <img src={linkedin} alt="linkedin logo" className="contact-icons social-icons" onClick={() => {window.open('https://www.linkedin.com/in/enrique-ortizsc/', '_blanck');}}/>
+                        <a href={`${process.env.PUBLIC_URL}/cv.pdf`} download="CV_Andres.pdf" className="download-btn">
+                        Download CV
+                        </a>
+                    </div>
                 </div>
                 <div className="content-contact content-form">
                     <form ref={form} onSubmit={sendEmail} class="row g-3 needs-validation" novalidate>
@@ -54,10 +62,10 @@ function Contact () {
                             <input type="email" class="form-control" id="email" name="email" required/>
                         </div>
                         <div class="mb-3">
-                            <label class="form-check-label" for="message">* Your Message :</label>
+                            <label class="form-label contact-text" for="message">* Your Message :</label>
                             <input type="text" class="form-control" id="message" name="message" required/>
                         </div>
-                        <button type="submit" class="btn btn-outline-info">Submit</button>
+                        <button type="submit" class="btn btn-outline-warning">Submit</button>
                     </form>
                 </div>
             </div>

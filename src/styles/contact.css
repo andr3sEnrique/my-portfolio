@@ -42,9 +42,12 @@
     width: 30px;
     height: auto;
 }
+.social-icons {
+    cursor: pointer;
+}
 .content-form {
     border: 1px solid #4e0e2e;
-    box-shadow: 5px 5px 5px 5px rgba(143, 26, 84, 0.4);
+    box-shadow: 5px 5px 5px 5px rgba(143, 122, 26, 0.4);
 }
 
 @media screen and (max-width: 450px) {

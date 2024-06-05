@@ -47,9 +47,6 @@
     width: 100%; 
     
 }
-.level-0 {
-    min-height: 100vh;
-}
 
 .visible {
     opacity: 1;
