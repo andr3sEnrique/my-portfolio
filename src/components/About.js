@@ -4,7 +4,7 @@ import Experience from './Experience';
 import Contact from "./Contact";
 import Papel from "../img/papel-picado.png";
 import Cempasuchil from '../img/cempasuchil.png';
-import profile from '../img/profile-pic.jpeg';
+import profile from '../img/profile-pic.jpg';
 import LogoUtez from '../img/Logo-utez.png';
 import LogoOrleans from '../img/logo-orleans.png';
 import Ronnie from '../img/ronnie-coleman.jpg';
