@@ -61,5 +61,10 @@
     .content-contact {
         width: 100%;
     }
+
+    .download-btn{
+        padding: 5px 18px !important;
+        font-size: small;
+    }
     
 }

@@ -112,9 +112,9 @@ function About () {
                     <div className="container-xxl">
                         <div className={`mt-4 altar-level level-1 visible`}>
                             <h1 className="title">
-                                <span className="green-color">Who is Andres </span>
-                                <span className="white-text">Enrique Ortiz </span>
-                                <span className="red-color">Santa Cruz?</span>
+                                <span className="">Who is Andres </span>
+                                <span className="">Enrique Ortiz </span>
+                                <span className="">Santa Cruz?</span>
                             </h1>
                             <div className="d-flex justify-content-center content-1">
                                 <img src={profile} alt="Enrique's profile" className="profile-pic"/>
