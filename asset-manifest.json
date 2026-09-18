@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.21dbaeb5.css",
-    "main.js": "/my-portfolio/static/js/main.f6c4ebcd.js",
+    "main.css": "/my-portfolio/static/css/main.3d5f8d49.css",
+    "main.js": "/my-portfolio/static/js/main.a51015d8.js",
     "static/js/453.41811d64.chunk.js": "/my-portfolio/static/js/453.41811d64.chunk.js",
     "static/media/cbum.png": "/my-portfolio/static/media/cbum.57eeb53b9a202784267b.png",
     "static/media/rick.png": "/my-portfolio/static/media/rick.6c06b1399d92aaeda773.png",
@@ -45,12 +45,12 @@
     "index.html": "/my-portfolio/index.html",
     "static/media/placeholder-pose.svg": "/my-portfolio/static/media/placeholder-pose.6cdcad088ea4620f40c66294292ccd59.svg",
     "static/media/placeholder-skill.svg": "/my-portfolio/static/media/placeholder-skill.01ea219b38f612bf082d7fed976fc6fb.svg",
-    "main.21dbaeb5.css.map": "/my-portfolio/static/css/main.21dbaeb5.css.map",
-    "main.f6c4ebcd.js.map": "/my-portfolio/static/js/main.f6c4ebcd.js.map",
+    "main.3d5f8d49.css.map": "/my-portfolio/static/css/main.3d5f8d49.css.map",
+    "main.a51015d8.js.map": "/my-portfolio/static/js/main.a51015d8.js.map",
     "453.41811d64.chunk.js.map": "/my-portfolio/static/js/453.41811d64.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.21dbaeb5.css",
-    "static/js/main.f6c4ebcd.js"
+    "static/css/main.3d5f8d49.css",
+    "static/js/main.a51015d8.js"
   ]
 }
