@@ -1,0 +1,145 @@
+{
+  "meta": {
+    "documentTitle": "Portafolio de Enrique",
+    "documentDescription": "Portafolio de Andres Enrique Ortiz Santa Cruz, estudiante de desarrollo de software."
+  },
+  "language": {
+    "label": "Idioma",
+    "en": "Inglés",
+    "fr": "Francés",
+    "es": "Español"
+  },
+  "nav": {
+    "brand": "Andres Enrique Ortiz Santa Cruz",
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "skills": "Habilidades"
+  },
+  "home": {
+    "greeting": "Hola, soy",
+    "name": "Enrique",
+    "intro": "Soy un desarrollador Full-Stack mexicano radicado en París. He realizado diferentes proyectos utilizando una variedad de tecnologías y herramientas.",
+    "showMore": "Déjame mostrarte más",
+    "aboutMeLink": "sobre mí"
+  },
+  "about": {
+    "title": "¿Quién es Andres Enrique Ortiz Santa Cruz?",
+    "profileAlt": "Foto de perfil de Enrique",
+    "bio1": "Hola, soy Andres Enrique Ortiz Santa Cruz, *desarrollador Full-Stack orientado a Backend*.",
+    "bio2": "Diseño y desarrollo aplicaciones web y servicios con *TypeScript, Node.js y React*, con un interés particular en *la arquitectura de software, los sistemas distribuidos, la IA y la ciberseguridad*.",
+    "academicTitle": "Formación académica",
+    "utezName": "Universidad Técnologica Emiliano Zapata",
+    "utezDegree": "Técnico Superior Universitario en desarrollo de software multiplataforma.",
+    "orleansName": "Université d'Orléans",
+    "orleansDegree": "B.U.T en Informática (Bac +3) - Realización de aplicaciones: diseño, desarrollo, validación.",
+    "hobbiesTitle": "Pasatiempos",
+    "hobbiesText": "Hacer lo que amas es esencial para mantener un equilibrio entre la salud física y mental. Por eso dedico parte de mi tiempo a mis pasatiempos, ya que no solo me ayudan a mantenerme en forma y saludable, sino que también mejoran mi ánimo, reducen el estrés y me relajan. Esto me da un escape del ajetreo diario y me permite olvidarme de todo por un momento y despejar la mente.",
+    "hobbyWorkout": "Entrenar",
+    "hobbyMusic": "Escuchar música",
+    "hobbyWatch": "Ver series y películas",
+    "hobbyGames": "Videojuegos",
+    "game": {
+      "title": "Haz clic en el botón tantas veces como puedas",
+      "resultsTitle": "Resultados",
+      "clicks": "Clics:",
+      "timeLeft": "Tiempo restante:",
+      "start": "Empezar",
+      "clickMe": "¡Haz clic!",
+      "loading": "Cargando...",
+      "levels": [
+        "Puedes hacerlo mejor",
+        "No es suficiente",
+        "Nada mal",
+        "Bien :)",
+        "Eres el próximo Mr. Olympia"
+      ]
+    },
+    "workoutModal": {
+      "title": "Lo estás haciendo bien",
+      "caption": "¡Light Weight!"
+    },
+    "bio3": "*Autónomo y adaptable*, me gusta descubrir nuevas tecnologías y resolver problemas técnicos concretos, tanto del lado del backend como del frontend.",
+    "bio4": "Fuera del desarrollo, me interesa *el gimnasio*, las nuevas tecnologías y aprender cosas nuevas, además de escuchar música (mexicana, reggaetón, rap, pop, electrónica) y jugar videojuegos con una buena historia.",
+    "livecampusName": "LiveCampus",
+    "livecampusDegree": "Máster – Experto en seguridad del desarrollo de software"
+  },
+  "hobbieModal": {
+    "title": "Ver cosas diferentes",
+    "anime": "Anime",
+    "movies": "Películas",
+    "series": "Series"
+  },
+  "skills": {
+    "title": "Habilidades",
+    "softSkills": {
+      "responsibility": "Responsabilidad",
+      "adaptability": "Adaptabilidad",
+      "teamwork": "Trabajo en equipo",
+      "engagement": "Compromiso",
+      "curiosity": "Curiosidad",
+      "autonomy": "Autonomía"
+    },
+    "sections": {
+      "frontend": "FrontEnd",
+      "backend": "BackEnd",
+      "data": "Datos",
+      "tooling": "Herramientas",
+      "languages": "Idiomas"
+    },
+    "languages": {
+      "spanish": "Español",
+      "french": "Francés",
+      "english": "Inglés"
+    }
+  },
+  "experience": {
+    "title": "Proyectos 📂",
+    "technologiesUsed": "Tecnologías utilizadas",
+    "aphilia": {
+      "role": "Alternancia | Desarrollador Backend",
+      "company": "Aphilia",
+      "task1": "Desarrollo Backend: Diseño e implementación de APIs REST y microservicios modulares con NestJS, Express y Node.js.",
+      "task2": "Gestión de datos: MySQL, Redis y TypeORM.",
+      "task3": "Integración de IA: Diseño e integración de agentes conversacionales y asistentes inteligentes (definición de skills, motor de reglas y prompts especializados).",
+      "task4": "Monitoreo y observabilidad: Seguimiento del rendimiento de las aplicaciones, configuración de tableros y gestión de métricas con Datadog."
+    },
+    "ird": {
+      "role": "Prácticas | Desarrollador Web Full Stack",
+      "company": "IRD - Institut de recherche pour le développement.",
+      "task1": "Desarrollo de una aplicación de recolección de datos y un panel de visualización de datos.",
+      "task2": "Mantenimiento y actualización del sitio web del equipo de investigación.",
+      "task3": "Apoyo al responsable de informática del equipo."
+    },
+    "gabor": {
+      "role": "Proyecto tutorado | Desarrollador FrontEnd",
+      "company": "GABOR 45 - Groupement des agriculteurs biologiques et biodynamistes de l'Orléanais et du Loiret",
+      "task1": "Contribución a la creación de los módulos de autenticación, agricultores, eventos y categorías.",
+      "task2": "Creación de las funciones de búsqueda de agricultores."
+    },
+    "utez": {
+      "role": "Proyecto tutorado | Desarrollador y Líder de proyecto",
+      "company": "UTEZ - Universidad Técnologica Emiliano Zapata",
+      "task1": "Gestión del equipo de trabajo así como de las reuniones con el cliente.",
+      "task2": "Desarrollo de una aplicación Web y Móvil para gestionar el préstamo de equipo de cómputo identificado con códigos QR."
+    },
+    "viewCode": "Ver código",
+    "privateRepo": "Repositorio privado"
+  },
+  "contact": {
+    "title": "Contáctame 📩",
+    "text": "Si tienes alguna pregunta o inquietud, no dudes en contactarme. Estoy abierto a cualquier oportunidad que se alinee con mis habilidades e intereses.",
+    "downloadCv": "Descargar CV",
+    "nameLabel": "* Tu nombre :",
+    "emailLabel": "* Tu correo :",
+    "messageLabel": "* Tu mensaje :",
+    "submit": "Enviar",
+    "success": "¡Mensaje enviado con éxito!",
+    "error": "Error al enviar el mensaje. Intenta de nuevo."
+  },
+  "common": {
+    "close": "Cerrar"
+  },
+  "footer": {
+    "text": "© 2024 Hecho con ❤️ por Andres Enrique Ortiz."
+  }
+}

@@ -1,0 +1,17 @@
+.language-switcher .dropdown-toggle {
+    color: #fff !important;
+}
+
+.language-switcher .language-title {
+    letter-spacing: 0.05em;
+}
+
+.language-switcher .dropdown-menu {
+    min-width: 10rem;
+}
+
+.language-switcher .dropdown-item.active,
+.language-switcher .dropdown-item:active {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: inherit;
+}

@@ -48,6 +48,11 @@ width: 30px;
 height: 40px;
 }
 
+.weight-25 {
+width: 40px;
+height: 50px;
+}
+
 .weight-3 { 
     width: 50px;
     height: 60px;
@@ -59,7 +64,8 @@ height: 40px;
 }
 
 .poses-gym {
-    width: 10%;
+    width: 12%;
+    min-width: 70px;
     height: auto;
     cursor: pointer;
     display: inline-block;
@@ -74,6 +80,15 @@ height: 40px;
     text-align: center;
     width: 100%;
 }
+.skills-container.single {
+    justify-content: center;
+}
+
+.poses-row {
+    gap: 2%;
+    row-gap: 1.5rem;
+}
+
 .nivel-skill{
     width: 50%;
     padding: 20px;
@@ -117,6 +132,11 @@ height: 40px;
     height: 30px;
     }
     
+    .weight-25 {
+    width: 25px;
+    height: 45px;
+    }
+
     .weight-3 { 
         width: 30px;
         height: 60px;

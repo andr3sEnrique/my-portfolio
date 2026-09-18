@@ -1,0 +1,145 @@
+{
+  "meta": {
+    "documentTitle": "Enrique's portfolio",
+    "documentDescription": "Portfolio of Andres Enrique Ortiz Santa Cruz, software development student."
+  },
+  "language": {
+    "label": "Language",
+    "en": "English",
+    "fr": "French",
+    "es": "Spanish"
+  },
+  "nav": {
+    "brand": "Andres Enrique Ortiz Santa Cruz",
+    "home": "Home",
+    "about": "About Me",
+    "skills": "Skills"
+  },
+  "home": {
+    "greeting": "Hey, I'm",
+    "name": "Enrique",
+    "intro": "I am a Mexican Full-Stack developer based in Paris. I have done different projects using a variety of technologies and tools.",
+    "showMore": "Let me show you more",
+    "aboutMeLink": "about me"
+  },
+  "about": {
+    "title": "Who is Andres Enrique Ortiz Santa Cruz?",
+    "profileAlt": "Enrique's profile",
+    "bio1": "Hello, I'm Andres Enrique Ortiz Santa Cruz, a *Backend-oriented Full-Stack developer*.",
+    "bio2": "I design and build web applications and services with *TypeScript, Node.js and React*, with a particular interest in *software architecture, distributed systems, AI and cybersecurity*.",
+    "academicTitle": "Academic Formation",
+    "utezName": "Universidad Técnologica Emiliano Zapata",
+    "utezDegree": "University Technician in multiplatform software development.",
+    "orleansName": "Université d'Orléans",
+    "orleansDegree": "IT B.U.T (Bac +3) - Realization of applications: design, development, validation.",
+    "hobbiesTitle": "Hobbies",
+    "hobbiesText": "Doing what you love is essential to maintain a balance between physical and mental health. That's why I prioritize some of my time to do my hobbies, as they not only help me stay fit and healthy, but also improve my mood, reduce stress and relax me. This gives me an escape from the daily hustle and bustle and allows me to forget about everything for a moment and clear my head.",
+    "hobbyWorkout": "Work out",
+    "hobbyMusic": "Listen to music",
+    "hobbyWatch": "Watch",
+    "hobbyGames": "Video games",
+    "game": {
+      "title": "Click the button as many times as you can",
+      "resultsTitle": "Results",
+      "clicks": "Clicks:",
+      "timeLeft": "Time Left:",
+      "start": "Start",
+      "clickMe": "Click Me!",
+      "loading": "Loading...",
+      "levels": [
+        "You can do better",
+        "Not enough",
+        "Not bad",
+        "Good :)",
+        "You're the next Mr. Olympia"
+      ]
+    },
+    "workoutModal": {
+      "title": "You're doing well",
+      "caption": "Light Weight !"
+    },
+    "bio3": "*Autonomous and adaptable*, I enjoy discovering new technologies and solving concrete technical problems, on both the backend and the frontend.",
+    "bio4": "Outside of development, I'm into *working out*, new technologies and learning new things, as well as listening to music (Mexican, reggaeton, rap, pop, electronica) and playing video games with a good story.",
+    "livecampusName": "LiveCampus",
+    "livecampusDegree": "Master's – Expert in security of software development"
+  },
+  "hobbieModal": {
+    "title": "Watch different things",
+    "anime": "Anime",
+    "movies": "Movies",
+    "series": "Series"
+  },
+  "skills": {
+    "title": "Skills",
+    "softSkills": {
+      "responsibility": "Responsibility",
+      "adaptability": "Adaptability",
+      "teamwork": "TeamWork",
+      "engagement": "Engagement",
+      "curiosity": "Curiosity",
+      "autonomy": "Autonomy"
+    },
+    "sections": {
+      "frontend": "FrontEnd",
+      "backend": "BackEnd",
+      "data": "Data",
+      "tooling": "Tooling",
+      "languages": "Languages"
+    },
+    "languages": {
+      "spanish": "Spanish",
+      "french": "French",
+      "english": "English"
+    }
+  },
+  "experience": {
+    "title": "Projects 📂",
+    "technologiesUsed": "Technologies used",
+    "aphilia": {
+      "role": "Apprenticeship | Backend Developer",
+      "company": "Aphilia",
+      "task1": "Backend development: Design and implementation of REST APIs and modular microservices with NestJS, Express and Node.js.",
+      "task2": "Data management: MySQL, Redis and TypeORM.",
+      "task3": "AI integration: Design and integration of conversational agents and intelligent assistants (skill definition, rules engine and specialised prompts).",
+      "task4": "Monitoring & observability: Application performance tracking, dashboard configuration and metrics management with Datadog."
+    },
+    "ird": {
+      "role": "Internship | Full Stack Web Developer",
+      "company": "IRD - Institut de recherche pour le développement.",
+      "task1": "Development of a data collection application and data visualization dashboard.",
+      "task2": "Maintenance and upgrading of the research team's website.",
+      "task3": "Assistance from the team's IT manager."
+    },
+    "gabor": {
+      "role": "Tutored project | FrontEnd Developer",
+      "company": "GABOR 45 - Groupement des agriculteurs biologiques et biodynamistes de l'Orléanais et du Loiret",
+      "task1": "Contribution to the creation of modules for authentication, farmers, events, categories.",
+      "task2": "Creation of search functions for farmers."
+    },
+    "utez": {
+      "role": "Tutored project | Developer and Project Leader",
+      "company": "UTEZ - Universidad Técnologica Emiliano Zapata",
+      "task1": "Management of the work team as well as client meetings.",
+      "task2": "Development of a Web and Mobile application to manage the borrowing of computer equipment identified by QR Codes."
+    },
+    "viewCode": "View code",
+    "privateRepo": "Private repository"
+  },
+  "contact": {
+    "title": "Contact Me 📩",
+    "text": "If you have any questions or concerns, please don't hesitate to contact me. I am open to any opportunities that align with my skills and interests.",
+    "downloadCv": "Download CV",
+    "nameLabel": "* Your Name :",
+    "emailLabel": "* Your Email :",
+    "messageLabel": "* Your Message :",
+    "submit": "Submit",
+    "success": "Message sent successfully!",
+    "error": "Error sending the message. Please try again."
+  },
+  "common": {
+    "close": "Close"
+  },
+  "footer": {
+    "text": "© 2024 Built with ❤️ by Andres Enrique Ortiz."
+  }
+}
