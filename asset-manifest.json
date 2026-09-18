@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.d4e3c7a1.css",
-    "main.js": "/my-portfolio/static/js/main.6d6f0918.js",
+    "main.css": "/my-portfolio/static/css/main.21dbaeb5.css",
+    "main.js": "/my-portfolio/static/js/main.f6c4ebcd.js",
     "static/js/453.41811d64.chunk.js": "/my-portfolio/static/js/453.41811d64.chunk.js",
     "static/media/cbum.png": "/my-portfolio/static/media/cbum.57eeb53b9a202784267b.png",
     "static/media/rick.png": "/my-portfolio/static/media/rick.6c06b1399d92aaeda773.png",
@@ -9,7 +9,10 @@
     "static/media/back-to-the-future.jpg": "/my-portfolio/static/media/back-to-the-future.5f7d77e02857ca07d12c.jpg",
     "static/media/cempasuchil.png": "/my-portfolio/static/media/cempasuchil.cf9daf270c8e54cfa142.png",
     "static/media/disco-olimpico.png": "/my-portfolio/static/media/disco-olimpico.e2fca57aa56fed427617.png",
+    "static/media/redis_logo.png": "/my-portfolio/static/media/redis_logo.91eb321da29c5e635bc8.png",
+    "static/media/node_logo.png": "/my-portfolio/static/media/node_logo.aa8bc616bb8252fa29f3.png",
     "static/media/snk.jpg": "/my-portfolio/static/media/snk.181eaf588f824a573a57.jpg",
+    "static/media/express_logo.png": "/my-portfolio/static/media/express_logo.6a3e055a6226b08114ef.png",
     "static/media/ramon.png": "/my-portfolio/static/media/ramon.174b69c94d47dc1dca64.png",
     "static/media/spiderman.jpg": "/my-portfolio/static/media/spiderman.b5bcbd8a320d110986c9.jpg",
     "static/media/breon.jpg": "/my-portfolio/static/media/breon.242277b9b03241be8a8a.jpg",
@@ -23,6 +26,7 @@
     "static/media/tengen.jpg": "/my-portfolio/static/media/tengen.681e41dc9e1e0388b841.jpg",
     "static/media/ronnie-coleman.jpg": "/my-portfolio/static/media/ronnie-coleman.201de9ef8957823abcb7.jpg",
     "static/media/dieta.jpg": "/my-portfolio/static/media/dieta.5683450a851d64d09c2b.jpg",
+    "static/media/datadog_logo.png": "/my-portfolio/static/media/datadog_logo.f5f806cf3bcbab282322.png",
     "static/media/spring.png": "/my-portfolio/static/media/spring.28945251997aaff9b452.png",
     "static/media/quetzal-loader.png": "/my-portfolio/static/media/quetzal-loader.b2a27a4997e362d02b5a.png",
     "static/media/team-work.jpg": "/my-portfolio/static/media/team-work.f1ab83ea820ba07c708f.jpg",
@@ -36,14 +40,17 @@
     "static/media/pose1.png": "/my-portfolio/static/media/pose1.82573236d5d96b3d8ad7.png",
     "static/media/grafana.png": "/my-portfolio/static/media/grafana.849ceea1e7b3297de29a.png",
     "static/media/react.png": "/my-portfolio/static/media/react.a1f489284484028b3900.png",
+    "static/media/logo-livecampus.png": "/my-portfolio/static/media/logo-livecampus.d0e9e5e8eb77d78ca5b3.png",
     "static/media/instagram.png": "/my-portfolio/static/media/instagram.0d8edca0af1a847ff2e6.png",
     "index.html": "/my-portfolio/index.html",
-    "main.d4e3c7a1.css.map": "/my-portfolio/static/css/main.d4e3c7a1.css.map",
-    "main.6d6f0918.js.map": "/my-portfolio/static/js/main.6d6f0918.js.map",
+    "static/media/placeholder-pose.svg": "/my-portfolio/static/media/placeholder-pose.6cdcad088ea4620f40c66294292ccd59.svg",
+    "static/media/placeholder-skill.svg": "/my-portfolio/static/media/placeholder-skill.01ea219b38f612bf082d7fed976fc6fb.svg",
+    "main.21dbaeb5.css.map": "/my-portfolio/static/css/main.21dbaeb5.css.map",
+    "main.f6c4ebcd.js.map": "/my-portfolio/static/js/main.f6c4ebcd.js.map",
     "453.41811d64.chunk.js.map": "/my-portfolio/static/js/453.41811d64.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d4e3c7a1.css",
-    "static/js/main.6d6f0918.js"
+    "static/css/main.21dbaeb5.css",
+    "static/js/main.f6c4ebcd.js"
   ]
 }
