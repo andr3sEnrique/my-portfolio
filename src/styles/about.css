@@ -154,3 +154,16 @@
 .vela:hover {
 filter: brightness(1.2); 
 }
+/* Percentage-sized images stop growing once the container passes 1320px, so the
+   section keeps the proportions it has on a standard laptop. */
+.profile-pic {
+    max-width: 520px;
+}
+
+.about-me {
+    max-width: 70ch;
+}
+
+.logos {
+    max-width: 640px;
+}

@@ -34,3 +34,58 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* ---------------------------------------------------------------------------
+   Page width
+
+   Bootstrap caps every .container at 1320px from 1400px up, which leaves a lot
+   of empty space on wide monitors. The cap grows in two steps instead, so the
+   navbar and the page content stay aligned at every size.
+
+   bootstrap.min.css is imported after this file in index.js, so these rules are
+   scoped under `body` to outrank it without reordering the imports.
+   --------------------------------------------------------------------------- */
+@media (min-width: 1400px) {
+  body .container,
+  body .container-sm,
+  body .container-md,
+  body .container-lg,
+  body .container-xl,
+  body .container-xxl {
+    max-width: 1440px;
+  }
+}
+
+@media (min-width: 1800px) {
+  body .container,
+  body .container-sm,
+  body .container-md,
+  body .container-lg,
+  body .container-xl,
+  body .container-xxl {
+    max-width: 1680px;
+  }
+}
+
+/* `clip` rather than `hidden`: it stops the full-bleed bands below from adding a
+   horizontal scrollbar without turning <html> into a scroll container. */
+html {
+  overflow-x: clip;
+}
+
+/* Decorative bands span the whole viewport instead of stopping at the container.
+   Relies on being a child of a centring flex column (.altar-level), which lets
+   the extra width spill evenly on both sides. The class is doubled so it beats
+   the element's own width rule (e.g. .line-separation) whatever the file order. */
+.full-bleed.full-bleed {
+  width: 100vw;
+  max-width: 100vw;
+  align-self: center;
+}
+
+/* Long paragraphs keep a readable line length even as the container grows. */
+.prose {
+  max-width: 70ch;
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -70,3 +70,7 @@
     animation: wave 1s ease-in-out infinite;
     transform-origin: 70% 70%;
 }
+/* Keeps the typed intro at a readable line length on wide monitors. */
+.introduction {
+    max-width: 70ch;
+}
