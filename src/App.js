@@ -7,20 +7,17 @@ import Footer from './components/Footer';
 import Home from './components/Home';
 import About from './components/About';
 import Skills from './components/Skills';
-import Experience from './components/Experience';
-import Contact from './components/Contact';
 
 function App() {
   return (
     <LanguageProvider>
-      <Router>
+      {/* basename keeps every route under the /my-portfolio/ subpath GitHub Pages serves. */}
+      <Router basename={process.env.PUBLIC_URL}>
         <CustomNavbar />
         <Routes>
-          <Route path="/my-portfolio" exact element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/skills" element={<Skills />} />
-          <Route path="/experience" element={<Experience />} />
-          <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer/>
       </Router>
