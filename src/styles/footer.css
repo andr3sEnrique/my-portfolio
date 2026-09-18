@@ -9,3 +9,7 @@
     padding: 10px;
     margin-bottom: -5px;
 }
+
+.text-footer {
+    color: var(--mx-rust);
+}

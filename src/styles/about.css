@@ -13,6 +13,7 @@
 
 .title {
     text-align: center;
+    color: var(--mx-rust);
     margin-bottom: 20px;
     
 }
@@ -35,7 +36,7 @@
 .profile-pic {
     width: 40%;
     height: auto;
-    border: 3px solid #af531a;
+    border: 3px solid var(--mx-rust);
 }
 
 .altar-level {
@@ -53,7 +54,7 @@
 }
 
 .line {
-    background-color: #e7682f;
+    background-color: var(--mx-marigold);
     height: auto;
     width: 10px;
     margin-left: 5px;
@@ -84,7 +85,7 @@
     font-optical-sizing: auto;
     font-size: x-large;
     font-style: normal;
-    color: gray;
+    color: var(--mx-muted);
     font-variation-settings: "wdth" 100;
     text-align: justify;
     text-justify: inter-word;
@@ -94,11 +95,11 @@
 }
 
 .key-words {
-    color: #000;
+    color: var(--mx-rust);
 }
 
 .reference {
-    color: #d63384;
+    color: var(--mx-pink);
     text-decoration: none;
 }
 

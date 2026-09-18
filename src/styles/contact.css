@@ -1,8 +1,8 @@
 .title-contact {
-    color: #8f1a54;
+    color: var(--mx-rust);
 }
 .download-btn {
-    background-color: #b3226a;
+    background-color: var(--mx-pink);
     color: white;
     border: none;
     padding: 10px 20px;
@@ -12,7 +12,8 @@
 }
 
 .download-btn:hover {
-    background-color: #8f1a54;
+    background-color: var(--mx-pink-dark);
+    color: white;
 }
 
 .contact-text {
@@ -46,8 +47,14 @@
     cursor: pointer;
 }
 .content-form {
-    border: 1px solid #4e0e2e;
-    box-shadow: 5px 5px 5px 5px rgba(143, 122, 26, 0.4);
+    border: 1px solid rgba(197, 67, 8, 0.35);
+    box-shadow: 5px 5px 5px 5px rgba(197, 67, 8, 0.18);
+}
+
+/* The submit button is the same call to action as the CV download. */
+.submit-btn {
+    border: none;
+    font-family: "Noto Sans", sans-serif;
 }
 
 @media screen and (max-width: 450px) {

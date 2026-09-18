@@ -1,3 +1,26 @@
+/* ---------------------------------------------------------------------------
+   Palette
+
+   One Mexican palette for the whole site. Each colour has a single job, so a
+   section never invents its own scheme:
+
+     rust      chrome — navbar, footer, section titles (barro / terracota)
+     marigold  decoration — dumbbell bars, rules, small labels (cempasúchil)
+     pink      anything interactive — links and buttons (rosa mexicano)
+     jade      sub-headings inside cards (jade prehispánico)
+     ink/muted text
+   --------------------------------------------------------------------------- */
+:root {
+  --mx-rust: #c54308;
+  --mx-rust-dark: #9a3406;
+  --mx-marigold: #e8871e;
+  --mx-pink: #d63384;
+  --mx-pink-dark: #a82766;
+  --mx-jade: #2e8372;
+  --mx-ink: #3f3a36;
+  --mx-muted: #6f6660;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

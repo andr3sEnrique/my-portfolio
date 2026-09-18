@@ -1,5 +1,5 @@
 .name {
-    color : #760bde;
+    color : var(--mx-rust);
 }
 
 .text-google {
@@ -11,7 +11,7 @@
 }
 
 .introduction {
-    color: gray;
+    color: var(--mx-muted);
     font-size: x-large;
 }
 
@@ -50,7 +50,7 @@
 }
 
 .reference-a {
-    color: #d63384;
+    color: var(--mx-pink);
     text-decoration: none;
 }
 

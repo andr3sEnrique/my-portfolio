@@ -1,32 +1,32 @@
 
-.card {
-    border: 1px solid #3c3c3c;
-    box-shadow: 5px 5px 5px 5px rgba(185, 85, 3, 0.4);
+body .card {
+    border: 1px solid rgba(197, 67, 8, 0.25);
+    box-shadow: 5px 5px 5px 5px rgba(197, 67, 8, 0.18);
 }
 
-.list-group-item {
+body .list-group-item {
     border: none;
-    color: #ce9178;
+    background-color: transparent;
 }
 
 .titleProjet {
-    color: #2e8372;
+    color: var(--mx-rust);
 }
 
 .headerTitle {
-    color: #4ec9b0;
+    color: var(--mx-jade);
 }
 
 .title-empresa {
-    color: #8f1a54;
+    color: var(--mx-ink);
 }
 
 .body-text {
-    color: rgb(15, 95, 107) !important;
+    color: var(--mx-muted) !important;
 }
 
 .footer-text {
-    color: #f9913c;
+    color: var(--mx-marigold);
 }
 
 .img-technologies {
@@ -46,7 +46,8 @@
     .footer-text {
         font-size: medium;
     }
-}/* Badge sitting at the end of the technology row: a link to the repo, or a note
+}
+/* Badge sitting at the end of the technology row: a link to the repo, or a note
    that the code belongs to a client and stays private. */
 .repo-badge {
     margin-left: auto;
@@ -58,19 +59,19 @@
 }
 
 .repo-badge-link {
-    background-color: #24292f;
+    background-color: var(--mx-pink);
     color: #fff;
     text-decoration: none;
 }
 
 .repo-badge-link:hover {
-    background-color: #57606a;
+    background-color: var(--mx-pink-dark);
     color: #fff;
 }
 
 .repo-badge-private {
     background-color: #eaeaea;
-    color: #6a6a6a;
+    color: var(--mx-muted);
 }
 
 @media screen and (max-width: 450px) {
