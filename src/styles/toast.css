@@ -1,0 +1,99 @@
+.toast-card {
+    position: fixed;
+    /* Clears the fixed footer, and sits above it. */
+    bottom: 76px;
+    right: 24px;
+    z-index: 1100;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    max-width: 380px;
+    padding: 14px 16px;
+    border-radius: 10px;
+    border-left: 5px solid;
+    background-color: #fff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+    font-family: "Noto Sans", sans-serif;
+    /* Only the slide is animated. Fading in from opacity 0 would leave the toast
+       invisible whenever the animation fails to tick — a background tab at mount,
+       a throttled compositor — and it would then auto-dismiss unseen. A frozen
+       slide is merely a toast sitting 16px lower. */
+    animation: toast-in 0.28s ease-out;
+}
+
+@keyframes toast-in {
+    from {
+        transform: translateY(16px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .toast-card {
+        animation: none;
+    }
+}
+
+.toast-success {
+    border-left-color: var(--mx-jade);
+}
+
+.toast-error {
+    border-left-color: var(--mx-rust);
+}
+
+.toast-icon {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.toast-success .toast-icon {
+    background-color: var(--mx-jade);
+}
+
+.toast-error .toast-icon {
+    background-color: var(--mx-rust);
+}
+
+.toast-message {
+    margin: 0;
+    padding-top: 2px;
+    font-size: 0.92rem;
+    line-height: 1.35;
+    color: var(--mx-ink);
+    text-align: left;
+}
+
+.toast-close {
+    flex-shrink: 0;
+    border: none;
+    background: none;
+    padding: 0 2px;
+    font-size: 1.3rem;
+    line-height: 1;
+    color: var(--mx-muted);
+    cursor: pointer;
+}
+
+.toast-close:hover {
+    color: var(--mx-ink);
+}
+
+@media screen and (max-width: 560px) {
+    .toast-card {
+        left: 16px;
+        right: 16px;
+        max-width: none;
+        bottom: 68px;
+    }
+}

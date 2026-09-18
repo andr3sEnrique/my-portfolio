@@ -75,3 +75,13 @@
     }
     
 }
+/* Spinner shown inside the submit button while the message is in flight. */
+.submit-spinner {
+    margin-right: 8px;
+    vertical-align: -0.125em;
+}
+
+.submit-btn:disabled {
+    opacity: 0.75;
+    cursor: progress;
+}

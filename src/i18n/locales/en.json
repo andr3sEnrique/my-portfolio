@@ -134,7 +134,8 @@
     "messageLabel": "* Your Message :",
     "submit": "Submit",
     "success": "Message sent successfully!",
-    "error": "Error sending the message. Please try again."
+    "error": "Error sending the message. Please try again.",
+    "sending": "Sending…"
   },
   "common": {
     "close": "Close"

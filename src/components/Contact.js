@@ -1,4 +1,4 @@
-import React, {useRef} from "react";
+import React, { useCallback, useRef, useState } from "react";
 import '../styles/contact.css';
 import arroba from '../img/arroba.png';
 import telefono from '../img/llamada.png';
@@ -9,6 +9,7 @@ import linkedin from '../img/linkedin.png';
 import emailjs from 'emailjs-com';
 import { useTranslation } from '../i18n/LanguageContext';
 import { clickable, openInNewTab } from '../utils/clickable';
+import Toast from './Toast';
 
 // French visitors get the French CV, everyone else the English one.
 // Filenames match the files in /public.
@@ -18,20 +19,37 @@ const CV_BY_LANGUAGE = {
     es: { file: 'CV-andres-en.pdf', downloadAs: 'CV_Andres_Ortiz_EN.pdf' }
 };
 
+// Kept together so the ids are easy to check against dashboard.emailjs.com.
+// The public key is meant to be public; it only authorises this one account's
+// templates from the browser.
+const EMAILJS = {
+    service: 'service_tm7jyq7',
+    template: 'template_c2z30di',
+    publicKey: 'AKtVQzWcPvbyu3Z-l'
+};
+
 function Contact () {
     const form = useRef();
+    const [status, setStatus] = useState({ state: 'idle' });
     const { t, language } = useTranslation();
     const cv = CV_BY_LANGUAGE[language] || CV_BY_LANGUAGE.en;
+    const dismiss = useCallback(() => setStatus({ state: 'idle' }), []);
+
     const sendEmail = (e) => {
         e.preventDefault();
+        setStatus({ state: 'sending' });
 
-        emailjs.sendForm('service_tm7jyq7', 'template_c2z30di', form.current, 'AKtVQzWcPvbyu3Z-l')
-            .then((result) => {
-                console.log(result.text);
-                alert(t('contact.success'));
-            }, (error) => {
-                console.log(error.text);
-                alert(t('contact.error'));
+        emailjs.sendForm(EMAILJS.service, EMAILJS.template, form.current, EMAILJS.publicKey)
+            .then(() => {
+                setStatus({ state: 'sent' });
+                form.current.reset();
+            })
+            .catch((error) => {
+                // EmailJS answers with { status, text }. The visitor gets the
+                // translated message; the technical reason (a dead template, an
+                // expired Gmail grant…) goes to the console for whoever debugs it.
+                console.error('EmailJS refused the message:', (error && error.text) || error);
+                setStatus({ state: 'error' });
             });
     };
     return(
@@ -77,10 +95,22 @@ function Contact () {
                             <label className="form-label contact-text" htmlFor="message">{t('contact.messageLabel')}</label>
                             <input type="text" className="form-control" id="message" name="message" required/>
                         </div>
-                        <button type="submit" className="download-btn submit-btn">{t('contact.submit')}</button>
+                        <button type="submit" className="download-btn submit-btn" disabled={status.state === 'sending'}>
+                            {status.state === 'sending' && (
+                                <span className="spinner-border spinner-border-sm submit-spinner" role="status" aria-hidden="true"></span>
+                            )}
+                            {status.state === 'sending' ? t('contact.sending') : t('contact.submit')}
+                        </button>
                     </form>
                 </div>
             </div>
+            {(status.state === 'sent' || status.state === 'error') && (
+                <Toast
+                    variant={status.state === 'sent' ? 'success' : 'error'}
+                    message={status.state === 'sent' ? t('contact.success') : t('contact.error')}
+                    onClose={dismiss}
+                />
+            )}
         </div>
     )
 }

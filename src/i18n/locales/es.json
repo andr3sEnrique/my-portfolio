@@ -134,7 +134,8 @@
     "messageLabel": "* Tu mensaje :",
     "submit": "Enviar",
     "success": "¡Mensaje enviado con éxito!",
-    "error": "Error al enviar el mensaje. Intenta de nuevo."
+    "error": "Error al enviar el mensaje. Intenta de nuevo.",
+    "sending": "Enviando…"
   },
   "common": {
     "close": "Cerrar"
