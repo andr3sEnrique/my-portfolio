@@ -63,15 +63,6 @@ height: 50px;
     margin-bottom: 20px;
 }
 
-.poses-gym {
-    width: 12%;
-    min-width: 70px;
-    height: auto;
-    cursor: pointer;
-    display: inline-block;
-    animation: wave 1s ease-in-out infinite;
-    transform-origin: 50% 50%;
-}
 .skills-container {
     display: flex;
     flex-direction: row;
@@ -82,11 +73,6 @@ height: 50px;
 }
 .skills-container.single {
     justify-content: center;
-}
-
-.poses-row {
-    gap: 2%;
-    row-gap: 1.5rem;
 }
 
 .nivel-skill{

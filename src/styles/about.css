@@ -103,10 +103,15 @@
     text-decoration: none;
 }
 
+/* Sized by height so a wide wordmark (LiveCampus) and a tall crest (UTEZ,
+   Orléans) carry the same visual weight instead of one filling the column. */
 .logos {
-    width: 100%;
+    width: auto;
     height: auto;
-    margin-bottom: 20px;
+    max-width: 100%;
+    max-height: 80px;
+    display: block;
+    margin: 0 auto 20px;
 }
 .hobbies {
     display: inline-block;
@@ -164,6 +169,57 @@ filter: brightness(1.2);
     max-width: 70ch;
 }
 
-.logos {
-    max-width: 640px;
+
+@media screen and (max-width: 450px) {
+    .logos {
+        max-height: 56px;
+    }
+}
+
+/* Claim on top, the experience that backs it underneath. */
+.soft-skills {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 26px 36px;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto 20px;
+    padding: 0;
+}
+
+.soft-skill {
+    border-left: 3px solid var(--mx-marigold);
+    padding-left: 16px;
+    text-align: left;
+}
+
+.soft-skill-name {
+    margin-bottom: 6px;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 1.2rem;
+    color: var(--mx-rust);
+}
+
+.soft-skill-evidence {
+    margin: 0;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 1rem;
+    line-height: 1.45;
+    color: var(--mx-muted);
+}
+
+@media screen and (max-width: 700px) {
+    .soft-skills {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .soft-skill-name {
+        font-size: 1.05rem;
+    }
+
+    .soft-skill-evidence {
+        font-size: 0.92rem;
+    }
 }

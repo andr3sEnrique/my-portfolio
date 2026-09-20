@@ -73,7 +73,7 @@ function Contact () {
                         </div>
                     </div>
                     <div className="d-flex flex-row justify-content-around">
-                        <img src={instagram} alt="instagram logo" className="contact-icons social-icons" {...clickable(openInNewTab('https://www.instagram.com/enrique_ortizsc/'), 'Instagram')}/>
+                        <img src={instagram} alt="instagram logo" className="contact-icons social-icons" {...clickable(openInNewTab('https://www.instagram.com/enrique.ortizsc/'), 'Instagram')}/>
                         <img src={github} alt="github logo" className="contact-icons social-icons" {...clickable(openInNewTab('https://github.com/andr3sEnrique'), 'Github')}/>
                         <img src={linkedin} alt="linkedin logo" className="contact-icons social-icons" {...clickable(openInNewTab('https://www.linkedin.com/in/enrique-ortizsc/'), 'Linkedin')}/>
                         <a href={`${process.env.PUBLIC_URL}/${cv.file}`} download={cv.downloadAs} className="download-btn">

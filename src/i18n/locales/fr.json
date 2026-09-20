@@ -61,7 +61,26 @@
     "bio3": "*Autonome et adaptable*, j'aime découvrir de nouvelles technologies et résoudre des problématiques techniques concrètes, aussi bien côté backend que frontend.",
     "bio4": "En dehors du développement, je m'intéresse à la *musculation*, aux nouvelles technologies et à l'apprentissage de nouvelles choses, ainsi qu'à écouter de la musique (mexicaine, reggaeton, rap, pop, electronica) et jouer à des jeux vidéo avec une bonne histoire.",
     "livecampusName": "LiveCampus",
-    "livecampusDegree": "Master – Expert en sécurité des développements informatiques"
+    "livecampusDegree": "Master – Expert en sécurité des développements informatiques",
+    "softSkillsTitle": "Savoir-être",
+    "softSkills": {
+      "teamwork": {
+        "name": "Travail d'équipe",
+        "evidence": "Chef de projet chez UTEZ : gestion d'une équipe de 5 personnes et des réunions client."
+      },
+      "autonomy": {
+        "name": "Autonomie",
+        "evidence": "Alternance chez Aphilia : conception et intégration d'agents conversationnels et d'assistants intelligents."
+      },
+      "adaptability": {
+        "name": "Adaptabilité",
+        "evidence": "Formation au Mexique, puis études et alternance en France — en français."
+      },
+      "curiosity": {
+        "name": "Curiosité",
+        "evidence": "Master en sécurité des développements informatiques chez LiveCampus, en parallèle de l'alternance."
+      }
+    }
   },
   "hobbieModal": {
     "title": "Regarder différentes choses",
@@ -71,14 +90,6 @@
   },
   "skills": {
     "title": "Compétences",
-    "softSkills": {
-      "responsibility": "Responsabilité",
-      "adaptability": "Adaptabilité",
-      "teamwork": "Travail d'équipe",
-      "engagement": "Engagement",
-      "curiosity": "Curiosité",
-      "autonomy": "Autonomie"
-    },
     "sections": {
       "frontend": "FrontEnd",
       "backend": "BackEnd",

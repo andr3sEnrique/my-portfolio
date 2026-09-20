@@ -61,7 +61,26 @@
     "bio3": "*Autónomo y adaptable*, me gusta descubrir nuevas tecnologías y resolver problemas técnicos concretos, tanto del lado del backend como del frontend.",
     "bio4": "Fuera del desarrollo, me interesa *el gimnasio*, las nuevas tecnologías y aprender cosas nuevas, además de escuchar música (mexicana, reggaetón, rap, pop, electrónica) y jugar videojuegos con una buena historia.",
     "livecampusName": "LiveCampus",
-    "livecampusDegree": "Máster – Experto en seguridad del desarrollo de software"
+    "livecampusDegree": "Máster – Experto en seguridad del desarrollo de software",
+    "softSkillsTitle": "Habilidades personales",
+    "softSkills": {
+      "teamwork": {
+        "name": "Trabajo en equipo",
+        "evidence": "Líder de proyecto en UTEZ: gestión de un equipo de 5 personas y de las reuniones con el cliente."
+      },
+      "autonomy": {
+        "name": "Autonomía",
+        "evidence": "Alternancia en Aphilia: diseño e integración de agentes conversacionales y asistentes inteligentes."
+      },
+      "adaptability": {
+        "name": "Adaptabilidad",
+        "evidence": "Formación en México, después estudios y alternancia en Francia — en francés."
+      },
+      "curiosity": {
+        "name": "Curiosidad",
+        "evidence": "Máster en seguridad del desarrollo de software en LiveCampus, en paralelo a la alternancia."
+      }
+    }
   },
   "hobbieModal": {
     "title": "Ver cosas diferentes",
@@ -71,14 +90,6 @@
   },
   "skills": {
     "title": "Habilidades",
-    "softSkills": {
-      "responsibility": "Responsabilidad",
-      "adaptability": "Adaptabilidad",
-      "teamwork": "Trabajo en equipo",
-      "engagement": "Compromiso",
-      "curiosity": "Curiosidad",
-      "autonomy": "Autonomía"
-    },
     "sections": {
       "frontend": "FrontEnd",
       "backend": "BackEnd",

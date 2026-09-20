@@ -28,6 +28,10 @@ const LOADER_MS = 600;
 // Ordered from the weakest to the strongest result; titles live in the locale files.
 const levelImages = [Terrence, Breon, Urs, Ramon, Cbum];
 
+// Stated as claim + evidence, because a bare adjective convinces nobody. Keys
+// resolve to about.softSkills.<key>.name / .evidence in the locale files.
+const softSkills = ['teamwork', 'autonomy', 'adaptability', 'curiosity'];
+
 // Most recent first. When `linkLabel` is missing the school name itself becomes the link.
 const education = [
     {
@@ -147,6 +151,16 @@ function About () {
                                     
                                 </div>
                             </div>
+                            <div className="line-separation full-bleed d-flex flex-row"><img src={Cempasuchil} alt="flor de cempasuchil" className="flor"/><img src={Cempasuchil} alt="flor de cempasuchil" className="flor"/></div>
+                            <h1 className="title">{t('about.softSkillsTitle')}</h1>
+                            <ul className="soft-skills">
+                                {softSkills.map((key) => (
+                                    <li className="soft-skill" key={key}>
+                                        <h3 className="soft-skill-name">{t(`about.softSkills.${key}.name`)}</h3>
+                                        <p className="soft-skill-evidence">{t(`about.softSkills.${key}.evidence`)}</p>
+                                    </li>
+                                ))}
+                            </ul>
                             <div className="line-separation full-bleed d-flex flex-row"><img src={Cempasuchil} alt="flor de cempasuchil" className="flor"/><img src={Cempasuchil} alt="flor de cempasuchil" className="flor"/></div>
                             <h1 className="title">{t('about.academicTitle')}</h1>
                             {education.map((school) => (

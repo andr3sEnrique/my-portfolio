@@ -1,22 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import Loader from './Loader';
 import Disco from '../img/disco-olimpico.png';
 import LamparaD from '../img/lampara-derecha.png';
 import LamparaI from '../img/lampara-izquierda.png';
-import Pose1 from '../img/pose1.png';
-import Pose2 from '../img/pose2.png';
-import Pose3 from '../img/pose3.png';
-import Pose4 from '../img/pose4.png';
-import PlaceholderPose from '../img/placeholder-pose.svg';
-import PlaceholderSkill from '../img/placeholder-skill.svg';
 import '../styles/skills.css';
-import Responsability from '../img/dieta.jpg';
-import Adaptability from '../img/suplementos.jpg';
-import TeamWork from '../img/team-work.jpg';
-import Engagement from '../img/cbum.png';
-import CustomModal from './Modal';
 import { useTranslation } from '../i18n/LanguageContext';
-import { clickable } from '../utils/clickable';
 import { useFirstVisitLoader } from '../utils/useFirstVisitLoader';
 
 // See About.js — shown only on the first visit to this section in a tab.
@@ -29,17 +17,6 @@ const LEVELS = {
     mediumHigh: ['weight-1', 'weight-2', 'weight-25'],
     high: ['weight-1', 'weight-2', 'weight-3']
 };
-
-// Soft skills shown as clickable gym poses. To add a real picture, drop the file in
-// src/img, import it, and replace PlaceholderPose / PlaceholderSkill below.
-const softSkills = [
-    { titleKey: 'skills.softSkills.responsibility', pose: Pose1, img: Responsability },
-    { titleKey: 'skills.softSkills.adaptability', pose: Pose2, img: Adaptability },
-    { titleKey: 'skills.softSkills.teamwork', pose: Pose3, img: TeamWork },
-    { titleKey: 'skills.softSkills.engagement', pose: Pose4, img: Engagement },
-    { titleKey: 'skills.softSkills.curiosity', pose: PlaceholderPose, img: PlaceholderSkill },
-    { titleKey: 'skills.softSkills.autonomy', pose: PlaceholderPose, img: PlaceholderSkill }
-];
 
 // `name` is a technology (never translated); `nameKey` goes through the locale files.
 const sections = [
@@ -115,16 +92,6 @@ const Dumbbell = ({ level }) => {
 function Skills () {
     const { t } = useTranslation();
     const isLoading = useFirstVisitLoader('skills', LOADER_MS);
-    const [show, setShow] = useState(false);
-    const [currentSkill, setCurrentSkill] = useState({});
-    const handleShow = (skill) => {
-        setCurrentSkill(skill);
-        setShow(true);
-    };
-    
-    const handleClose = () => {
-        setShow(false);
-    };
     return (
         <>
         {isLoading ? (
@@ -136,19 +103,6 @@ function Skills () {
                     <h1 className="text-google2">{t('skills.title')}</h1>
                     <img src={LamparaD} alt="lampara" className="lamparas derecha" />
                 </div>
-                <div className="d-flex flex-row flex-wrap justify-content-center poses-row mt-5">
-                    {softSkills.map((skill) => (
-                        <img
-                            key={skill.titleKey}
-                            src={skill.pose}
-                            alt={t(skill.titleKey)}
-                            title={t(skill.titleKey)}
-                            className="poses-gym"
-                            {...clickable(() => handleShow(skill), t(skill.titleKey))}
-                        />
-                    ))}
-                </div>
-                <CustomModal title={currentSkill.titleKey ? t(currentSkill.titleKey) : ''} img={currentSkill.img} show={show} handleClose={handleClose} />
                 <div className=" mb-5 tarima"></div>
                 {sections.map((section, sectionIndex) => (
                     <React.Fragment key={section.titleKey}>
