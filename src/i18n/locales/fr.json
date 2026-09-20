@@ -90,12 +90,14 @@
   },
   "skills": {
     "title": "Compétences",
-    "sections": {
-      "frontend": "FrontEnd",
-      "backend": "BackEnd",
-      "data": "Données",
+    "groups": {
+      "daily": "Au quotidien chez Aphilia",
+      "projects": "Sur des projets",
       "tooling": "Outils",
       "languages": "Langues"
+    },
+    "levels": {
+      "native": "Natif"
     },
     "languages": {
       "spanish": "Espagnol",
