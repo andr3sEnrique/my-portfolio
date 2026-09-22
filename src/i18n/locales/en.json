@@ -13,14 +13,26 @@
     "brand": "Andres Enrique Ortiz Santa Cruz",
     "home": "Home",
     "about": "About Me",
+    "projects": "Projects",
     "skills": "Skills"
   },
   "home": {
     "greeting": "Hey, I'm",
     "name": "Enrique",
     "intro": "I am a Mexican Full-Stack developer based in Paris. I have done different projects using a variety of technologies and tools.",
-    "showMore": "Let me show you more",
-    "aboutMeLink": "about me"
+    "aboutMe": "About me",
+    "seeProjects": "See my projects",
+    "snippet": {
+      "role": "Backend-oriented Full-Stack developer",
+      "based": "Île-de-France, France",
+      "focus": [
+        "software architecture",
+        "distributed systems",
+        "AI",
+        "cybersecurity"
+      ],
+      "comment": "Currently a backend apprentice at Aphilia."
+    }
   },
   "about": {
     "title": "Who is Andres Enrique Ortiz Santa Cruz?",
@@ -80,7 +92,9 @@
         "name": "Curiosity",
         "evidence": "Master's in security of software development at LiveCampus, alongside the apprenticeship."
       }
-    }
+    },
+    "animeAlt": "An anime character in front of an IDE",
+    "animeCaption": "Anime is one of them — this frame used to greet visitors on the home page."
   },
   "hobbieModal": {
     "title": "Watch different things",
@@ -105,9 +119,31 @@
       "english": "English"
     }
   },
-  "experience": {
+  "projects": {
     "title": "Projects 📂",
+    "intro": "What I have built — at work, at school, and on my own time.",
+    "groups": {
+      "work": "Professional & academic projects",
+      "workSubtitle": "Apprenticeship, internship and tutored projects.",
+      "personal": "Personal projects",
+      "personalSubtitle": "Built on my own time, outside of school and work."
+    },
     "technologiesUsed": "Technologies used",
+    "viewCode": "View code",
+    "viewDemo": "Live demo",
+    "privateRepo": "Private repository",
+    "privateRepoWhy": "The code belongs to the client and is covered by an NDA.",
+    "diagram": {
+      "alt": "Architecture of the services I work on at Aphilia: a REST API in front of the conversational agents and the data layer, monitored with Datadog.",
+      "clients": "Client applications",
+      "api": "REST API",
+      "apiDetail": "modular microservices",
+      "agents": "Conversational agents",
+      "agentsDetail": "skills · rules engine · prompts",
+      "data": "Data",
+      "observability": "metrics, dashboards, alerts",
+      "caption": "The repository is private, so here is the shape of the system instead."
+    },
     "aphilia": {
       "role": "Apprenticeship | Backend Developer",
       "company": "Aphilia",
@@ -135,8 +171,14 @@
       "task1": "Management of the work team as well as client meetings.",
       "task2": "Development of a Web and Mobile application to manage the borrowing of computer equipment identified by QR Codes."
     },
-    "viewCode": "View code",
-    "privateRepo": "Private repository"
+    "portfolio": {
+      "role": "Personal project | Design and development",
+      "company": "This portfolio",
+      "task1": "Single-page React application, built and deployed to GitHub Pages.",
+      "task2": "Available in three languages (English, French, Spanish) through a hand-written i18n context.",
+      "task3": "Contact form wired to EmailJS, and a layout that holds down to phone width.",
+      "shotAlt": "Home page of this portfolio"
+    }
   },
   "contact": {
     "title": "Contact Me 📩",

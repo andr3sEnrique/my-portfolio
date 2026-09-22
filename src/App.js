@@ -6,6 +6,7 @@ import CustomNavbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './components/Home';
 import About from './components/About';
+import Projects from './components/Projects';
 import Skills from './components/Skills';
 
 function App() {
@@ -13,13 +14,20 @@ function App() {
     <LanguageProvider>
       {/* basename keeps every route under the /my-portfolio/ subpath GitHub Pages serves. */}
       <Router basename={process.env.PUBLIC_URL}>
-        <CustomNavbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/skills" element={<Skills />} />
-        </Routes>
-        <Footer/>
+        {/* Column layout so a short page still pushes the footer to the bottom
+            of the viewport instead of leaving a white gap under it. */}
+        <div className="app-shell">
+          <CustomNavbar />
+          <main className="app-main">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/projects" element={<Projects />} />
+              <Route path="/skills" element={<Skills />} />
+            </Routes>
+          </main>
+          <Footer/>
+        </div>
       </Router>
     </LanguageProvider>
   );

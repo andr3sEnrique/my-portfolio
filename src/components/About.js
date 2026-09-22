@@ -1,9 +1,9 @@
 import React, { useState, useRef } from "react";
 import { Modal, Button } from 'react-bootstrap';
-import Experience from './Experience';
 import Contact from "./Contact";
 import Cempasuchil from '../img/cempasuchil.png';
 import profile from '../img/profile-pic.jpg';
+import animeCoding from '../img/imgHome.jpg';
 import LogoUtez from '../img/Logo-utez.png';
 import LogoOrleans from '../img/logo-orleans.png';
 import LogoLiveCampus from '../img/logo-livecampus.png';
@@ -59,6 +59,17 @@ const education = [
     }
 ];
 
+// Two bands for the whole page instead of one between every block: they mark
+// the two real breaks — who I am, what I studied, and the personal half.
+function Separator() {
+    return (
+        <div className="line-separation full-bleed d-flex flex-row">
+            <img src={Cempasuchil} alt="" className="flor" />
+            <img src={Cempasuchil} alt="" className="flor" />
+        </div>
+    );
+}
+
 function About () {
     const { t } = useTranslation();
     const rt = useRichTranslation();
@@ -73,6 +84,7 @@ function About () {
     const [displayState, setDisplayState] = useState('game');
     const countRef = useRef(0);
     const levelTitles = t('about.game.levels');
+
     const handleShowGame = () => {
         setShowModal(true);
         setDisplayState('game');
@@ -151,7 +163,9 @@ function About () {
                                     
                                 </div>
                             </div>
-                            <div className="line-separation full-bleed d-flex flex-row"><img src={Cempasuchil} alt="flor de cempasuchil" className="flor"/><img src={Cempasuchil} alt="flor de cempasuchil" className="flor"/></div>
+
+                            <Separator />
+
                             <h1 className="title">{t('about.softSkillsTitle')}</h1>
                             <ul className="soft-skills">
                                 {softSkills.map((key) => (
@@ -161,8 +175,8 @@ function About () {
                                     </li>
                                 ))}
                             </ul>
-                            <div className="line-separation full-bleed d-flex flex-row"><img src={Cempasuchil} alt="flor de cempasuchil" className="flor"/><img src={Cempasuchil} alt="flor de cempasuchil" className="flor"/></div>
-                            <h1 className="title">{t('about.academicTitle')}</h1>
+
+                            <h1 className="title mt-5">{t('about.academicTitle')}</h1>
                             {education.map((school) => (
                                 <div className="row mt-4" key={school.nameKey}>
                                     <div className="col align-self-center">
@@ -173,12 +187,14 @@ function About () {
                                             {school.linkLabel
                                                 ? <>{t(school.nameKey)} - <a className="reference" target="_blank" rel="noopener noreferrer" href={school.link}>{school.linkLabel}</a></>
                                                 : <a className="reference" target="_blank" rel="noopener noreferrer" href={school.link}>{t(school.nameKey)}</a>}
-                                        </h2>
+                                            </h2>
                                         <p className="text-google">{t(school.degreeKey)}</p>
                                     </div>
                                 </div>
                             ))}
-                            <div className="line-separation full-bleed d-flex flex-row"><img src={Cempasuchil} alt="flor de cempasuchil" className="flor"/><img src={Cempasuchil} alt="flor de cempasuchil" className="flor"/></div>
+
+                            <Separator />
+
                             <h1 className="title">{t('about.hobbiesTitle')}</h1>
                             <div className="mb-5 text-center">
                                 <p className="text-google prose p-2">{t('about.hobbiesText')}</p>
@@ -203,7 +219,13 @@ function About () {
                                             <h2>{t('about.hobbyGames')}</h2>
                                         </div>
                                     </div>
-                                </div> 
+                                </div>
+                                {/* Moved off the home page: a wink about the job, not the first
+                                    thing a recruiter sees. */}
+                                <figure className="hobby-aside">
+                                    <img src={animeCoding} alt={t('about.animeAlt')} className="hobby-aside-img" />
+                                    <figcaption className="hobby-aside-caption">{t('about.animeCaption')}</figcaption>
+                                </figure>
                                 <ModalHobbie show={showWatch} handleClose={handleCloseWatch}/>
                                 <Modal show={showModal} onHide={handleCloseGame}>
                                 <Modal.Header closeButton>
@@ -254,9 +276,7 @@ function About () {
                                     </Modal.Footer>
                                 </Modal>
                             </div>
-                            <div className="line-separation full-bleed d-flex flex-row"><img src={Cempasuchil} alt="flor de cempasuchil" className="flor"/><img src={Cempasuchil} alt="flor de cempasuchil" className="flor"/></div>
-                            <Experience />
-                            <div className="line-separation full-bleed d-flex flex-row"><img src={Cempasuchil} alt="flor de cempasuchil" className="flor"/><img src={Cempasuchil} alt="flor de cempasuchil" className="flor"/></div>
+
                             <Contact />
                             
                         </div>

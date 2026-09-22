@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
-import imgHome from '../img/imgHome.jpg';
 import { Link } from 'react-router-dom';
 import { useTranslation } from '../i18n/LanguageContext';
+import CodeCard from './CodeCard';
 import '../styles/home.css'
 function Home() {
     const { t } = useTranslation();
@@ -26,18 +26,22 @@ function Home() {
     }, [text, index, fullText]);
 
     return (
-        <div className='p-5'>
+        <div className='hero-section'>
             <div className='container-xxl'>
-                    <h1 className='text-google mt-5'>{t('home.greeting')} <span className='name'>{t('home.name')}</span> <span className='wave-emoji'>👋🏽</span></h1>
-                    <p className='text-google introduction mt-4'>{text}</p>
-                <div className='d-flex justify-content-center mt-5 align-items-center'>
-                    <h2>{t('home.showMore')} <Link to="/about" className='reference-a'>{t('home.aboutMeLink')}</Link></h2>
-                    <img className='img-home' src={imgHome} alt='Anime Software' />
+                <div className='hero'>
+                    <div className='hero-text'>
+                        <h1 className='text-google'>{t('home.greeting')} <span className='name'>{t('home.name')}</span> <span className='wave-emoji'>👋🏽</span></h1>
+                        <p className='text-google introduction mt-4'>{text}</p>
+                        <div className='hero-actions'>
+                            <Link to="/projects" className='hero-btn hero-btn-primary'>{t('home.seeProjects')}</Link>
+                            <Link to="/about" className='hero-btn hero-btn-ghost'>{t('home.aboutMe')}</Link>
+                        </div>
+                    </div>
+                    <div className='hero-visual'>
+                        <CodeCard />
+                    </div>
                 </div>
-
-                
             </div>
-                
         </div>
     )
 }

@@ -13,46 +13,149 @@
 .introduction {
     color: var(--mx-muted);
     font-size: x-large;
+    /* Keeps the typed intro at a readable line length on wide monitors. */
+    max-width: 60ch;
 }
 
-@media screen and (max-width: 450px) {
-    .introduction {
-        font-size: medium;
-    }
-    .d-flex {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .img-home {
-        width: 100%;
-        height: auto;
-        margin-left: 0 !important; 
-        display: block;
-    }
-
-    .text-footer{
-        font-size: small;
-    }
-    .container-xxl {
-        padding: 0 10px; /* Reduce el padding para evitar espacio no deseado */
-    }
-    .name, .text-google {
-        text-align: center; /* Centra el texto para una presentación más limpia */
-        margin-top: 20px; /* Reduce o ajusta los márgenes superiores según sea necesario */
-    }
-}
-
-.img-home {
-    width: 70%;
-    height: auto;
-    margin-left: 10%;
+/* about.css justifies .text-google, which tears the spacing apart in a short
+   narrow column — the hero reads better ragged-right. */
+.hero-text h1,
+.hero-text .introduction {
+    text-align: left;
 }
 
 .reference-a {
     color: var(--mx-pink);
     text-decoration: none;
 }
+
+/* ---------------------------------------------------------------------------
+   Hero
+
+   Two columns on a laptop: what I do on the left, the code card on the right.
+   Below 900px they stack, text first.
+   --------------------------------------------------------------------------- */
+.hero-section {
+    /* Clears the fixed navbar, then centres the hero in what is left of the
+       first screen so the leftover height is shared above and below it. */
+    padding: 110px 20px 70px;
+    min-height: calc(100vh - 66px);
+    display: flex;
+    align-items: center;
+}
+
+.hero-section > .container-xxl {
+    width: 100%;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 48px;
+    align-items: center;
+}
+
+.hero-text h1 {
+    font-size: clamp(1.9rem, 3.4vw, 3rem);
+    margin-bottom: 0;
+}
+
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 36px;
+}
+
+.hero-btn {
+    display: inline-block;
+    padding: 12px 26px;
+    border-radius: 999px;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.hero-btn-primary {
+    background-color: var(--mx-pink);
+    color: #fff;
+    border: 2px solid var(--mx-pink);
+}
+
+.hero-btn-primary:hover {
+    background-color: var(--mx-pink-dark);
+    border-color: var(--mx-pink-dark);
+    color: #fff;
+}
+
+.hero-btn-ghost {
+    background-color: transparent;
+    color: var(--mx-rust);
+    border: 2px solid var(--mx-rust);
+}
+
+.hero-btn-ghost:hover {
+    background-color: var(--mx-rust);
+    color: #fff;
+}
+
+/* ---------------------------------------------------------------------------
+   Code card
+
+   An editor window rather than a picture: same facts as the bio, in the form a
+   visitor of a developer portfolio expects to read them.
+   --------------------------------------------------------------------------- */
+.code-card {
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #2b2622;
+    box-shadow: 0 18px 40px rgba(63, 58, 54, 0.28);
+    border: 1px solid rgba(197, 67, 8, 0.35);
+}
+
+.code-card-bar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 14px;
+    background-color: #3a332e;
+}
+
+.code-dot {
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.code-dot-red { background-color: #e5534b; }
+.code-dot-amber { background-color: var(--mx-marigold); }
+.code-dot-green { background-color: var(--mx-jade); }
+
+.code-card-file {
+    margin-left: 10px;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, monospace;
+    font-size: 0.85rem;
+    color: #b9afa7;
+}
+
+.code-card-body {
+    margin: 0;
+    padding: 22px 24px;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, monospace;
+    font-size: 0.95rem;
+    line-height: 1.75;
+    color: #ece4dc;
+    white-space: pre-wrap;
+    overflow-x: auto;
+}
+
+.tok-kw { color: #ff9e64; }
+.tok-var { color: #7fd0bd; }
+.tok-key { color: #f4b860; }
+.tok-str { color: #ffa7cf; }
+.tok-com { color: #9b918a; font-style: italic; }
 
 @keyframes wave {
     0% { transform: rotate(0deg); }
@@ -70,7 +173,35 @@
     animation: wave 1s ease-in-out infinite;
     transform-origin: 70% 70%;
 }
-/* Keeps the typed intro at a readable line length on wide monitors. */
-.introduction {
-    max-width: 70ch;
+
+@media screen and (max-width: 900px) {
+    .hero {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 36px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .hero-section {
+        padding: 96px 12px 56px;
+    }
+
+    .introduction {
+        font-size: medium;
+    }
+
+    .code-card-body {
+        font-size: 0.78rem;
+        padding: 16px 14px;
+        line-height: 1.6;
+    }
+
+    .hero-actions {
+        margin-top: 26px;
+    }
+
+    .hero-btn {
+        flex: 1 1 100%;
+        text-align: center;
+    }
 }

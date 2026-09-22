@@ -18,6 +18,7 @@ function CustomNavbar() {
           <Nav className="me-auto">
             <Nav.Link as={NavLink} to="/" className="text-white text-google">{t('nav.home')}</Nav.Link>
             <Nav.Link as={NavLink} to="/about" className="text-white text-google">{t('nav.about')}</Nav.Link>
+            <Nav.Link as={NavLink} to="/projects" className="text-white text-google">{t('nav.projects')}</Nav.Link>
             <Nav.Link as={NavLink} to="/skills" className="text-white text-google">{t('nav.skills')}</Nav.Link>
         
           </Nav>

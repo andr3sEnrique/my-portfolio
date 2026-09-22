@@ -223,3 +223,50 @@ filter: brightness(1.2);
         font-size: 0.92rem;
     }
 }
+
+/* The anime frame that used to own the home page: kept as a small aside in
+   Hobbies, where a personal touch belongs. */
+.hobby-aside {
+    margin: 36px auto 0;
+    max-width: 320px;
+}
+
+.hobby-aside-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid var(--mx-marigold);
+}
+
+.hobby-aside-caption {
+    margin-top: 8px;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 0.85rem;
+    color: var(--mx-muted);
+}
+
+@media screen and (max-width: 600px) {
+    .hobby-aside {
+        max-width: 240px;
+    }
+}
+
+/* The intro is a photo next to the bio. Below tablet width the two columns get
+   too narrow to read, so they stack — the photo first, then the text at full
+   width. (home.css used to force this through a global `.d-flex` override; the
+   rule lives here now, scoped to the block it is meant for.) */
+@media screen and (max-width: 768px) {
+    .content-1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-pic {
+        width: 75%;
+        margin-bottom: 12px;
+    }
+
+    .text-google {
+        text-align: left;
+    }
+}

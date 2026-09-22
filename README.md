@@ -1,3 +1,46 @@
+# Portfolio — Andres Enrique Ortiz Santa Cruz
+
+Live at <https://andr3senrique.github.io/my-portfolio/>.
+
+## Adding a screenshot or GIF to a project card
+
+Each card in `src/components/Projects.js` can carry a picture of the thing
+running. To add one:
+
+1. Drop the file in `src/img/projects/` (e.g. `ird.png`, `gabor.gif`).
+   A width of about 1280px is enough; anything wider is wasted bytes.
+2. Import it at the top of `Projects.js` and set it as `shot` on that project:
+
+   ```js
+   import irdShot from '../img/projects/ird.png';
+   // ...
+   { key: 'ird', tasks: 3, shot: irdShot, technologies: [...] }
+   ```
+
+3. Add the alt text under `projects.<key>.shotAlt` in the three locale files
+   (`src/i18n/locales/{en,fr,es}.json`).
+
+A project with no `shot` still renders — the card just drops its media column.
+`diagram: true` draws `ArchitectureDiagram` instead, which is what the Aphilia
+card uses because that repository is private. A `demo` field adds a live-demo
+button next to the repository link.
+
+## Social preview image
+
+`public/og-image.png` is what LinkedIn, WhatsApp and Slack show when the link is
+shared. It is a 1200×630 capture of the home page, so it has to be retaken after
+a visual change:
+
+```bash
+npm start
+# in another shell, with the dev server up:
+chromium --headless --hide-scrollbars --virtual-time-budget=9000 \
+  --window-size=1200,630 --screenshot=public/og-image.png \
+  "http://localhost:3000/my-portfolio/"
+```
+
+---
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

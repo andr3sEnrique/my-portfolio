@@ -13,14 +13,26 @@
     "brand": "Andres Enrique Ortiz Santa Cruz",
     "home": "Accueil",
     "about": "À propos de moi",
+    "projects": "Projets",
     "skills": "Compétences"
   },
   "home": {
     "greeting": "Salut, je suis",
     "name": "Enrique",
     "intro": "Je suis un développeur Full-Stack mexicain basé à Paris. J'ai réalisé différents projets en utilisant une variété de technologies et d'outils.",
-    "showMore": "Laissez-moi vous en dire plus",
-    "aboutMeLink": "à propos de moi"
+    "aboutMe": "À propos de moi",
+    "seeProjects": "Voir mes projets",
+    "snippet": {
+      "role": "Développeur Full-Stack orienté Backend",
+      "based": "Île-de-France, France",
+      "focus": [
+        "architecture logicielle",
+        "systèmes distribués",
+        "IA",
+        "cybersécurité"
+      ],
+      "comment": "Actuellement alternant Backend chez Aphilia."
+    }
   },
   "about": {
     "title": "Qui est Andres Enrique Ortiz Santa Cruz ?",
@@ -80,7 +92,9 @@
         "name": "Curiosité",
         "evidence": "Master en sécurité des développements informatiques chez LiveCampus, en parallèle de l'alternance."
       }
-    }
+    },
+    "animeAlt": "Un personnage d'anime devant un IDE",
+    "animeCaption": "L'anime en fait partie — cette image accueillait autrefois les visiteurs sur la page d'accueil."
   },
   "hobbieModal": {
     "title": "Regarder différentes choses",
@@ -105,9 +119,31 @@
       "english": "Anglais"
     }
   },
-  "experience": {
+  "projects": {
     "title": "Projets 📂",
+    "intro": "Ce que j'ai construit — en entreprise, à l'école et sur mon temps libre.",
+    "groups": {
+      "work": "Projets professionnels et de formation",
+      "workSubtitle": "Alternance, stage et projets tutorés.",
+      "personal": "Projets personnels",
+      "personalSubtitle": "Réalisés sur mon temps libre, en dehors de l'école et du travail."
+    },
     "technologiesUsed": "Technologies utilisées",
+    "viewCode": "Voir le code",
+    "viewDemo": "Démo en ligne",
+    "privateRepo": "Dépôt privé",
+    "privateRepoWhy": "Le code appartient au client et est couvert par un NDA.",
+    "diagram": {
+      "alt": "Architecture des services sur lesquels je travaille chez Aphilia : une API REST devant les agents conversationnels et la couche de données, supervisée avec Datadog.",
+      "clients": "Applications clientes",
+      "api": "API REST",
+      "apiDetail": "microservices modulaires",
+      "agents": "Agents conversationnels",
+      "agentsDetail": "skills · moteur de règles · prompts",
+      "data": "Données",
+      "observability": "métriques, tableaux de bord, alertes",
+      "caption": "Le dépôt est privé : voici donc la forme du système à la place."
+    },
     "aphilia": {
       "role": "Alternance | Développeur Backend",
       "company": "Aphilia",
@@ -135,8 +171,14 @@
       "task1": "Gestion de l'équipe de travail ainsi que des réunions avec le client.",
       "task2": "Développement d'une application Web et Mobile pour gérer le prêt de matériel informatique identifié par QR Codes."
     },
-    "viewCode": "Voir le code",
-    "privateRepo": "Dépôt privé"
+    "portfolio": {
+      "role": "Projet personnel | Conception et développement",
+      "company": "Ce portfolio",
+      "task1": "Application React mono-page, construite et déployée sur GitHub Pages.",
+      "task2": "Disponible en trois langues (anglais, français, espagnol) via un contexte i18n écrit à la main.",
+      "task3": "Formulaire de contact branché sur EmailJS, et une mise en page qui tient jusqu'au format mobile.",
+      "shotAlt": "Page d'accueil de ce portfolio"
+    }
   },
   "contact": {
     "title": "Contactez-moi 📩",

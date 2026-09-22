@@ -1,15 +1,22 @@
-.fixed-footer {
-    position: fixed; /* Fija la posición relativa a la ventana del navegador */
-    bottom: 0; /* Alinea en la parte inferior */
-    left: 0; /* Alinea a la izquierda */
-    width: 100%; /* Asegura que se extienda a lo ancho de la pantalla */
-    background: #FFF; /* Color de fondo, cambialo según tu diseño */
-    text-align: center; /* Centra el texto dentro del footer */
-    z-index: 1000; /* Asegura que el footer esté sobre otros elementos */
-    padding: 10px;
-    margin-bottom: -5px;
+/* The footer is part of the page flow: it renders once, after the content, and
+   scrolls away with it. Only the navbar stays fixed. */
+.site-footer {
+    width: 100%;
+    background: #fff;
+    border-top: 1px solid rgba(197, 67, 8, 0.2);
+    text-align: center;
+    padding: 18px 16px;
+    margin: 0;
 }
 
 .text-footer {
     color: var(--mx-rust);
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+@media screen and (max-width: 450px) {
+    .text-footer {
+        font-size: 0.9rem;
+    }
 }

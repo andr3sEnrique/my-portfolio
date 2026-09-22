@@ -1,0 +1,58 @@
+.architecture {
+    margin: 0;
+    background-color: #fff;
+    border: 1px solid rgba(197, 67, 8, 0.2);
+    border-radius: 10px;
+    padding: 16px;
+}
+
+.architecture-svg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.arch-box {
+    fill: #fff;
+    stroke-width: 1.5;
+}
+
+.arch-box-muted { stroke: #b9aca3; }
+.arch-box-api { stroke: var(--mx-rust); fill: rgba(197, 67, 8, 0.06); }
+.arch-box-ai { stroke: var(--mx-pink); fill: rgba(214, 51, 132, 0.06); }
+.arch-box-data { stroke: var(--mx-jade); fill: rgba(46, 131, 114, 0.06); }
+.arch-box-obs { stroke: var(--mx-marigold); fill: rgba(232, 135, 30, 0.08); }
+
+.arch-label,
+.arch-sublabel {
+    font-family: "Noto Sans", sans-serif;
+    text-anchor: middle;
+    fill: var(--mx-ink);
+}
+
+.arch-label { font-size: 13px; }
+.arch-label-strong { font-weight: 700; }
+
+.arch-sublabel {
+    font-size: 11px;
+    fill: var(--mx-muted);
+}
+
+.arch-link {
+    stroke: #b9aca3;
+    stroke-width: 1.5;
+    fill: none;
+}
+
+.arch-link-dashed {
+    stroke-dasharray: 4 4;
+}
+
+.architecture-caption {
+    margin-top: 10px;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 0.85rem;
+    line-height: 1.4;
+    color: var(--mx-muted);
+    text-align: center;
+}
