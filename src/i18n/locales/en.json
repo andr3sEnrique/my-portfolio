@@ -150,14 +150,17 @@
       "task1": "Backend development: Design and implementation of REST APIs and modular microservices with NestJS, Express and Node.js.",
       "task2": "Data management: MySQL, Redis and TypeORM.",
       "task3": "AI integration: Design and integration of conversational agents and intelligent assistants (skill definition, rules engine and specialised prompts).",
-      "task4": "Monitoring & observability: Application performance tracking, dashboard configuration and metrics management with Datadog."
+      "task4": "Monitoring & observability: Application performance tracking, dashboard configuration and metrics management with Datadog.",
+      "task5": "AI-assisted workflow: use of coding agents such as Claude Code to speed up delivery — framing the requirement, delegating the implementation, then reviewing and validating the generated code before merging."
     },
     "ird": {
       "role": "Internship | Full Stack Web Developer",
       "company": "IRD - Institut de recherche pour le développement.",
-      "task1": "Development of a data collection application and data visualization dashboard.",
+      "task1": "Development of a mobile data collection application and a data visualization dashboard; the mobile app was published on the Google Play Store (available in Côte d'Ivoire).",
       "task2": "Maintenance and upgrading of the research team's website.",
-      "task3": "Assistance from the team's IT manager."
+      "task3": "Assistance from the team's IT manager.",
+      "storeAlt": "Store listing for the Incident Voirie Bouaké app: icon, name and publisher IRN Trauma",
+      "appAlt": "The Incident Voirie Bouaké app: a map of Bouaké with a reported incident"
     },
     "gabor": {
       "role": "Tutored project | FrontEnd Developer",

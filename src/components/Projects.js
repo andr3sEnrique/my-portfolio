@@ -17,11 +17,15 @@ import redisIcon from '../img/redis_logo.png';
 import typeormIcon from '../img/typeorm_logo.png';
 import datadogIcon from '../img/datadog_logo.png';
 import portfolioShot from '../img/projects/portfolio.png';
+import irdStoreShot from '../img/projects/ird-store.png';
+import irdAppShot from '../img/projects/ird-app.png';
 import { useTranslation } from '../i18n/LanguageContext';
 import { clickable, openInNewTab } from '../utils/clickable';
 
 /* Each project card carries, when it exists:
-     shot     a screenshot or short GIF of the thing running (src/img/projects/)
+     shots    one or more screenshots of the thing running (src/img/projects/),
+              each { src, altKey, kind } — kind 'phone' is sized as a portrait
+              screenshot rather than stretched to the column
      diagram  drawn instead of a screenshot when the code is under NDA
      demo     a live URL
      repo     a repository URL, or the string 'private'
@@ -54,7 +58,7 @@ const groups = [
         projects: [
             {
                 key: 'aphilia',
-                tasks: 4,
+                tasks: 5,
                 repo: 'private',
                 diagram: true,
                 technologies: [TECH.nestjs, TECH.express, TECH.node, TECH.mysql, TECH.redis, TECH.typeorm, TECH.datadog]
@@ -62,6 +66,10 @@ const groups = [
             {
                 key: 'ird',
                 tasks: 3,
+                shots: [
+                    { src: irdStoreShot, altKey: 'storeAlt' },
+                    { src: irdAppShot, altKey: 'appAlt', kind: 'phone' }
+                ],
                 technologies: [TECH.grafana, TECH.python, TECH.flutter]
             },
             {
@@ -85,7 +93,7 @@ const groups = [
             {
                 key: 'portfolio',
                 tasks: 3,
-                shot: portfolioShot,
+                shots: [{ src: portfolioShot, altKey: 'shotAlt' }],
                 demo: 'https://andr3senrique.github.io/my-portfolio/',
                 repo: 'https://github.com/andr3sEnrique/my-portfolio',
                 stack: ['React Router', 'Bootstrap', 'EmailJS', 'GitHub Pages'],
@@ -97,7 +105,8 @@ const groups = [
 
 function ProjectCard({ project }) {
     const { t } = useTranslation();
-    const hasMedia = Boolean(project.shot || project.diagram);
+    const shots = project.shots || [];
+    const hasMedia = Boolean(shots.length || project.diagram);
 
     return (
         <article className="project-card">
@@ -107,9 +116,14 @@ function ProjectCard({ project }) {
             <div className={`project-card-body${hasMedia ? ' has-media' : ''}`}>
                 {hasMedia && (
                     <div className="project-media">
-                        {project.shot
-                            ? <img src={project.shot} alt={t(`projects.${project.key}.shotAlt`)} className="project-shot" />
-                            : <ArchitectureDiagram />}
+                        {project.diagram ? <ArchitectureDiagram /> : shots.map((shot) => (
+                            <img
+                                key={shot.altKey}
+                                src={shot.src}
+                                alt={t(`projects.${project.key}.${shot.altKey}`)}
+                                className={`project-shot project-shot-${shot.kind || 'wide'}`}
+                            />
+                        ))}
                     </div>
                 )}
                 <div className="project-content">

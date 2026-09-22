@@ -78,12 +78,31 @@
     align-items: start;
 }
 
+/* A card can show more than one shot — a store listing and the app itself, for
+   instance. They stack, centred, so a portrait phone capture does not get
+   stretched across a column sized for a landscape one. */
+.project-media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
 .project-shot {
-    width: 100%;
     height: auto;
     display: block;
     border-radius: 10px;
     border: 1px solid rgba(197, 67, 8, 0.2);
+}
+
+.project-shot-wide {
+    width: 100%;
+}
+
+.project-shot-phone {
+    width: auto;
+    max-width: 100%;
+    max-height: 420px;
 }
 
 .project-company {
@@ -238,5 +257,9 @@
     .project-stack-label {
         font-size: 0.95rem;
         width: 100%;
+    }
+
+    .project-shot-phone {
+        max-height: 340px;
     }
 }

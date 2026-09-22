@@ -150,14 +150,17 @@
       "task1": "Desarrollo Backend: Diseño e implementación de APIs REST y microservicios modulares con NestJS, Express y Node.js.",
       "task2": "Gestión de datos: MySQL, Redis y TypeORM.",
       "task3": "Integración de IA: Diseño e integración de agentes conversacionales y asistentes inteligentes (definición de skills, motor de reglas y prompts especializados).",
-      "task4": "Monitoreo y observabilidad: Seguimiento del rendimiento de las aplicaciones, configuración de tableros y gestión de métricas con Datadog."
+      "task4": "Monitoreo y observabilidad: Seguimiento del rendimiento de las aplicaciones, configuración de tableros y gestión de métricas con Datadog.",
+      "task5": "Flujo de trabajo asistido por IA: uso de agentes de código como Claude Code para acelerar la entrega — definición del requerimiento, delegación de la implementación, y revisión y validación del código generado antes del merge."
     },
     "ird": {
       "role": "Prácticas | Desarrollador Web Full Stack",
       "company": "IRD - Institut de recherche pour le développement.",
-      "task1": "Desarrollo de una aplicación de recolección de datos y un panel de visualización de datos.",
+      "task1": "Desarrollo de una aplicación móvil de recolección de datos y un panel de visualización; la aplicación móvil fue publicada en Google Play Store (disponible en Costa de Marfil).",
       "task2": "Mantenimiento y actualización del sitio web del equipo de investigación.",
-      "task3": "Apoyo al responsable de informática del equipo."
+      "task3": "Apoyo al responsable de informática del equipo.",
+      "storeAlt": "Ficha de la aplicación Incident Voirie Bouaké: ícono, nombre y editor IRN Trauma",
+      "appAlt": "La aplicación Incident Voirie Bouaké: un mapa de Bouaké con un incidente reportado"
     },
     "gabor": {
       "role": "Proyecto tutorado | Desarrollador FrontEnd",

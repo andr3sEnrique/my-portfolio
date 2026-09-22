@@ -150,14 +150,17 @@
       "task1": "Développement Backend : Conception et implémentation d'APIs REST et microservices modulaires avec NestJS, Express, Node.js.",
       "task2": "Gestion des Données : MySQL, Redis et TypeORM.",
       "task3": "Intégration d'IA : Conception et intégration d'agents conversationnels et d'assistants intelligents (définition de skills, moteur de rules et prompts spécialisés).",
-      "task4": "Monitoring & Observabilité : Suivi des performances applicatives, configuration de tableaux de bord et gestion des métriques avec Datadog."
+      "task4": "Monitoring & Observabilité : Suivi des performances applicatives, configuration de tableaux de bord et gestion des métriques avec Datadog.",
+      "task5": "Workflow assisté par IA : utilisation d'agents de code comme Claude Code pour accélérer la livraison — cadrage du besoin, délégation de l'implémentation, puis relecture et validation du code généré avant le merge."
     },
     "ird": {
       "role": "Stage | Développeur Web Full Stack",
       "company": "IRD - Institut de recherche pour le développement.",
-      "task1": "Développement d'une application de collecte de données et d'un tableau de bord de visualisation.",
+      "task1": "Développement d'une application mobile de collecte de données et d'un tableau de bord de visualisation ; l'application mobile a été publiée sur le Google Play Store (disponible en Côte d'Ivoire).",
       "task2": "Maintenance et mise à jour du site web de l'équipe de recherche.",
-      "task3": "Assistance au responsable informatique de l'équipe."
+      "task3": "Assistance au responsable informatique de l'équipe.",
+      "storeAlt": "Fiche de l'application Incident Voirie Bouaké : icône, nom et éditeur IRN Trauma",
+      "appAlt": "L'application Incident Voirie Bouaké : une carte de Bouaké avec un incident signalé"
     },
     "gabor": {
       "role": "Projet tutoré | Développeur FrontEnd",
