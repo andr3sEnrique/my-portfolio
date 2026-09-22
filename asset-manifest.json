@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.ea99b4d1.css",
-    "main.js": "/my-portfolio/static/js/main.f2d9af2d.js",
+    "main.css": "/my-portfolio/static/css/main.d6ed8658.css",
+    "main.js": "/my-portfolio/static/js/main.24c852e9.js",
     "static/js/453.41811d64.chunk.js": "/my-portfolio/static/js/453.41811d64.chunk.js",
     "static/media/cbum.png": "/my-portfolio/static/media/cbum.57eeb53b9a202784267b.png",
     "static/media/rick.png": "/my-portfolio/static/media/rick.6c06b1399d92aaeda773.png",
+    "static/media/ird-app.png": "/my-portfolio/static/media/ird-app.e6f72b9e94c74cb66932.png",
     "static/media/profile-pic.jpg": "/my-portfolio/static/media/profile-pic.65f602eb2b1b4c2920fa.jpg",
     "static/media/back-to-the-future.jpg": "/my-portfolio/static/media/back-to-the-future.5f7d77e02857ca07d12c.jpg",
     "static/media/cempasuchil.png": "/my-portfolio/static/media/cempasuchil.cf9daf270c8e54cfa142.png",
@@ -12,6 +13,7 @@
     "static/media/redis_logo.png": "/my-portfolio/static/media/redis_logo.91eb321da29c5e635bc8.png",
     "static/media/node_logo.png": "/my-portfolio/static/media/node_logo.aa8bc616bb8252fa29f3.png",
     "static/media/snk.jpg": "/my-portfolio/static/media/snk.181eaf588f824a573a57.jpg",
+    "static/media/ird-store.png": "/my-portfolio/static/media/ird-store.8a9ac52aee88fd604913.png",
     "static/media/express_logo.png": "/my-portfolio/static/media/express_logo.6a3e055a6226b08114ef.png",
     "static/media/ramon.png": "/my-portfolio/static/media/ramon.174b69c94d47dc1dca64.png",
     "static/media/spiderman.jpg": "/my-portfolio/static/media/spiderman.b5bcbd8a320d110986c9.jpg",
@@ -37,12 +39,12 @@
     "static/media/logo-livecampus.png": "/my-portfolio/static/media/logo-livecampus.d0e9e5e8eb77d78ca5b3.png",
     "static/media/instagram.png": "/my-portfolio/static/media/instagram.0d8edca0af1a847ff2e6.png",
     "index.html": "/my-portfolio/index.html",
-    "main.ea99b4d1.css.map": "/my-portfolio/static/css/main.ea99b4d1.css.map",
-    "main.f2d9af2d.js.map": "/my-portfolio/static/js/main.f2d9af2d.js.map",
+    "main.d6ed8658.css.map": "/my-portfolio/static/css/main.d6ed8658.css.map",
+    "main.24c852e9.js.map": "/my-portfolio/static/js/main.24c852e9.js.map",
     "453.41811d64.chunk.js.map": "/my-portfolio/static/js/453.41811d64.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ea99b4d1.css",
-    "static/js/main.f2d9af2d.js"
+    "static/css/main.d6ed8658.css",
+    "static/js/main.24c852e9.js"
   ]
 }
