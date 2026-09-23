@@ -52,6 +52,11 @@
 }
 
 .project-card-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4px 14px;
     padding: 14px 20px;
     background-color: rgba(197, 67, 8, 0.05);
     border-bottom: 1px solid rgba(197, 67, 8, 0.15);
@@ -63,6 +68,23 @@
     color: var(--mx-jade);
     font-family: "Noto Sans", sans-serif;
     font-size: 1.15rem;
+}
+
+.project-period {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 0.9rem;
+    color: var(--mx-muted);
+    white-space: nowrap;
+}
+
+/* One line of setting between the employer and the bullets: what the product
+   is, so the achievements below have something to attach to. */
+.project-context {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: var(--mx-muted);
+    margin: -6px 0 14px;
 }
 
 .project-card-body {
@@ -243,6 +265,14 @@
 
     .project-role {
         font-size: 1rem;
+    }
+
+    .project-period {
+        font-size: 0.82rem;
+    }
+
+    .project-context {
+        font-size: 0.88rem;
     }
 
     .project-task {

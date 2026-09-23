@@ -58,22 +58,28 @@ const groups = [
         projects: [
             {
                 key: 'aphilia',
-                tasks: 5,
+                period: true,
+                context: true,
+                tasks: 7,
                 repo: 'private',
                 diagram: true,
-                technologies: [TECH.nestjs, TECH.express, TECH.node, TECH.mysql, TECH.redis, TECH.typeorm, TECH.datadog]
+                stack: ['Jest', 'Cypress', 'CI'],
+                technologies: [TECH.nestjs, TECH.express, TECH.node, TECH.react, TECH.mysql, TECH.redis, TECH.typeorm, TECH.datadog]
             },
             {
                 key: 'ird',
-                tasks: 3,
+                period: true,
+                tasks: 2,
                 shots: [
                     { src: irdStoreShot, altKey: 'storeAlt' },
                     { src: irdAppShot, altKey: 'appAlt', kind: 'phone' }
                 ],
+                stack: ['Django'],
                 technologies: [TECH.grafana, TECH.python, TECH.flutter]
             },
             {
                 key: 'gabor',
+                period: true,
                 tasks: 2,
                 repo: 'https://github.com/MaxRonce/GABOR45',
                 stack: ['Ionic React', 'Nx monorepo', 'Capacitor'],
@@ -81,6 +87,7 @@ const groups = [
             },
             {
                 key: 'utez',
+                period: true,
                 tasks: 2,
                 technologies: [TECH.spring, TECH.java, TECH.mysql]
             }
@@ -112,6 +119,9 @@ function ProjectCard({ project }) {
         <article className="project-card">
             <div className="project-card-header">
                 <h4 className="project-role">{t(`projects.${project.key}.role`)}</h4>
+                {project.period && (
+                    <span className="project-period">{t(`projects.${project.key}.period`)}</span>
+                )}
             </div>
             <div className={`project-card-body${hasMedia ? ' has-media' : ''}`}>
                 {hasMedia && (
@@ -128,6 +138,9 @@ function ProjectCard({ project }) {
                 )}
                 <div className="project-content">
                     <h5 className="project-company">{t(`projects.${project.key}.company`)}</h5>
+                    {project.context && (
+                        <p className="project-context">{t(`projects.${project.key}.context`)}</p>
+                    )}
                     <ul className="project-tasks">
                         {Array.from({ length: project.tasks }, (_, i) => (
                             <li className="project-task" key={i}>{t(`projects.${project.key}.task${i + 1}`)}</li>

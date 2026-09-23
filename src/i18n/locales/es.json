@@ -134,8 +134,9 @@
     "privateRepo": "Repositorio privado",
     "privateRepoWhy": "El código pertenece al cliente y está cubierto por un NDA.",
     "diagram": {
-      "alt": "Arquitectura de los servicios en los que trabajo en Aphilia: una API REST delante de los agentes conversacionales y la capa de datos, monitoreada con Datadog.",
-      "clients": "Aplicaciones cliente",
+      "alt": "Arquitectura del back office Monora en Aphilia: el back office y las terminales de caja llaman a una API REST, que orquesta los agentes conversacionales y la capa de datos; Datadog la monitorea al costado.",
+      "backoffice": "Back office (React)",
+      "terminals": "Terminales de caja",
       "api": "API REST",
       "apiDetail": "microservicios modulares",
       "agents": "Agentes conversacionales",
@@ -146,30 +147,36 @@
     },
     "aphilia": {
       "role": "Alternancia | Desarrollador Backend",
+      "period": "10/2024 – 11/2026 (fin prevista)",
       "company": "Aphilia",
-      "task1": "Desarrollo Backend: Diseño e implementación de APIs REST y microservicios modulares con NestJS, Express y Node.js.",
-      "task2": "Gestión de datos: MySQL, Redis y TypeORM.",
-      "task3": "Integración de IA: Diseño e integración de agentes conversacionales y asistentes inteligentes (definición de skills, motor de reglas y prompts especializados).",
-      "task4": "Monitoreo y observabilidad: Seguimiento del rendimiento de las aplicaciones, configuración de tableros y gestión de métricas con Datadog.",
-      "task5": "Flujo de trabajo asistido por IA: uso de agentes de código como Claude Code para acelerar la entrega — definición del requerimiento, delegación de la implementación, y revisión y validación del código generado antes del merge."
+      "context": "Start-up de 30 personas, grupo PI Electronique. Monora Back Office es el hub de reporting y administración de las cajas de restauración de PI Electronique.",
+      "task1": "Desarrollo de funcionalidades en toda la stack, sobre todo back-end (NestJS, TypeORM, MySQL): gestión de menús y artículos — catálogos, precios, promociones — y nuevos componentes React en el front.",
+      "task2": "Integración de IA: diseño e integración de agentes conversacionales y asistentes inteligentes — definición de skills, motor de reglas y prompts especializados.",
+      "task3": "Reducción del 18 % de la latencia p50 de los endpoints de listado, reemplazando joins to-many por una sola consulta batch.",
+      "task4": "Diagnóstico de esperas de bloqueo de 50 s y errores HTTP 429 con Datadog, resueltos optimizando las consultas SQL detrás de ellos.",
+      "task5": "Construcción de tableros Datadog (salud de la aplicación, latencia de API, éxito/fallo de las sincronizaciones) y logs estructurados, para rastrear los incidentes de sincronización de las terminales.",
+      "task6": "Escritura de los tests Jest (unitarios y de integración) y Cypress (end-to-end) que corren en CI, y pruebas de carga.",
+      "task7": "Uso de Claude Code a diario, revisando y validando todo el código generado antes del merge."
     },
     "ird": {
       "role": "Prácticas | Desarrollador Web Full Stack",
+      "period": "03/2024 – 07/2024",
       "company": "IRD - Institut de recherche pour le développement.",
-      "task1": "Desarrollo de una aplicación móvil de recolección de datos y un panel de visualización; la aplicación móvil fue publicada en Google Play Store (disponible en Costa de Marfil).",
-      "task2": "Mantenimiento y actualización del sitio web del equipo de investigación.",
-      "task3": "Apoyo al responsable de informática del equipo.",
+      "task1": "Desarrollo de una aplicación móvil de recolección de datos (Flutter, Django), publicada en Google Play y disponible en Costa de Marfil, junto con un tablero Grafana para visualizar los datos recolectados.",
+      "task2": "Mantenimiento correctivo y evolutivo del sitio web existente del equipo, para el responsable de informática.",
       "storeAlt": "Ficha de la aplicación Incident Voirie Bouaké: ícono, nombre y editor IRN Trauma",
       "appAlt": "La aplicación Incident Voirie Bouaké: un mapa de Bouaké con un incidente reportado"
     },
     "gabor": {
       "role": "Proyecto tutorado | Desarrollador FrontEnd",
+      "period": "09/2023 – 01/2024",
       "company": "GABOR 45 - Groupement des agriculteurs biologiques et biodynamistes de l'Orléanais et du Loiret",
       "task1": "Contribución a la creación de los módulos de autenticación, agricultores, eventos y categorías.",
       "task2": "Creación de las funciones de búsqueda de agricultores."
     },
     "utez": {
       "role": "Proyecto tutorado | Desarrollador y Líder de proyecto",
+      "period": "09/2022 – 12/2022",
       "company": "UTEZ - Universidad Técnologica Emiliano Zapata",
       "task1": "Gestión del equipo de trabajo así como de las reuniones con el cliente.",
       "task2": "Desarrollo de una aplicación Web y Móvil para gestionar el préstamo de equipo de cómputo identificado con códigos QR."

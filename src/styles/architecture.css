@@ -31,6 +31,10 @@
 }
 
 .arch-label { font-size: 13px; }
+
+/* The full-width band carries the longest string in the diagram, and French is
+   the longest of the three translations — it gets a size of its own. */
+.arch-label-band { font-size: 12px; }
 .arch-label-strong { font-weight: 700; }
 
 .arch-sublabel {
