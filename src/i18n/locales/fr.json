@@ -82,7 +82,7 @@
       },
       "autonomy": {
         "name": "Autonomie",
-        "evidence": "Alternance chez Aphilia : conception et intégration d'agents conversationnels et d'assistants intelligents."
+        "evidence": "Audits de sécurité sur des projets académiques : OWASP ZAP et SonarQube sur des applications web — injections SQL, failles XSS et en-têtes manquants."
       },
       "adaptability": {
         "name": "Adaptabilité",
