@@ -12,11 +12,12 @@ import { clickable, openInNewTab } from '../utils/clickable';
 import Toast from './Toast';
 
 // French visitors get the French CV, everyone else the English one.
-// Filenames match the files in /public.
+// `file` matches the files in /public; `downloadAs` is what lands in the
+// visitor's downloads folder, so it carries the name a recruiter will look for.
 const CV_BY_LANGUAGE = {
-    fr: { file: 'CV-adres-fr.pdf', downloadAs: 'CV_Andres_Ortiz_FR.pdf' },
-    en: { file: 'CV-andres-en.pdf', downloadAs: 'CV_Andres_Ortiz_EN.pdf' },
-    es: { file: 'CV-andres-en.pdf', downloadAs: 'CV_Andres_Ortiz_EN.pdf' }
+    fr: { file: 'CV_FR.pdf', downloadAs: 'CV_Andres_Ortiz_FR.pdf' },
+    en: { file: 'CV_EN.pdf', downloadAs: 'CV_Andres_Ortiz_EN.pdf' },
+    es: { file: 'CV_EN.pdf', downloadAs: 'CV_Andres_Ortiz_EN.pdf' }
 };
 
 // Kept together so the ids are easy to check against dashboard.emailjs.com.
