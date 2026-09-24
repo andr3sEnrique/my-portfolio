@@ -181,13 +181,20 @@
       "task1": "Management of the work team as well as client meetings.",
       "task2": "Development of a Web and Mobile application to manage the borrowing of computer equipment identified by QR Codes."
     },
-    "portfolio": {
-      "role": "Personal project | Design and development",
-      "company": "This portfolio",
-      "task1": "Single-page React application, built and deployed to GitHub Pages.",
-      "task2": "Available in three languages (English, French, Spanish) through a hand-written i18n context.",
-      "task3": "Contact form wired to EmailJS, and a layout that holds down to phone width.",
-      "shotAlt": "Home page of this portfolio"
+    "jobtracker": {
+      "role": "Personal project | Design and full-stack development",
+      "company": "Job Application Tracker",
+      "context": "A private dashboard that fills itself from Gmail: it classifies recruiting email, pulls out the company and the role, and keeps each application’s history up to date.",
+      "task1": "Monorepo on pnpm workspaces and Turborepo: a Next.js 16 web app, a NestJS + Prisma + PostgreSQL API, and Zod contracts shared by both ends.",
+      "task2": "Email classified by prioritised rules in three languages, with an optional AI second opinion (Claude Haiku 4.5 or a local Ollama) called only when the rules are unsure, and capped by a monthly budget.",
+      "task3": "Incremental Gmail sync over the History API with a search fallback, resumable in chunks and driven by a cron. An application’s status is recomputed by replaying its events, so the order the email arrives in does not matter.",
+      "task4": "Privacy by design: message bodies are never stored, what the AI sees is redacted of addresses and phone numbers, and Settings deletes the account and everything attached to it.",
+      "task5": "Hardening: per-request nonce CSP, helmet, rate limits, Zod on every input, Vitest + Testcontainers + Playwright in CI, and a deploy that fits in the free tiers of Vercel, Render and Neon.",
+      "videoCaption": "Walkthrough: sign-in, dashboard, applications and settings.",
+      "homeAlt": "Job Tracker dashboard: totals, applications per week, distribution by status and recent activity",
+      "applicationsAlt": "Job Tracker applications table, with search, filters and status",
+      "emailsAlt": "Job Tracker emails screen: every message detected in Gmail and how it was classified",
+      "settingsAlt": "Job Tracker settings: Gmail connection, AI classification and account deletion"
     }
   },
   "contact": {

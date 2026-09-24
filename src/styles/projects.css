@@ -110,6 +110,52 @@
     gap: 16px;
 }
 
+/* A project with a demo video and a set of dashboard captures needs the width:
+   in a half column the screenshots are unreadable. The media takes the whole
+   card and the write-up sits underneath. */
+.project-card-body.has-wide-media {
+    display: block;
+}
+
+.has-wide-media .project-media {
+    margin-bottom: 26px;
+}
+
+.project-video-figure {
+    width: 100%;
+    margin: 0;
+}
+
+.project-video {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+    border: 1px solid rgba(197, 67, 8, 0.2);
+    background-color: #2b2622;
+}
+
+.project-video-caption {
+    margin-top: 8px;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 0.85rem;
+    color: var(--mx-muted);
+    text-align: center;
+}
+
+.project-gallery {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.project-gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+}
+
 .project-shot {
     height: auto;
     display: block;
@@ -291,5 +337,9 @@
 
     .project-shot-phone {
         max-height: 340px;
+    }
+
+    .project-gallery-grid {
+        grid-template-columns: minmax(0, 1fr);
     }
 }

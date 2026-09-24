@@ -16,9 +16,13 @@ import nodejsIcon from '../img/node_logo.png';
 import redisIcon from '../img/redis_logo.png';
 import typeormIcon from '../img/typeorm_logo.png';
 import datadogIcon from '../img/datadog_logo.png';
-import portfolioShot from '../img/projects/portfolio.png';
 import irdStoreShot from '../img/projects/ird-store.png';
 import irdAppShot from '../img/projects/ird-app.png';
+import jobTrackerHome from '../img/projects/job-tracker-home.png';
+import jobTrackerApplications from '../img/projects/job-tracker-candidatures.png';
+import jobTrackerEmails from '../img/projects/job-tracker-mails.png';
+import jobTrackerSettings from '../img/projects/job-tracker-settings.png';
+import jobTrackerPoster from '../img/projects/job-tracker-poster.jpg';
 import { useTranslation } from '../i18n/LanguageContext';
 import { clickable, openInNewTab } from '../utils/clickable';
 
@@ -26,6 +30,7 @@ import { clickable, openInNewTab } from '../utils/clickable';
      shots    one or more screenshots of the thing running (src/img/projects/),
               each { src, altKey, kind } — kind 'phone' is sized as a portrait
               screenshot rather than stretched to the column
+     video    a file under public/media, played from a poster on demand
      diagram  drawn instead of a screenshot when the code is under NDA
      demo     a live URL
      repo     a repository URL, or the string 'private'
@@ -98,13 +103,22 @@ const groups = [
         subtitleKey: 'projects.groups.personalSubtitle',
         projects: [
             {
-                key: 'portfolio',
-                tasks: 3,
-                shots: [{ src: portfolioShot, altKey: 'shotAlt' }],
-                demo: 'https://andr3senrique.github.io/my-portfolio/',
-                repo: 'https://github.com/andr3sEnrique/my-portfolio',
-                stack: ['React Router', 'Bootstrap', 'EmailJS', 'GitHub Pages'],
-                technologies: [TECH.react]
+                key: 'jobtracker',
+                context: true,
+                tasks: 5,
+                mediaLayout: 'wide',
+                video: 'media/job-tracker.mp4',
+                // A frame of the video itself, so the poster matches its aspect ratio.
+                poster: jobTrackerPoster,
+                shots: [
+                    { src: jobTrackerHome, altKey: 'homeAlt' },
+                    { src: jobTrackerApplications, altKey: 'applicationsAlt' },
+                    { src: jobTrackerEmails, altKey: 'emailsAlt' },
+                    { src: jobTrackerSettings, altKey: 'settingsAlt' }
+                ],
+                repo: 'https://github.com/andr3sEnrique/job-tracker',
+                stack: ['Next.js 16', 'Prisma', 'PostgreSQL', 'Turborepo', 'Zod', 'Playwright'],
+                technologies: [TECH.nestjs, TECH.react, TECH.typescript, TECH.node]
             }
         ]
     }
@@ -113,7 +127,10 @@ const groups = [
 function ProjectCard({ project }) {
     const { t } = useTranslation();
     const shots = project.shots || [];
-    const hasMedia = Boolean(shots.length || project.diagram);
+    const hasMedia = Boolean(shots.length || project.diagram || project.video);
+    const mediaClass = hasMedia
+        ? (project.mediaLayout === 'wide' ? ' has-wide-media' : ' has-media')
+        : '';
 
     return (
         <article className="project-card">
@@ -123,17 +140,40 @@ function ProjectCard({ project }) {
                     <span className="project-period">{t(`projects.${project.key}.period`)}</span>
                 )}
             </div>
-            <div className={`project-card-body${hasMedia ? ' has-media' : ''}`}>
+            <div className={`project-card-body${mediaClass}`}>
                 {hasMedia && (
                     <div className="project-media">
-                        {project.diagram ? <ArchitectureDiagram /> : shots.map((shot) => (
-                            <img
-                                key={shot.altKey}
-                                src={shot.src}
-                                alt={t(`projects.${project.key}.${shot.altKey}`)}
-                                className={`project-shot project-shot-${shot.kind || 'wide'}`}
-                            />
-                        ))}
+                        {project.video && (
+                            <figure className="project-video-figure">
+                                {/* preload="none": the file is only fetched once
+                                    someone presses play, so the page stays light. */}
+                                <video
+                                    className="project-video"
+                                    controls
+                                    preload="none"
+                                    playsInline
+                                    poster={project.poster}
+                                >
+                                    <source src={`${process.env.PUBLIC_URL}/${project.video}`} type="video/mp4" />
+                                </video>
+                                <figcaption className="project-video-caption">
+                                    {t(`projects.${project.key}.videoCaption`)}
+                                </figcaption>
+                            </figure>
+                        )}
+                        {project.diagram && <ArchitectureDiagram />}
+                        {shots.length > 0 && (
+                            <div className={`project-gallery${shots.length > 1 ? ' project-gallery-grid' : ''}`}>
+                                {shots.map((shot) => (
+                                    <img
+                                        key={shot.altKey}
+                                        src={shot.src}
+                                        alt={t(`projects.${project.key}.${shot.altKey}`)}
+                                        className={`project-shot project-shot-${shot.kind || 'wide'}`}
+                                    />
+                                ))}
+                            </div>
+                        )}
                     </div>
                 )}
                 <div className="project-content">

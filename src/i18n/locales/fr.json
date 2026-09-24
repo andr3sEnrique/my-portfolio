@@ -181,13 +181,20 @@
       "task1": "Gestion de l'équipe de travail ainsi que des réunions avec le client.",
       "task2": "Développement d'une application Web et Mobile pour gérer le prêt de matériel informatique identifié par QR Codes."
     },
-    "portfolio": {
-      "role": "Projet personnel | Conception et développement",
-      "company": "Ce portfolio",
-      "task1": "Application React mono-page, construite et déployée sur GitHub Pages.",
-      "task2": "Disponible en trois langues (anglais, français, espagnol) via un contexte i18n écrit à la main.",
-      "task3": "Formulaire de contact branché sur EmailJS, et une mise en page qui tient jusqu'au format mobile.",
-      "shotAlt": "Page d'accueil de ce portfolio"
+    "jobtracker": {
+      "role": "Projet personnel | Conception et développement full-stack",
+      "company": "Job Application Tracker",
+      "context": "Un tableau de bord privé qui se remplit depuis Gmail : il classe les emails de recrutement, en extrait l'entreprise et le poste, et tient à jour l'historique de chaque candidature.",
+      "task1": "Monorepo pnpm workspaces et Turborepo : une application web Next.js 16, une API NestJS + Prisma + PostgreSQL, et des contrats Zod partagés par les deux bouts.",
+      "task2": "Emails classés par des règles priorisées en trois langues, avec un second avis IA optionnel (Claude Haiku 4.5 ou un Ollama local) appelé seulement quand les règles doutent, et plafonné par un budget mensuel.",
+      "task3": "Synchronisation Gmail incrémentale via l'API History avec repli sur la recherche, reprenable par morceaux et pilotée par un cron. Le statut d'une candidature est recalculé en rejouant ses événements : l'ordre d'arrivée des emails n'a donc pas d'importance.",
+      "task4": "Privacy by design : le corps des messages n'est jamais stocké, ce que voit l'IA est expurgé des adresses et des numéros, et les réglages suppriment le compte et tout ce qui s'y rattache.",
+      "task5": "Durcissement : CSP à nonce par requête, helmet, rate limits, Zod sur chaque entrée, Vitest + Testcontainers + Playwright en CI, et un déploiement qui tient dans les offres gratuites de Vercel, Render et Neon.",
+      "videoCaption": "Démo : connexion, tableau de bord, candidatures et réglages.",
+      "homeAlt": "Tableau de bord de Job Tracker : totaux, candidatures par semaine, répartition par statut et activité récente",
+      "applicationsAlt": "Tableau des candidatures de Job Tracker, avec recherche, filtres et statut",
+      "emailsAlt": "Écran Emails de Job Tracker : chaque message détecté dans Gmail et son classement",
+      "settingsAlt": "Réglages de Job Tracker : connexion Gmail, classification par IA et suppression du compte"
     }
   },
   "contact": {

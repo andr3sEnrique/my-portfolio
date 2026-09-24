@@ -181,13 +181,20 @@
       "task1": "Gestión del equipo de trabajo así como de las reuniones con el cliente.",
       "task2": "Desarrollo de una aplicación Web y Móvil para gestionar el préstamo de equipo de cómputo identificado con códigos QR."
     },
-    "portfolio": {
-      "role": "Proyecto personal | Diseño y desarrollo",
-      "company": "Este portafolio",
-      "task1": "Aplicación React de una sola página, construida y desplegada en GitHub Pages.",
-      "task2": "Disponible en tres idiomas (inglés, francés, español) mediante un contexto i18n propio.",
-      "task3": "Formulario de contacto conectado a EmailJS y un diseño que aguanta hasta el ancho de un móvil.",
-      "shotAlt": "Página de inicio de este portafolio"
+    "jobtracker": {
+      "role": "Proyecto personal | Diseño y desarrollo full-stack",
+      "company": "Job Application Tracker",
+      "context": "Un panel privado que se llena solo desde Gmail: clasifica los correos de reclutamiento, extrae la empresa y el puesto, y mantiene al día el historial de cada candidatura.",
+      "task1": "Monorepo con pnpm workspaces y Turborepo: una app web Next.js 16, una API NestJS + Prisma + PostgreSQL, y contratos Zod compartidos por ambos lados.",
+      "task2": "Correos clasificados por reglas priorizadas en tres idiomas, con una segunda opinión de IA opcional (Claude Haiku 4.5 u Ollama local) que solo se llama cuando las reglas dudan, y con tope de presupuesto mensual.",
+      "task3": "Sincronización incremental de Gmail sobre la History API con respaldo por búsqueda, reanudable por tramos y disparada por un cron. El estado de una candidatura se recalcula reproduciendo sus eventos, así que el orden en que llegan los correos da igual.",
+      "task4": "Privacidad por diseño: el cuerpo de los mensajes nunca se guarda, lo que ve la IA va sin direcciones ni teléfonos, y desde Ajustes se borra la cuenta y todo lo asociado.",
+      "task5": "Endurecimiento: CSP con nonce por petición, helmet, rate limits, Zod en cada entrada, Vitest + Testcontainers + Playwright en CI, y un despliegue que cabe en los planes gratuitos de Vercel, Render y Neon.",
+      "videoCaption": "Recorrido: inicio de sesión, panel, candidaturas y ajustes.",
+      "homeAlt": "Panel de Job Tracker: totales, candidaturas por semana, distribución por estado y actividad reciente",
+      "applicationsAlt": "Tabla de candidaturas de Job Tracker, con búsqueda, filtros y estado",
+      "emailsAlt": "Pantalla de Emails de Job Tracker: cada mensaje detectado en Gmail y cómo se clasificó",
+      "settingsAlt": "Ajustes de Job Tracker: conexión con Gmail, clasificación con IA y borrado de la cuenta"
     }
   },
   "contact": {
