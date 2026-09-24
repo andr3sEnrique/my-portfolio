@@ -15,31 +15,11 @@
     font-size: 1.05rem;
     color: var(--mx-muted);
     text-align: center;
-    margin-bottom: 8px;
+    margin-bottom: 36px;
 }
 
 .titleProjet {
     color: var(--mx-rust);
-}
-
-.project-group {
-    margin-top: 40px;
-}
-
-.project-group-title {
-    color: var(--mx-jade);
-    font-family: "Noto Sans", sans-serif;
-    font-size: 1.5rem;
-    text-align: center;
-    margin-bottom: 4px;
-}
-
-.project-group-subtitle {
-    font-family: "Noto Sans", sans-serif;
-    font-size: 0.95rem;
-    color: var(--mx-muted);
-    text-align: center;
-    margin-bottom: 26px;
 }
 
 .project-card {

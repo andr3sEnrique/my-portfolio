@@ -56,71 +56,62 @@ const TECH = {
 
 // Professional first, then the two tutored projects: a recruiter reads the
 // paid work before the school work.
-const groups = [
+// One list, strongest first: the apprenticeship, then the personal project that
+// carries the most engineering, then the older work. Each card's header already
+// says what kind of project it is, so the list needs no headings of its own.
+const projects = [
     {
-        titleKey: 'projects.groups.work',
-        subtitleKey: 'projects.groups.workSubtitle',
-        projects: [
-            {
-                key: 'aphilia',
-                period: true,
-                context: true,
-                tasks: 7,
-                repo: 'private',
-                diagram: true,
-                stack: ['Jest', 'Cypress', 'CI'],
-                technologies: [TECH.nestjs, TECH.express, TECH.node, TECH.react, TECH.mysql, TECH.redis, TECH.typeorm, TECH.datadog]
-            },
-            {
-                key: 'ird',
-                period: true,
-                tasks: 2,
-                shots: [
-                    { src: irdStoreShot, altKey: 'storeAlt' },
-                    { src: irdAppShot, altKey: 'appAlt', kind: 'phone' }
-                ],
-                stack: ['Django'],
-                technologies: [TECH.grafana, TECH.python, TECH.flutter]
-            },
-            {
-                key: 'gabor',
-                period: true,
-                tasks: 2,
-                repo: 'https://github.com/MaxRonce/GABOR45',
-                stack: ['Ionic React', 'Nx monorepo', 'Capacitor'],
-                technologies: [TECH.supabase, TECH.react, TECH.typescript]
-            },
-            {
-                key: 'utez',
-                period: true,
-                tasks: 2,
-                technologies: [TECH.spring, TECH.java, TECH.mysql]
-            }
-        ]
+        key: 'aphilia',
+        period: true,
+        context: true,
+        tasks: 7,
+        repo: 'private',
+        diagram: true,
+        stack: ['Jest', 'Cypress', 'CI'],
+        technologies: [TECH.nestjs, TECH.express, TECH.node, TECH.react, TECH.mysql, TECH.redis, TECH.typeorm, TECH.datadog]
     },
     {
-        titleKey: 'projects.groups.personal',
-        subtitleKey: 'projects.groups.personalSubtitle',
-        projects: [
-            {
-                key: 'jobtracker',
-                context: true,
-                tasks: 5,
-                mediaLayout: 'wide',
-                video: 'media/job-tracker.mp4',
-                // A frame of the video itself, so the poster matches its aspect ratio.
-                poster: jobTrackerPoster,
-                shots: [
-                    { src: jobTrackerHome, altKey: 'homeAlt' },
-                    { src: jobTrackerApplications, altKey: 'applicationsAlt' },
-                    { src: jobTrackerEmails, altKey: 'emailsAlt' },
-                    { src: jobTrackerSettings, altKey: 'settingsAlt' }
-                ],
-                repo: 'https://github.com/andr3sEnrique/job-tracker',
-                stack: ['Next.js 16', 'Prisma', 'PostgreSQL', 'Turborepo', 'Zod', 'Playwright'],
-                technologies: [TECH.nestjs, TECH.react, TECH.typescript, TECH.node]
-            }
-        ]
+        key: 'jobtracker',
+        context: true,
+        tasks: 5,
+        mediaLayout: 'wide',
+        video: 'media/job-tracker.mp4',
+        // A frame of the video itself, so the poster matches its aspect ratio.
+        poster: jobTrackerPoster,
+        shots: [
+            { src: jobTrackerHome, altKey: 'homeAlt' },
+            { src: jobTrackerApplications, altKey: 'applicationsAlt' },
+            { src: jobTrackerEmails, altKey: 'emailsAlt' },
+            { src: jobTrackerSettings, altKey: 'settingsAlt' }
+        ],
+        repo: 'https://github.com/andr3sEnrique/job-tracker',
+        stack: ['Next.js 16', 'Prisma', 'PostgreSQL', 'Turborepo', 'Zod', 'Playwright'],
+        technologies: [TECH.nestjs, TECH.react, TECH.typescript, TECH.node]
+    },
+    {
+        key: 'ird',
+        period: true,
+        tasks: 2,
+        shots: [
+            { src: irdStoreShot, altKey: 'storeAlt' },
+            { src: irdAppShot, altKey: 'appAlt', kind: 'phone' }
+        ],
+        stack: ['Django'],
+        technologies: [TECH.grafana, TECH.python, TECH.flutter]
+    },
+    {
+        key: 'gabor',
+        period: true,
+        tasks: 2,
+        repo: 'https://github.com/MaxRonce/GABOR45',
+        stack: ['Ionic React', 'Nx monorepo', 'Capacitor'],
+        technologies: [TECH.supabase, TECH.react, TECH.typescript]
+    },
+    {
+        key: 'utez',
+        period: true,
+        tasks: 2,
+        technologies: [TECH.spring, TECH.java, TECH.mysql]
     }
 ];
 
@@ -236,14 +227,8 @@ function Projects () {
             <div className="container-xxl">
                 <h1 className="text-center titleProjet">{t('projects.title')}</h1>
                 <p className="projects-intro prose">{t('projects.intro')}</p>
-                {groups.map((group) => (
-                    <div className="project-group" key={group.titleKey}>
-                        <h2 className="project-group-title">{t(group.titleKey)}</h2>
-                        <p className="project-group-subtitle">{t(group.subtitleKey)}</p>
-                        {group.projects.map((project) => (
-                            <ProjectCard project={project} key={project.key} />
-                        ))}
-                    </div>
+                {projects.map((project) => (
+                    <ProjectCard project={project} key={project.key} />
                 ))}
             </div>
         </div>

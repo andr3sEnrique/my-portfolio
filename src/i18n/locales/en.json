@@ -122,12 +122,6 @@
   "projects": {
     "title": "Projects 📂",
     "intro": "What I have built — at work, at school, and on my own time.",
-    "groups": {
-      "work": "Professional & academic projects",
-      "workSubtitle": "Apprenticeship, internship and tutored projects.",
-      "personal": "Personal projects",
-      "personalSubtitle": "Built on my own time, outside of school and work."
-    },
     "technologiesUsed": "Technologies used",
     "viewCode": "View code",
     "viewDemo": "Live demo",

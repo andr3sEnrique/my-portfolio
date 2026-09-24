@@ -122,12 +122,6 @@
   "projects": {
     "title": "Proyectos 📂",
     "intro": "Lo que he construido — en la empresa, en la escuela y en mi tiempo libre.",
-    "groups": {
-      "work": "Proyectos profesionales y de formación",
-      "workSubtitle": "Alternancia, prácticas y proyectos tutorados.",
-      "personal": "Proyectos personales",
-      "personalSubtitle": "Hechos en mi tiempo libre, fuera de la escuela y del trabajo."
-    },
     "technologiesUsed": "Tecnologías utilizadas",
     "viewCode": "Ver código",
     "viewDemo": "Demo en vivo",
