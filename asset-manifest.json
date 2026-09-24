@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.6e4bea07.css",
-    "main.js": "/my-portfolio/static/js/main.1b390702.js",
+    "main.css": "/my-portfolio/static/css/main.50ad7c70.css",
+    "main.js": "/my-portfolio/static/js/main.8b820b00.js",
     "static/js/453.41811d64.chunk.js": "/my-portfolio/static/js/453.41811d64.chunk.js",
     "static/media/cbum.png": "/my-portfolio/static/media/cbum.57eeb53b9a202784267b.png",
     "static/media/rick.png": "/my-portfolio/static/media/rick.6c06b1399d92aaeda773.png",
@@ -9,18 +9,21 @@
     "static/media/profile-pic.jpg": "/my-portfolio/static/media/profile-pic.65f602eb2b1b4c2920fa.jpg",
     "static/media/back-to-the-future.jpg": "/my-portfolio/static/media/back-to-the-future.5f7d77e02857ca07d12c.jpg",
     "static/media/cempasuchil.png": "/my-portfolio/static/media/cempasuchil.cf9daf270c8e54cfa142.png",
+    "static/media/job-tracker-mails.png": "/my-portfolio/static/media/job-tracker-mails.4ed21202b4aab814306a.png",
+    "static/media/job-tracker-candidatures.png": "/my-portfolio/static/media/job-tracker-candidatures.bfa46f9261ae3b340dc0.png",
     "static/media/disco-olimpico.png": "/my-portfolio/static/media/disco-olimpico.e2fca57aa56fed427617.png",
     "static/media/redis_logo.png": "/my-portfolio/static/media/redis_logo.91eb321da29c5e635bc8.png",
     "static/media/node_logo.png": "/my-portfolio/static/media/node_logo.aa8bc616bb8252fa29f3.png",
     "static/media/snk.jpg": "/my-portfolio/static/media/snk.181eaf588f824a573a57.jpg",
     "static/media/ird-store.png": "/my-portfolio/static/media/ird-store.8a9ac52aee88fd604913.png",
+    "static/media/job-tracker-home.png": "/my-portfolio/static/media/job-tracker-home.54d3ca1789de69cbbaf8.png",
     "static/media/express_logo.png": "/my-portfolio/static/media/express_logo.6a3e055a6226b08114ef.png",
     "static/media/ramon.png": "/my-portfolio/static/media/ramon.174b69c94d47dc1dca64.png",
     "static/media/spiderman.jpg": "/my-portfolio/static/media/spiderman.b5bcbd8a320d110986c9.jpg",
     "static/media/breon.jpg": "/my-portfolio/static/media/breon.242277b9b03241be8a8a.jpg",
+    "static/media/job-tracker-settings.png": "/my-portfolio/static/media/job-tracker-settings.3f95e24c1d6dcd0f0bfa.png",
     "static/media/breaking-bad.jpg": "/my-portfolio/static/media/breaking-bad.6577c533ad45e2700598.jpg",
     "static/media/imgHome.jpg": "/my-portfolio/static/media/imgHome.a33d2a9ac42b11151394.jpg",
-    "static/media/portfolio.png": "/my-portfolio/static/media/portfolio.726eabc4a10687d7b7fe.png",
     "static/media/logo-orleans.png": "/my-portfolio/static/media/logo-orleans.6287a87aaf5f4e8b634a.png",
     "static/media/terrence.jpg": "/my-portfolio/static/media/terrence.e8082faaa2dc1dd11d9b.jpg",
     "static/media/Logo-utez.png": "/my-portfolio/static/media/Logo-utez.5ed9f81a0ef59e20442c.png",
@@ -30,6 +33,7 @@
     "static/media/ronnie-coleman.jpg": "/my-portfolio/static/media/ronnie-coleman.201de9ef8957823abcb7.jpg",
     "static/media/datadog_logo.png": "/my-portfolio/static/media/datadog_logo.f5f806cf3bcbab282322.png",
     "static/media/spring.png": "/my-portfolio/static/media/spring.28945251997aaff9b452.png",
+    "static/media/job-tracker-poster.jpg": "/my-portfolio/static/media/job-tracker-poster.540aa01859f025b0dff9.jpg",
     "static/media/quetzal-loader.png": "/my-portfolio/static/media/quetzal-loader.b2a27a4997e362d02b5a.png",
     "static/media/urs.jpg": "/my-portfolio/static/media/urs.ea6c8d9dad59be599cae.jpg",
     "static/media/mysql.png": "/my-portfolio/static/media/mysql.9e541756895e562f0dea.png",
@@ -39,12 +43,12 @@
     "static/media/logo-livecampus.png": "/my-portfolio/static/media/logo-livecampus.d0e9e5e8eb77d78ca5b3.png",
     "static/media/instagram.png": "/my-portfolio/static/media/instagram.0d8edca0af1a847ff2e6.png",
     "index.html": "/my-portfolio/index.html",
-    "main.6e4bea07.css.map": "/my-portfolio/static/css/main.6e4bea07.css.map",
-    "main.1b390702.js.map": "/my-portfolio/static/js/main.1b390702.js.map",
+    "main.50ad7c70.css.map": "/my-portfolio/static/css/main.50ad7c70.css.map",
+    "main.8b820b00.js.map": "/my-portfolio/static/js/main.8b820b00.js.map",
     "453.41811d64.chunk.js.map": "/my-portfolio/static/js/453.41811d64.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6e4bea07.css",
-    "static/js/main.1b390702.js"
+    "static/css/main.50ad7c70.css",
+    "static/js/main.8b820b00.js"
   ]
 }
