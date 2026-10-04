@@ -23,13 +23,15 @@ import jobTrackerApplications from '../img/projects/job-tracker-candidatures.png
 import jobTrackerEmails from '../img/projects/job-tracker-mails.png';
 import jobTrackerSettings from '../img/projects/job-tracker-settings.png';
 import jobTrackerPoster from '../img/projects/job-tracker-poster.jpg';
-import { useTranslation } from '../i18n/LanguageContext';
+import { useContent } from '../i18n/useContent';
 import { clickable, openInNewTab } from '../utils/clickable';
 
 /* Each project card carries, when it exists:
      shots    one or more screenshots of the thing running (src/img/projects/),
               each { src, altKey, kind } — kind 'phone' is sized as a portrait
               screenshot rather than stretched to the column
+     tasks    how many bullets to render — a number, or one per profile
+     onlyProfiles  limits the card to the listed profiles
      video    a file under public/media, played from a poster on demand
      diagram  drawn instead of a screenshot when the code is under NDA
      demo     a live URL
@@ -64,7 +66,7 @@ const projects = [
         key: 'aphilia',
         period: true,
         context: true,
-        tasks: 7,
+        tasks: { dev: 7, appsec: 5 },
         repo: 'private',
         diagram: true,
         stack: ['Jest', 'Cypress', 'CI'],
@@ -103,6 +105,8 @@ const projects = [
         key: 'gabor',
         period: true,
         tasks: 2,
+        // Dropped from the security CV, so it is dropped from that profile too.
+        onlyProfiles: ['dev'],
         repo: 'https://github.com/MaxRonce/GABOR45',
         stack: ['Ionic React', 'Nx monorepo', 'Capacitor'],
         technologies: [TECH.supabase, TECH.react, TECH.typescript]
@@ -116,7 +120,8 @@ const projects = [
 ];
 
 function ProjectCard({ project }) {
-    const { t } = useTranslation();
+    const { t, tp, profile } = useContent();
+    const taskCount = typeof project.tasks === 'number' ? project.tasks : project.tasks[profile];
     const shots = project.shots || [];
     const hasMedia = Boolean(shots.length || project.diagram || project.video);
     const mediaClass = hasMedia
@@ -173,8 +178,8 @@ function ProjectCard({ project }) {
                         <p className="project-context">{t(`projects.${project.key}.context`)}</p>
                     )}
                     <ul className="project-tasks">
-                        {Array.from({ length: project.tasks }, (_, i) => (
-                            <li className="project-task" key={i}>{t(`projects.${project.key}.task${i + 1}`)}</li>
+                        {Array.from({ length: taskCount }, (_, i) => (
+                            <li className="project-task" key={i}>{tp(`projects.${project.key}.task${i + 1}`)}</li>
                         ))}
                     </ul>
                     <div className="project-links">
@@ -221,13 +226,14 @@ function ProjectCard({ project }) {
 // Its own route rather than a block inside About: it is the section a recruiter
 // comes for, so it gets a place in the navbar instead of a scroll.
 function Projects () {
-    const { t } = useTranslation();
+    const { t, profile } = useContent();
+    const visible = projects.filter((p) => !p.onlyProfiles || p.onlyProfiles.includes(profile));
     return(
         <div className="projects-page">
             <div className="container-xxl">
                 <h1 className="text-center titleProjet">{t('projects.title')}</h1>
                 <p className="projects-intro prose">{t('projects.intro')}</p>
-                {projects.map((project) => (
+                {visible.map((project) => (
                     <ProjectCard project={project} key={project.key} />
                 ))}
             </div>

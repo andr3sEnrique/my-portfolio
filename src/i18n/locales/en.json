@@ -19,26 +19,15 @@
   "home": {
     "greeting": "Hey, I'm",
     "name": "Enrique",
-    "intro": "I am a Mexican Full-Stack developer based in Paris. I have done different projects using a variety of technologies and tools.",
     "aboutMe": "About me",
     "seeProjects": "See my projects",
     "snippet": {
-      "role": "Backend-oriented Full-Stack developer",
-      "based": "Île-de-France, France",
-      "focus": [
-        "software architecture",
-        "distributed systems",
-        "AI",
-        "cybersecurity"
-      ],
-      "comment": "Currently a backend apprentice at Aphilia."
+      "based": "Île-de-France, France"
     }
   },
   "about": {
     "title": "Who is Andres Enrique Ortiz Santa Cruz?",
     "profileAlt": "Enrique's profile",
-    "bio1": "Hello, I'm Andres Enrique Ortiz Santa Cruz, a *Backend-oriented Full-Stack developer*.",
-    "bio2": "I design and build web applications and services with *TypeScript, Node.js and React*, with a particular interest in *software architecture, distributed systems, AI and cybersecurity*.",
     "academicTitle": "Academic Formation",
     "utezName": "Universidad Técnologica Emiliano Zapata",
     "utezDegree": "University Technician in multiplatform software development.",
@@ -104,12 +93,6 @@
   },
   "skills": {
     "title": "Skills",
-    "groups": {
-      "daily": "Daily at Aphilia",
-      "projects": "On projects",
-      "tooling": "Tooling",
-      "languages": "Languages"
-    },
     "levels": {
       "native": "Native"
     },
@@ -143,14 +126,7 @@
       "role": "Apprenticeship | Backend Developer",
       "period": "10/2024 – 11/2026 (expected)",
       "company": "Aphilia",
-      "context": "30-person start-up in the PI Electronique group. Monora Back Office is the reporting and administration hub for PI Electronique's restaurant POS systems.",
-      "task1": "Feature work across the stack, mostly back-end (NestJS, TypeORM, MySQL): menu and item management — catalogues, prices, promotions — plus new React components on the front end.",
-      "task2": "AI integration: design and integration of conversational agents and intelligent assistants — skill definition, rules engine and specialised prompts.",
-      "task3": "Cut p50 latency on the listing endpoints by 18%, by replacing to-many joins with a single batch query.",
-      "task4": "Diagnosed 50-second lock waits and HTTP 429 errors with Datadog, then cleared them by optimising the SQL behind them.",
-      "task5": "Built Datadog dashboards (application health, API latency, sync success/failure) and added structured logs, so terminal sync problems can be traced.",
-      "task6": "Wrote the Jest (unit and integration) and Cypress (end-to-end) suites that run in CI, and ran load tests.",
-      "task7": "Used Claude Code daily, reviewing and validating every generated change before merging."
+      "context": "30-person start-up in the PI Electronique group. Monora Back Office is the reporting and administration hub for PI Electronique's restaurant POS systems."
     },
     "ird": {
       "role": "Internship | Full Stack Web Developer",
@@ -179,11 +155,6 @@
       "role": "Personal project | Design and full-stack development",
       "company": "Job Application Tracker",
       "context": "A private dashboard that fills itself from Gmail: it classifies recruiting email, pulls out the company and the role, and keeps each application’s history up to date.",
-      "task1": "Monorepo on pnpm workspaces and Turborepo: a Next.js 16 web app, a NestJS + Prisma + PostgreSQL API, and Zod contracts shared by both ends.",
-      "task2": "Email classified by prioritised rules in three languages, with an optional AI second opinion (Claude Haiku 4.5 or a local Ollama) called only when the rules are unsure, and capped by a monthly budget.",
-      "task3": "Incremental Gmail sync over the History API with a search fallback, resumable in chunks and driven by a cron. An application’s status is recomputed by replaying its events, so the order the email arrives in does not matter.",
-      "task4": "Privacy by design: message bodies are never stored, what the AI sees is redacted of addresses and phone numbers, and Settings deletes the account and everything attached to it.",
-      "task5": "Hardening: per-request nonce CSP, helmet, rate limits, Zod on every input, Vitest + Testcontainers + Playwright in CI, and a deploy that fits in the free tiers of Vercel, Render and Neon.",
       "videoCaption": "Walkthrough: sign-in, dashboard, applications and settings.",
       "homeAlt": "Job Tracker dashboard: totals, applications per week, distribution by status and recent activity",
       "applicationsAlt": "Job Tracker applications table, with search, filters and status",
@@ -208,5 +179,105 @@
   },
   "footer": {
     "text": "© 2024 Built with ❤️ by Andres Enrique Ortiz."
+  },
+  "profiles": {
+    "switcherLabel": "Profile",
+    "dev": {
+      "name": "Backend developer",
+      "short": "Backend",
+      "meta": {
+        "documentTitle": "Enrique — Backend developer",
+        "documentDescription": "Portfolio of Andres Enrique Ortiz Santa Cruz, backend-oriented Full-Stack developer in Île-de-France."
+      },
+      "home": {
+        "intro": "I am a Mexican Full-Stack developer based in Paris. I have done different projects using a variety of technologies and tools.",
+        "snippet": {
+          "role": "Backend-oriented Full-Stack developer",
+          "focus": [
+            "software architecture",
+            "distributed systems",
+            "AI",
+            "cybersecurity"
+          ],
+          "comment": "Currently a backend apprentice at Aphilia."
+        }
+      },
+      "about": {
+        "bio1": "Hello, I'm Andres Enrique Ortiz Santa Cruz, a *Backend-oriented Full-Stack developer*.",
+        "bio2": "I design and build web applications and services with *TypeScript, Node.js and React*, with a particular interest in *software architecture, distributed systems, AI and cybersecurity*."
+      },
+      "skills": {
+        "daily": "Daily at Aphilia",
+        "projects": "On projects",
+        "tooling": "Tooling",
+        "languages": "Languages"
+      },
+      "projects": {
+        "aphilia": {
+          "task1": "Feature work across the stack, mostly back-end (NestJS, TypeORM, MySQL): menu and item management — catalogues, prices, promotions — plus new React components on the front end.",
+          "task2": "AI integration: design and integration of conversational agents and intelligent assistants — skill definition, rules engine and specialised prompts.",
+          "task3": "Cut p50 latency on the listing endpoints by 18%, by replacing to-many joins with a single batch query.",
+          "task4": "Diagnosed 50-second lock waits and HTTP 429 errors with Datadog, then cleared them by optimising the SQL behind them.",
+          "task5": "Built Datadog dashboards (application health, API latency, sync success/failure) and added structured logs, so terminal sync problems can be traced.",
+          "task6": "Wrote the Jest (unit and integration) and Cypress (end-to-end) suites that run in CI, and ran load tests.",
+          "task7": "Used Claude Code daily, reviewing and validating every generated change before merging."
+        },
+        "jobtracker": {
+          "task1": "Monorepo on pnpm workspaces and Turborepo: a Next.js 16 web app, a NestJS + Prisma + PostgreSQL API, and Zod contracts shared by both ends.",
+          "task2": "Email classified by prioritised rules in three languages, with an optional AI second opinion (Claude Haiku 4.5 or a local Ollama) called only when the rules are unsure, and capped by a monthly budget.",
+          "task3": "Incremental Gmail sync over the History API with a search fallback, resumable in chunks and driven by a cron. An application's status is recomputed by replaying its events, so the order the email arrives in does not matter.",
+          "task4": "Privacy by design: message bodies are never stored, what the AI sees is redacted of addresses and phone numbers, and Settings deletes the account and everything attached to it.",
+          "task5": "Hardening: per-request nonce CSP, helmet, rate limits, Zod on every input, Vitest + Testcontainers + Playwright in CI, and a deploy that fits in the free tiers of Vercel, Render and Neon."
+        }
+      }
+    },
+    "appsec": {
+      "name": "Application security consultant",
+      "short": "AppSec",
+      "meta": {
+        "documentTitle": "Enrique — Application security",
+        "documentDescription": "Portfolio of Andres Enrique Ortiz Santa Cruz, junior application security consultant / DevSecOps in Île-de-France."
+      },
+      "home": {
+        "intro": "I am a Mexican developer based in Paris, moving from backend into application security. I work with development teams to find, prioritise and fix vulnerabilities.",
+        "snippet": {
+          "role": "Junior application security consultant / DevSecOps",
+          "focus": [
+            "OWASP Top 10",
+            "threat modeling",
+            "SAST / DAST",
+            "secure by design"
+          ],
+          "comment": "Developer by background, moving into application security."
+        }
+      },
+      "about": {
+        "bio1": "Hello, I'm Andres Enrique Ortiz Santa Cruz, a *developer moving into application security*.",
+        "bio2": "I build with *TypeScript, Node.js and NestJS*, and I bring that to security teams as an *enabler*: my goal is to identify, prioritise and help development teams fix vulnerabilities — not to hand them a report and walk away."
+      },
+      "skills": {
+        "appsec": "Application security",
+        "devsecops": "DevSecOps & CI/CD",
+        "training": "Seen in the master's programme",
+        "build": "What I build with",
+        "languages": "Languages"
+      },
+      "projects": {
+        "aphilia": {
+          "task1": "Wrote the Jest and Cypress (end-to-end) suites that run in CI, with lint on every pull request, and ran load tests.",
+          "task2": "Reviewed and validated all the code generated by an AI assistant (Claude Code) before it was merged.",
+          "task3": "Diagnosed 50-second lock waits and HTTP 429 errors with Datadog, then cleared them by optimising the SQL behind them.",
+          "task4": "Built Datadog dashboards (application health, errors, API latency) and added structured logs to trace incidents.",
+          "task5": "Developed back-end features (NestJS, TypeORM, MySQL) and React components, and fixed bugs."
+        },
+        "jobtracker": {
+          "task1": "Applied data minimisation: email bodies are never stored, and a user can delete their account and every record attached to it.",
+          "task2": "Limited the data-leak surface of the LLM: personal data is redacted before any call, the AI is only ever a second opinion, and spend is capped by a monthly budget.",
+          "task3": "Hardened the app: per-request nonce CSP, security headers through helmet, rate limiting, and Zod validation on every input.",
+          "task4": "Automated the tests in CI with Vitest, Testcontainers and Playwright, plus a dependency audit that fails the build on a high vulnerability.",
+          "task5": "Built on a pnpm/Turborepo monorepo: Next.js 16 web app, NestJS + Prisma + PostgreSQL API, Zod contracts shared by both ends."
+        }
+      }
+    }
   }
 }

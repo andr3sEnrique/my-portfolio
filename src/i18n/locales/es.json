@@ -19,26 +19,15 @@
   "home": {
     "greeting": "Hola, soy",
     "name": "Enrique",
-    "intro": "Soy un desarrollador Full-Stack mexicano radicado en París. He realizado diferentes proyectos utilizando una variedad de tecnologías y herramientas.",
     "aboutMe": "Sobre mí",
     "seeProjects": "Ver mis proyectos",
     "snippet": {
-      "role": "Desarrollador Full-Stack orientado a Backend",
-      "based": "Île-de-France, Francia",
-      "focus": [
-        "arquitectura de software",
-        "sistemas distribuidos",
-        "IA",
-        "ciberseguridad"
-      ],
-      "comment": "Actualmente en alternancia como Backend en Aphilia."
+      "based": "Île-de-France, Francia"
     }
   },
   "about": {
     "title": "¿Quién es Andres Enrique Ortiz Santa Cruz?",
     "profileAlt": "Foto de perfil de Enrique",
-    "bio1": "Hola, soy Andres Enrique Ortiz Santa Cruz, *desarrollador Full-Stack orientado a Backend*.",
-    "bio2": "Diseño y desarrollo aplicaciones web y servicios con *TypeScript, Node.js y React*, con un interés particular en *la arquitectura de software, los sistemas distribuidos, la IA y la ciberseguridad*.",
     "academicTitle": "Formación académica",
     "utezName": "Universidad Técnologica Emiliano Zapata",
     "utezDegree": "Técnico Superior Universitario en desarrollo de software multiplataforma.",
@@ -104,12 +93,6 @@
   },
   "skills": {
     "title": "Habilidades",
-    "groups": {
-      "daily": "A diario en Aphilia",
-      "projects": "En proyectos",
-      "tooling": "Herramientas",
-      "languages": "Idiomas"
-    },
     "levels": {
       "native": "Nativo"
     },
@@ -143,14 +126,7 @@
       "role": "Alternancia | Desarrollador Backend",
       "period": "10/2024 – 11/2026 (fin prevista)",
       "company": "Aphilia",
-      "context": "Start-up de 30 personas, grupo PI Electronique. Monora Back Office es el hub de reporting y administración de las cajas de restauración de PI Electronique.",
-      "task1": "Desarrollo de funcionalidades en toda la stack, sobre todo back-end (NestJS, TypeORM, MySQL): gestión de menús y artículos — catálogos, precios, promociones — y nuevos componentes React en el front.",
-      "task2": "Integración de IA: diseño e integración de agentes conversacionales y asistentes inteligentes — definición de skills, motor de reglas y prompts especializados.",
-      "task3": "Reducción del 18 % de la latencia p50 de los endpoints de listado, reemplazando joins to-many por una sola consulta batch.",
-      "task4": "Diagnóstico de esperas de bloqueo de 50 s y errores HTTP 429 con Datadog, resueltos optimizando las consultas SQL detrás de ellos.",
-      "task5": "Construcción de tableros Datadog (salud de la aplicación, latencia de API, éxito/fallo de las sincronizaciones) y logs estructurados, para rastrear los incidentes de sincronización de las terminales.",
-      "task6": "Escritura de los tests Jest (unitarios y de integración) y Cypress (end-to-end) que corren en CI, y pruebas de carga.",
-      "task7": "Uso de Claude Code a diario, revisando y validando todo el código generado antes del merge."
+      "context": "Start-up de 30 personas, grupo PI Electronique. Monora Back Office es el hub de reporting y administración de las cajas de restauración de PI Electronique."
     },
     "ird": {
       "role": "Prácticas | Desarrollador Web Full Stack",
@@ -179,11 +155,6 @@
       "role": "Proyecto personal | Diseño y desarrollo full-stack",
       "company": "Job Application Tracker",
       "context": "Un panel privado que se llena solo desde Gmail: clasifica los correos de reclutamiento, extrae la empresa y el puesto, y mantiene al día el historial de cada candidatura.",
-      "task1": "Monorepo con pnpm workspaces y Turborepo: una app web Next.js 16, una API NestJS + Prisma + PostgreSQL, y contratos Zod compartidos por ambos lados.",
-      "task2": "Correos clasificados por reglas priorizadas en tres idiomas, con una segunda opinión de IA opcional (Claude Haiku 4.5 u Ollama local) que solo se llama cuando las reglas dudan, y con tope de presupuesto mensual.",
-      "task3": "Sincronización incremental de Gmail sobre la History API con respaldo por búsqueda, reanudable por tramos y disparada por un cron. El estado de una candidatura se recalcula reproduciendo sus eventos, así que el orden en que llegan los correos da igual.",
-      "task4": "Privacidad por diseño: el cuerpo de los mensajes nunca se guarda, lo que ve la IA va sin direcciones ni teléfonos, y desde Ajustes se borra la cuenta y todo lo asociado.",
-      "task5": "Endurecimiento: CSP con nonce por petición, helmet, rate limits, Zod en cada entrada, Vitest + Testcontainers + Playwright en CI, y un despliegue que cabe en los planes gratuitos de Vercel, Render y Neon.",
       "videoCaption": "Recorrido: inicio de sesión, panel, candidaturas y ajustes.",
       "homeAlt": "Panel de Job Tracker: totales, candidaturas por semana, distribución por estado y actividad reciente",
       "applicationsAlt": "Tabla de candidaturas de Job Tracker, con búsqueda, filtros y estado",
@@ -208,5 +179,105 @@
   },
   "footer": {
     "text": "© 2024 Hecho con ❤️ por Andres Enrique Ortiz."
+  },
+  "profiles": {
+    "switcherLabel": "Perfil",
+    "dev": {
+      "name": "Desarrollador Backend",
+      "short": "Backend",
+      "meta": {
+        "documentTitle": "Enrique — Desarrollador Backend",
+        "documentDescription": "Portafolio de Andres Enrique Ortiz Santa Cruz, desarrollador Full-Stack orientado a Backend en Île-de-France."
+      },
+      "home": {
+        "intro": "Soy un desarrollador Full-Stack mexicano radicado en París. He realizado diferentes proyectos utilizando una variedad de tecnologías y herramientas.",
+        "snippet": {
+          "role": "Desarrollador Full-Stack orientado a Backend",
+          "focus": [
+            "arquitectura de software",
+            "sistemas distribuidos",
+            "IA",
+            "ciberseguridad"
+          ],
+          "comment": "Actualmente en alternancia como Backend en Aphilia."
+        }
+      },
+      "about": {
+        "bio1": "Hola, soy Andres Enrique Ortiz Santa Cruz, *desarrollador Full-Stack orientado a Backend*.",
+        "bio2": "Diseño y desarrollo aplicaciones web y servicios con *TypeScript, Node.js y React*, con un interés particular por *la arquitectura de software, los sistemas distribuidos, la IA y la ciberseguridad*."
+      },
+      "skills": {
+        "daily": "A diario en Aphilia",
+        "projects": "En proyectos",
+        "tooling": "Herramientas",
+        "languages": "Idiomas"
+      },
+      "projects": {
+        "aphilia": {
+          "task1": "Desarrollo de funcionalidades en toda la stack, sobre todo back-end (NestJS, TypeORM, MySQL): gestión de menús y artículos — catálogos, precios, promociones — y nuevos componentes React en el front.",
+          "task2": "Integración de IA: diseño e integración de agentes conversacionales y asistentes inteligentes — definición de skills, motor de reglas y prompts especializados.",
+          "task3": "Reducción del 18 % de la latencia p50 de los endpoints de listado, reemplazando joins to-many por una sola consulta batch.",
+          "task4": "Diagnóstico de esperas de bloqueo de 50 s y errores HTTP 429 con Datadog, resueltos optimizando las consultas SQL detrás de ellos.",
+          "task5": "Construcción de tableros Datadog (salud de la aplicación, latencia de API, éxito/fallo de las sincronizaciones) y logs estructurados, para rastrear los incidentes de sincronización de las terminales.",
+          "task6": "Escritura de los tests Jest (unitarios y de integración) y Cypress (end-to-end) que corren en CI, y pruebas de carga.",
+          "task7": "Uso de Claude Code a diario, revisando y validando todo el código generado antes del merge."
+        },
+        "jobtracker": {
+          "task1": "Monorepo con pnpm workspaces y Turborepo: una app web Next.js 16, una API NestJS + Prisma + PostgreSQL, y contratos Zod compartidos por ambos lados.",
+          "task2": "Correos clasificados por reglas priorizadas en tres idiomas, con una segunda opinión de IA opcional (Claude Haiku 4.5 u Ollama local) que solo se llama cuando las reglas dudan, y con tope de presupuesto mensual.",
+          "task3": "Sincronización incremental de Gmail sobre la History API con respaldo por búsqueda, reanudable por tramos y disparada por un cron. El estado de una candidatura se recalcula reproduciendo sus eventos, así que el orden en que llegan los correos da igual.",
+          "task4": "Privacidad por diseño: el cuerpo de los mensajes nunca se guarda, lo que ve la IA va sin direcciones ni teléfonos, y desde Ajustes se borra la cuenta y todo lo asociado.",
+          "task5": "Endurecimiento: CSP con nonce por petición, helmet, rate limits, Zod en cada entrada, Vitest + Testcontainers + Playwright en CI, y un despliegue que cabe en los planes gratuitos de Vercel, Render y Neon."
+        }
+      }
+    },
+    "appsec": {
+      "name": "Consultor en seguridad de aplicaciones",
+      "short": "AppSec",
+      "meta": {
+        "documentTitle": "Enrique — Seguridad de aplicaciones",
+        "documentDescription": "Portafolio de Andres Enrique Ortiz Santa Cruz, consultor junior en seguridad de aplicaciones / DevSecOps en Île-de-France."
+      },
+      "home": {
+        "intro": "Soy un desarrollador mexicano radicado en París, en camino del backend hacia la seguridad de aplicaciones. Trabajo con los equipos de desarrollo para identificar, priorizar y corregir vulnerabilidades.",
+        "snippet": {
+          "role": "Consultor junior en seguridad de aplicaciones / DevSecOps",
+          "focus": [
+            "OWASP Top 10",
+            "modelado de amenazas",
+            "SAST / DAST",
+            "secure by design"
+          ],
+          "comment": "Desarrollador de formación, en camino hacia la seguridad de aplicaciones."
+        }
+      },
+      "about": {
+        "bio1": "Hola, soy Andres Enrique Ortiz Santa Cruz, *desarrollador en camino hacia la seguridad de aplicaciones*.",
+        "bio2": "Desarrollo con *TypeScript, Node.js y NestJS*, y lo llevo a los equipos de seguridad con un *enfoque enabler*: mi objetivo es identificar, priorizar y ayudar a los equipos de desarrollo a corregir vulnerabilidades — no entregarles un informe y marcharme."
+      },
+      "skills": {
+        "appsec": "Seguridad de aplicaciones",
+        "devsecops": "DevSecOps y CI/CD",
+        "training": "Visto en el máster",
+        "build": "Con lo que desarrollo",
+        "languages": "Idiomas"
+      },
+      "projects": {
+        "aphilia": {
+          "task1": "Escritura de los tests Jest y Cypress (end-to-end) que corren en CI, con lint en cada pull request, y pruebas de carga.",
+          "task2": "Revisión y validación de todo el código generado por un asistente de IA (Claude Code) antes del merge.",
+          "task3": "Diagnóstico de esperas de bloqueo de 50 s y errores HTTP 429 con Datadog, resueltos optimizando las consultas SQL detrás de ellos.",
+          "task4": "Construcción de tableros Datadog (salud de la aplicación, errores, latencia de API) y logs estructurados para rastrear incidentes.",
+          "task5": "Desarrollo de funcionalidades back-end (NestJS, TypeORM, MySQL) y componentes React, y corrección de bugs."
+        },
+        "jobtracker": {
+          "task1": "Minimización de datos: el cuerpo de los correos nunca se almacena, y el usuario puede borrar su cuenta y todo lo asociado.",
+          "task2": "Reducción de la superficie de fuga hacia el LLM: los datos personales se enmascaran antes de cualquier llamada, la IA es solo una segunda opinión, y el gasto tiene tope mensual.",
+          "task3": "Endurecimiento de la aplicación: CSP con nonce por petición, cabeceras de seguridad con helmet, rate limiting y validación Zod en cada entrada.",
+          "task4": "Automatización de los tests en CI con Vitest, Testcontainers y Playwright, más una auditoría de dependencias que rompe el build ante una vulnerabilidad alta.",
+          "task5": "Construido sobre un monorepo pnpm/Turborepo: app web Next.js 16, API NestJS + Prisma + PostgreSQL, contratos Zod compartidos por ambos lados."
+        }
+      }
+    }
   }
 }

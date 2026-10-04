@@ -51,12 +51,11 @@ export function LanguageProvider({ children }) {
         return fallback !== undefined ? fallback : key;
     }, [language]);
 
+    // The title and description also depend on the profile, so DocumentMeta
+    // owns them; this only has to keep <html lang> honest.
     useEffect(() => {
         document.documentElement.lang = language;
-        document.title = t('meta.documentTitle');
-        const description = document.querySelector('meta[name="description"]');
-        if (description) description.setAttribute('content', t('meta.documentDescription'));
-    }, [language, t]);
+    }, [language]);
 
     const value = useMemo(() => ({ language, setLanguage, t }), [language, setLanguage, t]);
 
@@ -71,16 +70,19 @@ export function useTranslation() {
     return context;
 }
 
+// Turns *emphasised words* into highlighted spans. Exported so the
+// profile-aware hook can render the same markup without duplicating it.
+export function renderRich(text, className = 'key-words') {
+    if (typeof text !== 'string') return text;
+    return text.split(/\*([^*]+)\*/g).map((part, index) =>
+        index % 2 === 1
+            ? <span key={index} className={className}>{part}</span>
+            : <React.Fragment key={index}>{part}</React.Fragment>
+    );
+}
+
 // Renders a translation where *emphasised words* become highlighted spans.
 export function useRichTranslation() {
     const { t } = useTranslation();
-    return useCallback((key, className = 'key-words') => {
-        const text = t(key);
-        if (typeof text !== 'string') return text;
-        return text.split(/\*([^*]+)\*/g).map((part, index) =>
-            index % 2 === 1
-                ? <span key={index} className={className}>{part}</span>
-                : <React.Fragment key={index}>{part}</React.Fragment>
-        );
-    }, [t]);
+    return useCallback((key, className = 'key-words') => renderRich(t(key), className), [t]);
 }

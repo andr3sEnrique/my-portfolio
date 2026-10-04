@@ -18,6 +18,7 @@ import Quetzalcoatl from '../img/quetzal-loader.png';
 import Loader from './Loader';
 import ModalHobbie from "./ModalHobbie";
 import { useTranslation, useRichTranslation } from '../i18n/LanguageContext';
+import { useContent } from '../i18n/useContent';
 import { clickable, openInNewTab } from '../utils/clickable';
 import { useFirstVisitLoader } from '../utils/useFirstVisitLoader';
 
@@ -73,6 +74,7 @@ function Separator() {
 function About () {
     const { t } = useTranslation();
     const rt = useRichTranslation();
+    const { rtp } = useContent();
     const isLoading = useFirstVisitLoader('about', LOADER_MS);
     const [show, setShow] = useState(false);
     const [showModal, setShowModal] = useState(false);
@@ -156,8 +158,8 @@ function About () {
                                 <img src={profile} alt={t('about.profileAlt')} className="profile-pic"/>
                                 <div className="line"></div>
                                 <div className="d-flex justify-content-center flex-column about-me">
-                                    <p className="text-google">{rt('about.bio1')}</p>
-                                    <p className="text-google">{rt('about.bio2')}</p>
+                                    <p className="text-google">{rtp('about.bio1')}</p>
+                                    <p className="text-google">{rtp('about.bio2')}</p>
                                     <p className="text-google">{rt('about.bio3')}</p>
                                     <p className="text-google">{rt('about.bio4')}</p>
                                     

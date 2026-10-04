@@ -4,6 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import LanguageSwitcher from './LanguageSwitcher';
+import ProfileSwitcher from './ProfileSwitcher';
 import { useTranslation } from '../i18n/LanguageContext';
 import '../styles/navbar.css'
 
@@ -23,6 +24,7 @@ function CustomNavbar() {
         
           </Nav>
           <Nav>
+            <ProfileSwitcher />
             <LanguageSwitcher />
           </Nav>
         </Navbar.Collapse>

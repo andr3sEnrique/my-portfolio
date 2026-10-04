@@ -1,11 +1,11 @@
 import React, {useState, useEffect} from 'react';
 import { Link } from 'react-router-dom';
-import { useTranslation } from '../i18n/LanguageContext';
+import { useContent } from '../i18n/useContent';
 import CodeCard from './CodeCard';
 import '../styles/home.css'
 function Home() {
-    const { t } = useTranslation();
-    const fullText = t('home.intro');
+    const { t, tp } = useContent();
+    const fullText = tp('home.intro');
     const [text, setText] = useState('');
     const [index, setIndex] = useState(0);
 

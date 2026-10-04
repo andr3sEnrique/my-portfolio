@@ -1,5 +1,5 @@
 import React from 'react';
-import { useTranslation } from '../i18n/LanguageContext';
+import { useContent } from '../i18n/useContent';
 
 // Technology names are the same in every language, so they stay here rather
 // than in the locale files; everything else comes from home.snippet.*.
@@ -9,10 +9,10 @@ const STACK = ['TypeScript', 'Node.js', 'NestJS', 'React'];
 // written as the object a reader of this site would expect. It replaces the
 // decorative image so the first screen says what the site is about.
 function CodeCard() {
-    const { t } = useTranslation();
+    const { t, tp } = useContent();
     // t() falls back to the key itself when a translation is missing, so a
     // list is only ever rendered when it really came back as one.
-    const focus = t('home.snippet.focus');
+    const focus = tp('home.snippet.focus');
     const list = (values) => (Array.isArray(values) ? values : [])
         .map((value) => `'${value}'`)
         .join(', ');
@@ -27,13 +27,13 @@ function CodeCard() {
             </div>
             <pre className="code-card-body"><code>
                 <span className="tok-kw">const</span> <span className="tok-var">enrique</span> = {'{'}{'\n'}
-                {'  '}<span className="tok-key">role</span>: <span className="tok-str">'{t('home.snippet.role')}'</span>,{'\n'}
+                {'  '}<span className="tok-key">role</span>: <span className="tok-str">'{tp('home.snippet.role')}'</span>,{'\n'}
                 {'  '}<span className="tok-key">stack</span>: [<span className="tok-str">{list(STACK)}</span>],{'\n'}
                 {'  '}<span className="tok-key">focus</span>: [<span className="tok-str">{list(focus)}</span>],{'\n'}
                 {'  '}<span className="tok-key">based</span>: <span className="tok-str">'{t('home.snippet.based')}'</span>,{'\n'}
                 {'}'};{'\n'}
                 {'\n'}
-                <span className="tok-com">{'// '}{t('home.snippet.comment')}</span>
+                <span className="tok-com">{'// '}{tp('home.snippet.comment')}</span>
             </code></pre>
         </div>
     );

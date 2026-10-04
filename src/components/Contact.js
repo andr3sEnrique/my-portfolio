@@ -8,16 +8,25 @@ import github from '../img/github.png';
 import linkedin from '../img/linkedin.png';
 import emailjs from 'emailjs-com';
 import { useTranslation } from '../i18n/LanguageContext';
+import { useProfile } from '../i18n/ProfileContext';
 import { clickable, openInNewTab } from '../utils/clickable';
 import Toast from './Toast';
 
-// French visitors get the French CV, everyone else the English one.
-// `file` matches the files in /public; `downloadAs` is what lands in the
-// visitor's downloads folder, so it carries the name a recruiter will look for.
-const CV_BY_LANGUAGE = {
-    fr: { file: 'CV_FR.pdf', downloadAs: 'CV_Andres_Ortiz_FR.pdf' },
-    en: { file: 'CV_EN.pdf', downloadAs: 'CV_Andres_Ortiz_EN.pdf' },
-    es: { file: 'CV_EN.pdf', downloadAs: 'CV_Andres_Ortiz_EN.pdf' }
+// One CV per profile and language: French visitors get the French one,
+// everyone else the English one. `file` matches the files in /public;
+// `downloadAs` is what lands in the visitor's downloads folder, so it carries
+// the name a recruiter will look for.
+const CV_BY_PROFILE = {
+    dev: {
+        fr: { file: 'CV_FR_DEV_BACK.pdf', downloadAs: 'CV_Andres_Ortiz_Backend_FR.pdf' },
+        en: { file: 'CV_EN_DEV_BACK.pdf', downloadAs: 'CV_Andres_Ortiz_Backend_EN.pdf' },
+        es: { file: 'CV_EN_DEV_BACK.pdf', downloadAs: 'CV_Andres_Ortiz_Backend_EN.pdf' }
+    },
+    appsec: {
+        fr: { file: 'CV_APPSEC_FR.pdf', downloadAs: 'CV_Andres_Ortiz_AppSec_FR.pdf' },
+        en: { file: 'CV_APPSEC_EN.pdf', downloadAs: 'CV_Andres_Ortiz_AppSec_EN.pdf' },
+        es: { file: 'CV_APPSEC_EN.pdf', downloadAs: 'CV_Andres_Ortiz_AppSec_EN.pdf' }
+    }
 };
 
 // Kept together so the ids are easy to check against dashboard.emailjs.com.
@@ -33,7 +42,9 @@ function Contact () {
     const form = useRef();
     const [status, setStatus] = useState({ state: 'idle' });
     const { t, language } = useTranslation();
-    const cv = CV_BY_LANGUAGE[language] || CV_BY_LANGUAGE.en;
+    const { profile } = useProfile();
+    const forProfile = CV_BY_PROFILE[profile] || CV_BY_PROFILE.dev;
+    const cv = forProfile[language] || forProfile.en;
     const dismiss = useCallback(() => setStatus({ state: 'idle' }), []);
 
     const sendEmail = (e) => {

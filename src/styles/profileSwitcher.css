@@ -1,0 +1,17 @@
+.profile-switcher .dropdown-toggle {
+    color: #fff !important;
+}
+
+.profile-switcher .profile-title {
+    letter-spacing: 0.05em;
+}
+
+.profile-switcher .dropdown-menu {
+    min-width: 16rem;
+}
+
+.profile-switcher .dropdown-item.active,
+.profile-switcher .dropdown-item:active {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: inherit;
+}
