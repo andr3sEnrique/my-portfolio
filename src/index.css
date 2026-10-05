@@ -67,6 +67,13 @@ code {
   }
 }
 
+/* Bootstrap is imported after App.css and resets the body to white, so the
+   page tone is set here, scoped to outrank it. A warm off-white rather than
+   pure white: the papel picado reads as paper, not as dirt on a screen. */
+html body {
+  background-color: #faf7f3;
+}
+
 /* `clip` rather than `hidden`: it stops the full-bleed bands below from adding a
    horizontal scrollbar without turning <html> into a scroll container. */
 html {

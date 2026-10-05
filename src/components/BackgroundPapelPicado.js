@@ -14,7 +14,7 @@ import '../styles/background.css';
 const PALETTE = ['#c54308', '#e8871e', '#d63384', '#2e8372'];
 const SPACING = 52;      // px between perforations
 const PETAL = 7;         // resting radius
-const REACH = 240;       // how far the pointer's light carries
+const REACH = 330;       // how far the pointer's light carries
 const REST_ALPHA = 0.055;
 const LIT_ALPHA = 0.42;
 const EASE = 0.12;       // pointer trail; lower is more sluggish

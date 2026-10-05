@@ -2,7 +2,9 @@
    scrolls away with it. Only the navbar stays fixed. */
 .site-footer {
     width: 100%;
-    background: #fff;
+    /* Transparent on purpose: the papel picado runs behind it, so the page has
+       one continuous background rather than a white band at the bottom. */
+    background: transparent;
     border-top: 1px solid rgba(197, 67, 8, 0.2);
     text-align: center;
     padding: 18px 16px;
