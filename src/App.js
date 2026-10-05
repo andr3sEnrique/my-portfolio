@@ -4,6 +4,7 @@ import './App.css'
 import { LanguageProvider } from './i18n/LanguageContext';
 import { ProfileProvider } from './i18n/ProfileContext';
 import DocumentMeta from './components/DocumentMeta';
+import BackgroundPapelPicado from './components/BackgroundPapelPicado';
 import CustomNavbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './components/Home';
@@ -16,6 +17,7 @@ function App() {
     <LanguageProvider>
       <ProfileProvider>
       <DocumentMeta />
+      <BackgroundPapelPicado />
       {/* basename keeps every route under the /my-portfolio/ subpath GitHub Pages serves. */}
       <Router basename={process.env.PUBLIC_URL}>
         {/* Column layout so a short page still pushes the footer to the bottom
