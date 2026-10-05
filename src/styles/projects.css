@@ -23,7 +23,10 @@
 }
 
 .project-card {
-    background-color: #fff;
+    /* Slightly translucent, so the papel picado reads through the card instead
+       of stopping at it. Not lower than this: at 0.85 the body text still has
+       5.1:1 against the worst case, a fully lit petal behind it. */
+    background-color: rgba(255, 255, 255, 0.85);
     border: 1px solid rgba(197, 67, 8, 0.25);
     border-radius: 8px;
     box-shadow: 0 6px 18px rgba(197, 67, 8, 0.12);
@@ -47,7 +50,11 @@
     text-align: center;
     color: var(--mx-jade);
     font-family: "Noto Sans", sans-serif;
-    font-size: 1.15rem;
+    /* 19.2px at weight 700 clears the WCAG large-text threshold, so the jade
+       only needs 3:1 and lands on 4.15:1 with a lit petal behind the card. The
+       h4 default is 500, which does not qualify however large the type is. */
+    font-size: 1.2rem;
+    font-weight: 700;
 }
 
 .project-period {
